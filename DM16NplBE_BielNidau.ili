@@ -1,10 +1,10 @@
 TRANSFER Interlis1;
 
-MODEL DM16NplBE
+MODEL DM16NplBE_BielNidau
 
    !!Amt für Geoinformation des Kantons Bern / Amt für Gemeinden und Raumordnung 
-   !!Version vom 31.03.2017 
-   !!Kommunalen Nutzungsplanung im Kanton Bern
+   !!Entwurf vom 09.10.2017
+   !!Kommunalen Nutzungsplanung im Kanton Bern / Erweiterungsmodell für die Städte Biel und Nidau
 
   DOMAIN
 
@@ -51,7 +51,7 @@ MODEL DM16NplBE
                             Region,
                             Gemeinde),
                         Hinweis); !! nicht eigentuemerverbindlich!
-
+						
     ZonentypenKanton = (     !! Festlegung durch AGR gemaess Legende UZP = Uebersichtszonenplan des Kantons Bern
       W1,                    !! Wohnzone, 1 Geschoss ; !!//TS:MGDMCode_1.11//
       W2,                    !! Wohnzone, 2 Geschosse ; !!//TS:MGDMCode_1.11//
@@ -87,6 +87,42 @@ MODEL DM16NplBE
       USP,                   !! Uferschutzplan ; !!//TS:MGDMCode_1.19//
       Uebrige,               !! uebriges Gebiet ; !!//TS:MGDMCode_4.49//      
       VZ);                   !! Verkehrszone; !!//TS:MGDMCode_1.18//
+	  
+	Nutzungszonentypen = ( !! Nutzungszonen Biel (Nutzungszonenplan))
+	  MA,					!! Mischzone A
+	  MB,					!! Mischzone B
+	  A,					!! Arbeitszone
+	  ZOEN,					!! Zone für öffentliche Nutzungen
+	  GR,					!! Grünzone
+	  LWZ,					!! Landwirtschaftszone
+	  uebriges_Gebiet_Wald, 
+      uebriges_Gebiet_Gewaesser, 
+      uebriges_Gebiet_Verkehrsraum
+	);
+	
+	Verkehrsraumtypen = ( !! Unterteilung Verkehrsraum
+		oeffentlich,
+		privat,
+		Gleisanlagen,
+		kein
+	);
+	
+	Bauzonentypen = ( !! Bauzonen Biel (Bauzonenplan)
+	  BZK,				!! Bauzone Kleinbauten
+	  BZ0,				!! Bauzone 0
+	  BZ1,				!! Bauzone 1
+	  BZ2,				!! Bauzone 2
+	  BZ3,				!! Bauzone 3
+	  BZ4,				!! Bauzone 4
+	  BZ5,				!! Bauzone 5
+	  BZ6				!! Bauzone 6
+	);
+	
+	Spezialvorschriftentypen = ( !! Spezialvorschriften Biel
+	  ZPP,				!! Zone mit Planungspflicht
+	  TGO,				!! Teilgrundordnung
+	  UeO				!! Überbauungsordnung (in Zuständigkeit er Stimmbürger)
+	);
 
     Schutzgrade = (geschuetzt, schuetzenswert, erhaltenswert, unbekannt, reduziert);
 
@@ -139,6 +175,14 @@ MODEL DM16NplBE
          Restgefaehrdung, !!//MGDMCode_5.53//           !! Gefahrenstufe gelb-weiss
          Gefahrenhinweis), !!//MGDMCode_5.53//          !! nicht bestimmte Gefahrenstufe
       weitere);  !!//MGDMCode_6.69//                    !! weitere Ueberlagerungsarten
+	  
+	UeberlagerungArtBiel = (
+	  Landschaftsschutzgebiet, !! In Biel mit Gestaltungsfunktion, nicht "Schutzfunktion", deshalb nicht in NHS.
+	  Gebiet_mit_Erdgeschossbestimmungen,
+	  Siedlungseinheit,
+	  Besonderer_Gestaltungsperimeter,
+	  Wald
+	);
 
     AbstandslinienArtKanton = (
       Eisenbahn, !!//MGDMCode_7.71//
@@ -154,6 +198,23 @@ MODEL DM16NplBE
       Innenbaulinie,  !!//MGDMCode_7.71//
       Hilfsbaulinie,  !!//MGDMCode_7.79//
       weitere);  !!//MGDMCode_7.79//                        !! weitere Abstandslinientypen
+	  
+	AbstandslinienArtBiel = (
+      BL,                              !! Baulinie
+      BL_optional,
+      BL_Anbaupflicht,                 !! Baulinie mit Anbaupflicht
+      BL_beschrAnbaubefugnis,          !! Baulinie mit beschraenkter Anbaubefugnis
+      BL_beschrAnbaubefugnis_optional,
+      HBL,                             !! Hoehenbaulinie
+      HBL_optional,
+      EBL,                             !! Erdgeschossbaulinie
+      EBL_optional,
+      BL_StrassenGeleiseAbstand_A,     !! Baulinien fuer Bauten im Strassen- und Geleiseabstand A
+      BL_StrassenGeleiseAbstand_B,     !! Baulinien fuer Bauten im Strassen- und Geleiseabstand B
+      GAL_Gewaesserabstandslinie,      !! Gewässerabstandslinie
+      BL_Nationalstrasse_A5,		   !! Baulinie für A5
+      weitere                          !! z.B. Nationalstrassenbaulinie mit STP_Art=weitere, KantArt=Nationalstrasse.
+	);
 
     NHArtKanton = (
       Landschaft
@@ -235,7 +296,40 @@ MODEL DM16NplBE
             Veloweg,
             Uferweg,
             andere);
+			
+	Wohnnutzungsanteiltypen = (
+      min_30_Prozent,
+      min_40_Prozent,
+      min_50_Prozent,
+      min_70_Prozent
+	);
+	
+	Gruenflaechenzifferntypen = ( !! Gruenflaechenziffern Biel/Bienne (Nutzungszonenplan)
+      min_30_Prozent,
+      min_40_Prozent
+	);
 
+    Bauweisetypen = ( !! Bauweisen Biel/Bienne (Bauzonenplan)
+      geschlossen,
+      geschlossen_I,
+      annaehernd_geschlossen,
+      geschlossen_hofbauweise,
+      geschlossen_I_hofbauweise,
+      annaehernd_geschlossen_hofbauweise,
+      hofbauweise
+	);
+
+	Gebaeudelaengentypen = ( !! Gebaeudelaengentypen Biel/Bienne (Bauzonenplan)
+      GL_GT_Generell,            !! Gebaeudelaenge_Gebaeudetiefe_Generell
+      GL_GT_Obergeschoss,        !! Gebaeudelaenge_Gebaeudetiefe_Obergeschoss
+      GL_GT_Ohne_Beschraenkung); !! Keine Beschraenkung, z.B. Insel bei Schule Mühlefeld
+	  
+	Vorgartenbereiche = ( !! Vorgartenbereiche Biel/Bienne (Baulinienplan)
+      A,
+      B,
+      kein_Vorgartenbereich !! z.B. für Inseln innerhalb von umgebenden Vorgartenbereichen
+      );
+	
   TOPIC Nutzungsplanung =
   
     TABLE Datenbestand =
@@ -257,12 +351,12 @@ MODEL DM16NplBE
     TABLE Dokument =
         Art_Doku: (Rechtsvorschrift,  
               Hinweis);  !! Reglemente, Vorschriften etc. die generell konkret sind (generell fuer die Person, die nicht bekannt ist, konkret fuer dass der Raumbezug mit Karte definiert ist), die zusammen mit der exakten geometrischen Definition als Einheit die Eigentumsbeschraenkung unmittelbar beschreiben und innerhalb desselben Verfahrens verabschiedet worden sind.
-        Titel: TEXT*200; !!//TS:Dokument.Titel// !! Titel (oder falls vorhanden Kurztitel) des Dokuments; z.B. "Baureglement" oder "Raumplanungsgesetz"
-        OffiziellerTitel: TEXT*200; !!//TS:Dokument.OffiziellerTitel// !! Offizieller Titel des Dokuments; z.B. "Baureglement Thun, vom 06.2002" oder "Bundesgesetz ueber die Raumplanung" 
-        Abkuerzung: OPTIONAL TEXT*20; !!//TS:Dokument.Abkuerzung//  !! Abkuerzung des Gesetzes; z.B. "RPG"
-        OffizielleNr: OPTIONAL TEXT*20; !!//TS:Dokument.OffizielleNr// !! Offizielle Nummer des Gesetzes; z.B. "SR 700" oder "sGS 731.1"
+        Titel: TEXT*400; !!//TS:Dokument.Titel// !! Titel (oder falls vorhanden Kurztitel) des Dokuments; z.B. "Baureglement" oder "Raumplanungsgesetz"
+        OffiziellerTitel: TEXT*400; !!//TS:Dokument.OffiziellerTitel// !! Offizieller Titel des Dokuments; z.B. "Baureglement Thun, vom 06.2002" oder "Bundesgesetz ueber die Raumplanung" 
+        Abkuerzung: OPTIONAL TEXT*40; !!//TS:Dokument.Abkuerzung//  !! Abkuerzung des Gesetzes; z.B. "RPG"
+        OffizielleNr: OPTIONAL TEXT*40; !!//TS:Dokument.OffizielleNr// !! Offizielle Nummer des Gesetzes; z.B. "SR 700" oder "sGS 731.1"
         Gemeinde: BFSNr; !!//TS:Dokument.Gemeinde// !! Falls die Angabe fehlt, ist es ein Erlass des Kantons oder des Bundes. z.B. "942"
-        Dokument: TEXT*100; !!//TS:Dokument.Dokument//  !! Der Name der PDF-Datei (ohne Pfadangaben)
+        Dokument: TEXT*200; !!//TS:Dokument.Dokument//  !! Der Name der PDF-Datei (ohne Pfadangaben)
         ZustaendigeStelle: -> Amt; !! ->Amt; !! {0..*}
     NO IDENT
     END Dokument;
@@ -274,107 +368,217 @@ MODEL DM16NplBE
         Ordnungsnummer: OPTIONAL [1  .. 99];
     NO IDENT
     END HinweisWeitereDokumente;
+	
+	!! Die Grundnutzung wird nicht in eine Tabelle überführt sondern
+	!! verbleibt in getrennten Tabellen. Die Zuordnung zu ZonentypenKanton 
+	!! kann daher nicht im Modell gemacht werden.
+	!! Der dazu notwendige Verschnitt (Nutzungszone/Spezialvorschriften 
+	!! mit Bauzonen) wird durch das AGI gemacht.
+	!! Die Zuordnung zu ZonentypenKanton ist statisch und wird
+	!! vom AGR noch definiert.
 
-    TABLE GN_Zonentyp =
-        Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
-        KantArt: ZonentypenKanton;  !! Zonencode gemaess UZP Kanton Bern
-        Abkuerzung: TEXT*12; !!//TS:Eigentumsbeschraenkung.ArtCode//                 !! Zonenabkuerzung Gemeinde VV01
-        Bezeichnung: TEXT*150; !!//TS:Eigentumsbeschraenkung.Aussage//                !! Zonenname Gemeinde VV01 / Zeichenlaenge VV28
-        BR_Nutzungsart: OPTIONAL TEXT*80;  !! Hinweis auf Artikel Baureglement
-        BR_Nutzungsmass: OPTIONAL TEXT*80; !! Hinweis auf Artikel Baureglement
+	!! Nutzungszonen und Spezialvorschriften sind zusammen
+	!! flächendeckend. Dazu werden neben dem Verkehrsraum auch
+	!! Gewässer und Wald neu in den Nutzungszonen erfasst.
+	!! Für die Feinunterteilung des Verkehrsraum wurde das
+	!! Attribut Verkehrsraum eingefügt.
+	TABLE GN_Nutzungszonentyp =
+		Verbindlichkeit: Verbindlichkeiten;
+		Abkuerzung: TEXT*24; !!//TS:Eigentumsbeschraenkung.ArtCode//
+		Nutzungszone: Nutzungszonentypen; !!//TS:Eigentumsbeschraenkung.Aussage//
+        BR_Nutzungsart: OPTIONAL TEXT*160;  !! Hinweis auf Artikel Baureglement
+        BR_Nutzungsmass: OPTIONAL TEXT*160; !! Hinweis auf Artikel Baureglement
         Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
         Nutzungsziffer_Art: OPTIONAL MGDM_Nutzungsziffer_Art;
         Gruenflaechenziffer: OPTIONAL MGDM_Nutzungsziffer;
-        Bemerkung: OPTIONAL TEXT*80;
+        Bemerkung: OPTIONAL TEXT*160;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
-    NO IDENT
-    END GN_Zonentyp;
-
-    TABLE GN_ZonentypRV =
-      Typ: -> GN_Zonentyp; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
+		Verkehrsraum: OPTIONAL Verkehrsraumtypen; !! Obligatorisch, wenn Nutzungszone=Verkehrsraum
+	NO IDENT
+	END GN_Nutzungszonentyp;
+	
+	TABLE GN_NutzungszonentypRV =
+      Typ: -> GN_Nutzungszonentyp; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
       Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
       ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
-    NO IDENT
-    END GN_ZonentypRV;
-
-    TABLE GN_Grundzone =
-        ZonentypRef: -> GN_Zonentyp; !!//TS:Geometrie.Eigentumsbeschraenkung//
+	NO IDENT
+	END GN_NutzungszonentypRV;
+	
+	TABLE GN_Nutzungszone =
+        NutzungszonentypRef: -> GN_Nutzungszonentyp; !!//TS:Geometrie.Eigentumsbeschraenkung//
         Genehmigung: OPTIONAL DATE;
         Inkraftsetzung: OPTIONAL DATE;
         Laermempfindlichkeit: OPTIONAL Laermempfindlichkeit;
-        Beschrieb: OPTIONAL TEXT*80;
-        Planbeschriftung: OPTIONAL TEXT*150; !! fuer Beschriftungen auf dem Plan 
+        Beschrieb: OPTIONAL TEXT*160;
+        Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan 
         Geometrie: AREA WITH (STRAIGHTS, ARCS) VERTEX LKoord 
             WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
         Qualitaet: Qualitaetsstandard;
-        Bemerkung: OPTIONAL TEXT*80;
+        Bemerkung: OPTIONAL TEXT*160;
         Flaechenmass: DIM2 0 999999999;  !! aus Koordinaten gerechnete Flaeche
-    NO IDENT    
-    END GN_Grundzone;
-
-    TABLE GN_GrundzonePos = !! beschriftet Attribut Planbeschriftung
-        Objekt: -> GN_Grundzone; !! Beziehung 1-mc
+	NO IDENT
+	END GN_Nutzungszone;
+	
+    TABLE GN_NutzungszonePos = !! beschriftet Attribut Planbeschriftung
+        Objekt: -> GN_Nutzungszone; !! Beziehung 1-mc
         TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
         TextOri: OPTIONAL Rotation;
         TextHAli: OPTIONAL HALIGNMENT;
         TextVAli: OPTIONAL VALIGNMENT;
         TextSize: OPTIONAL Schriftgroesse;
     NO IDENT    
-    END GN_GrundzonePos;
+    END GN_NutzungszonePos;
 
-    TABLE GN_GrundzoneSym = !! Symbol und Text mit Zonenkuerzel
-        Objekt: -> GN_Grundzone; !! Beziehung 1-mc
+    TABLE GN_NutzungszoneSym = !! Symbol und Text mit Zonenkuerzel
+        Objekt: -> GN_Nutzungszone; !! Beziehung 1-mc
         SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
         SymOri: OPTIONAL Rotation;
         SymSize: OPTIONAL Schriftgroesse;
     NO IDENT    
-    END GN_GrundzoneSym;
+    END GN_NutzungszoneSym;	
+	
+	TABLE GN_Bauzonentyp =
+		Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
+		Bauzone: Bauzonentypen; !!//TS:Eigentumsbeschraenkung.Aussage//
+        BR_Nutzungsart: OPTIONAL TEXT*160;  !! Hinweis auf Artikel Baureglement
+        BR_Nutzungsmass: OPTIONAL TEXT*160; !! Hinweis auf Artikel Baureglement
+        Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
+        Nutzungsziffer_Art: OPTIONAL MGDM_Nutzungsziffer_Art;
+        Gruenflaechenziffer: OPTIONAL MGDM_Nutzungsziffer;
+        Bemerkung: OPTIONAL TEXT*160;
+        DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;
+        Datenverwaltungsstelle: -> Amt;
+        ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
+	NO IDENT
+	END GN_Bauzonentyp;
 
-    TABLE GN_Grundzone_ZPP_UeO = !! Unterteilung der Flaechen ZPP und UeO
-        ZonentypRef: -> GN_Zonentyp; 
+	TABLE GN_BauzonentypRV =
+      Typ: -> GN_Bauzonentyp; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
+      Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
+      ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
+	NO IDENT
+	END GN_BauzonentypRV;
+	
+	TABLE GN_Bauzone =
+        BauzonentypRef: -> GN_Bauzonentyp; !!//TS:Geometrie.Eigentumsbeschraenkung//
         Genehmigung: OPTIONAL DATE;
         Inkraftsetzung: OPTIONAL DATE;
         Laermempfindlichkeit: OPTIONAL Laermempfindlichkeit;
-        Beschrieb: OPTIONAL TEXT*80;
-        Planbeschriftung: OPTIONAL TEXT*150; !! fuer Beschriftungen auf dem Plan
+        Beschrieb: OPTIONAL TEXT*160;
+        Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan 
+        Geometrie: AREA WITH (STRAIGHTS, ARCS) VERTEX LKoord 
+            WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
+        Qualitaet: Qualitaetsstandard;
+        Bemerkung: OPTIONAL TEXT*160;
+        Flaechenmass: DIM2 0 999999999;  !! aus Koordinaten gerechnete Flaeche
+	NO IDENT
+	END GN_Bauzone;
+
+    TABLE GN_BauzonePos = !! beschriftet Attribut Planbeschriftung
+        Objekt: -> GN_Bauzone; !! Beziehung 1-mc
+        TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        TextOri: OPTIONAL Rotation;
+        TextHAli: OPTIONAL HALIGNMENT;
+        TextVAli: OPTIONAL VALIGNMENT;
+        TextSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END GN_BauzonePos;
+
+    TABLE GN_BauzoneSym = !! Symbol und Text mit Zonenkuerzel
+        Objekt: -> GN_Bauzone; !! Beziehung 1-mc
+        SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        SymOri: OPTIONAL Rotation;
+        SymSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END GN_BauzoneSym;	
+
+	TABLE GN_Spezialvorschriftentyp =
+		Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
+		Spezialvorschrift: Spezialvorschriftentypen; !!//TS:Eigentumsbeschraenkung.Aussage//
+		Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//
+        BR_Nutzungsart: OPTIONAL TEXT*160;  !! Hinweis auf Artikel Baureglement
+        BR_Nutzungsmass: OPTIONAL TEXT*160; !! Hinweis auf Artikel Baureglement
+        Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
+        Nutzungsziffer_Art: OPTIONAL MGDM_Nutzungsziffer_Art;
+        Gruenflaechenziffer: OPTIONAL MGDM_Nutzungsziffer;
+        Bemerkung: OPTIONAL TEXT*160;
+        DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;
+        Datenverwaltungsstelle: -> Amt;
+        ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
+	NO IDENT
+	END GN_Spezialvorschriftentyp;
+
+	TABLE GN_SpezialvorschriftentypRV =
+      Typ: -> GN_Spezialvorschriftentyp; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
+      Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
+      ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
+	NO IDENT
+	END GN_SpezialvorschriftentypRV;
+	
+	TABLE GN_Spezialvorschrift =
+        SpezialvorschriftentypRef: -> GN_Spezialvorschriftentyp; !!//TS:Geometrie.Eigentumsbeschraenkung//
+        Genehmigung: OPTIONAL DATE;
+        Inkraftsetzung: OPTIONAL DATE;
+        Laermempfindlichkeit: OPTIONAL Laermempfindlichkeit;
+        Beschrieb: OPTIONAL TEXT*160;
+        Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan 
+        Geometrie: AREA WITH (STRAIGHTS, ARCS) VERTEX LKoord 
+            WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
+        Qualitaet: Qualitaetsstandard;
+        Bemerkung: OPTIONAL TEXT*160;
+        Flaechenmass: DIM2 0 999999999;  !! aus Koordinaten gerechnete Flaeche
+		DarstellungInNZPlan: (ja, nein); 
+		DarstellungInBZPlan: (ja, nein); 
+		DarstellungInBLPlan: (ja, nein);
+	NO IDENT
+	END GN_Spezialvorschrift;
+
+    TABLE GN_SpezialvorschriftPos = !! beschriftet Attribut Planbeschriftung
+        Objekt: -> GN_Spezialvorschrift; !! Beziehung 1-mc
+        TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        TextOri: OPTIONAL Rotation;
+        TextHAli: OPTIONAL HALIGNMENT;
+        TextVAli: OPTIONAL VALIGNMENT;
+        TextSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END GN_SpezialvorschriftPos;
+
+    TABLE GN_SpezialvorschriftSym = !! Symbol und Text mit Zonenkuerzel
+        Objekt: -> GN_Spezialvorschrift; !! Beziehung 1-mc
+        SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        SymOri: OPTIONAL Rotation;
+        SymSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END GN_SpezialvorschriftSym;
+	
+    TABLE GN_Grundzone_ZPP_UeO = !! Unterteilung der Flaechen ZPP und UeO (innere Nutzung)
+        KantArt: ZonentypenKanton;  !! Zonencode gemaess UZP Kanton Bern
+        Genehmigung: OPTIONAL DATE;
+        Inkraftsetzung: OPTIONAL DATE;
+        Laermempfindlichkeit: OPTIONAL Laermempfindlichkeit;
+        Beschrieb: OPTIONAL TEXT*160;
+        Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
         Geometrie: AREA WITH (STRAIGHTS, ARCS) VERTEX LKoord
             WITHOUT OVERLAPS > 0.050;
         Qualitaet: Qualitaetsstandard;
-        Bemerkung: OPTIONAL TEXT*80;
+        Bemerkung: OPTIONAL TEXT*160;
         Flaechenmass: DIM2 0 999999999;  !! aus Koordinaten gerechnete Flaeche
     NO IDENT
     END GN_Grundzone_ZPP_UeO;
 
-    TABLE GN_Grundzone_ZPP_UeOPos = !! beschriftet Attribut Planbeschriftung
-        Objekt: -> GN_Grundzone_ZPP_UeO; !! Beziehung 1-mc
-        TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
-        TextOri: OPTIONAL Rotation;
-        TextHAli: OPTIONAL HALIGNMENT;
-        TextVAli: OPTIONAL VALIGNMENT;
-        TextSize: OPTIONAL Schriftgroesse;
-    NO IDENT
-    END GN_Grundzone_ZPP_UeOPos;
-
-    TABLE GN_Grundzone_ZPP_UeO_Sym = !! Symbol und Text mit Zonenkuerzel
-        Objekt: -> GN_Grundzone_ZPP_UeO; !! Beziehung 1-mc
-        SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
-        SymOri: OPTIONAL Rotation;
-        SymSize: OPTIONAL Schriftgroesse;
-    NO IDENT
-    END GN_Grundzone_ZPP_UeO_Sym;
-
     TABLE UE_UeberlagerungZone =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Verbindlichkeit//
-        KantArt: UeberlagerungArtKanton; !!//TS:Eigentumsbeschraenkung.Aussage//
-        Abkuerzung: OPTIONAL TEXT*12;                 !! Zonenabkuerzung Gemeinde
-        Bezeichnung: TEXT*150; !!//TS:Eigentumsbeschraenkung.Aussage//
-        Planbeschriftung: OPTIONAL TEXT*150;        !! fuer Beschriftungen auf dem Plan
+        KantArt: UeberlagerungArtKanton;
+		Art: UeberlagerungArtBiel; !!//TS:Eigentumsbeschraenkung.Aussage//
+        Abkuerzung: OPTIONAL TEXT*24;                 !! Zonenabkuerzung Gemeinde
+        Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//
+        Planbeschriftung: OPTIONAL TEXT*300;        !! fuer Beschriftungen auf dem Plan
         Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
         Nutzungsziffer_Art: OPTIONAL MGDM_Nutzungsziffer_Art;
         Gruenflaechenziffer: OPTIONAL MGDM_Nutzungsziffer;
-        Bemerkung: OPTIONAL TEXT*80;
+        Bemerkung: OPTIONAL TEXT*160;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
@@ -392,7 +596,7 @@ MODEL DM16NplBE
         Genehmigung: OPTIONAL DATE;
         Inkraftsetzung: OPTIONAL DATE;
         Objekt: -> UE_UeberlagerungZone; !!//TS:Geometrie.Eigentumsbeschraenkung//  !! Beziehung 1-m
-        Beschrieb: OPTIONAL TEXT*80;
+        Beschrieb: OPTIONAL TEXT*160;
         Qualitaet: Qualitaetsstandard;
         Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord
             WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
@@ -411,14 +615,16 @@ MODEL DM16NplBE
 
     TABLE UE_Abstandslinie =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
-        KantArt: AbstandslinienArtKanton; !!//TS:Eigentumsbeschraenkung.Aussage//
-        Abkuerzung: OPTIONAL TEXT*12;                 !! Linienabkuerzung Gemeinde
-        Bezeichnung: TEXT*150; !!//TS:Eigentumsbeschraenkung.Aussage//
-        Planbeschriftung: OPTIONAL TEXT*150; !! fuer Beschriftungen auf dem Plan
+        KantArt: AbstandslinienArtKanton;
+		Art: AbstandslinienArtBiel; !!//TS:Eigentumsbeschraenkung.Aussage//
+		BeschrVorsprGebaeudeteile: (ja, nein);   !! BL mit Beschraenkung vorspringender Gebaeudeteile
+        Abkuerzung: OPTIONAL TEXT*24;                 !! Linienabkuerzung Gemeinde
+        Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//
+        Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
         Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
         Nutzungsziffer_Art: OPTIONAL MGDM_Nutzungsziffer_Art;
         Gruenflaechenziffer: OPTIONAL MGDM_Nutzungsziffer;
-        Bemerkung: OPTIONAL TEXT*80;
+        Bemerkung: OPTIONAL TEXT*160;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit L = Linie
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
@@ -434,7 +640,7 @@ MODEL DM16NplBE
 
     TABLE UE_LinienelementAbstand =
         Objekt: -> UE_Abstandslinie; !!//TS:Geometrie.Eigentumsbeschraenkung//  !! Beziehung 1-m
-        Beschrieb: OPTIONAL TEXT*80;
+        Beschrieb: OPTIONAL TEXT*160;
         Genehmigung: OPTIONAL DATE;
         Inkraftsetzung: OPTIONAL DATE;
         Qualitaet: Qualitaetsstandard;
@@ -460,13 +666,13 @@ MODEL DM16NplBE
                   andere);
         Gueltig_bis: DATE;
         Beschwerde_haengig: OPTIONAL (ja, nein);
-        Abkuerzung: OPTIONAL TEXT*12;                 !! Abkuerzung Gemeinde
-        Planbeschriftung: OPTIONAL TEXT*150; !! fuer Beschriftungen auf dem Plan
-        Bezeichnung: TEXT*150; !!//TS:Eigentumsbeschraenkung.Aussage//
+        Abkuerzung: OPTIONAL TEXT*24;                 !! Abkuerzung Gemeinde
+        Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
+        Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//
         Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
         Nutzungsziffer_Art: OPTIONAL MGDM_Nutzungsziffer_Art;
         Gruenflaechenziffer: OPTIONAL MGDM_Nutzungsziffer;
-        Bemerkung: OPTIONAL TEXT*80;
+        Bemerkung: OPTIONAL TEXT*160;
         ThemaLaufendeAenderung: OPTIONAL (Grundnutzung,
                                 Ueberlagerung,
                                 Erschliessungsstand,
@@ -491,7 +697,7 @@ MODEL DM16NplBE
         Objekt: -> VE_Vor_Einschraenkung; !!//TS:Geometrie.Eigentumsbeschraenkung//  !! Beziehung 1-m
         Genehmigung: OPTIONAL DATE;
         Inkraftsetzung: OPTIONAL DATE;
-        Beschrieb: OPTIONAL TEXT*80;
+        Beschrieb: OPTIONAL TEXT*160;
         Qualitaet: Qualitaetsstandard;	
         Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord
             WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
@@ -511,7 +717,7 @@ MODEL DM16NplBE
     TABLE WF_Einzelpunkt = 
         !! Definition gemaess Einzelpunkt Bodenbedeckung AV
         !! Rechtsgueltig vermessene Einzelpunkte
-        Identifikator: OPTIONAL TEXT*12;
+        Identifikator: OPTIONAL TEXT*24;
         Geometrie: LKoord;
         LageGen: [0.0 .. 700.0];  !! in cm
         LageZuv: (ja,     !! genuegend
@@ -527,7 +733,7 @@ MODEL DM16NplBE
 
     TABLE WF_FeststellungWald =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
-        Bemerkung: OPTIONAL TEXT*80;
+        Bemerkung: OPTIONAL TEXT*160;
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
     NO IDENT
@@ -565,12 +771,12 @@ MODEL DM16NplBE
     TABLE NH_NHSchutz =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
         KantArt: NHArtKanton; !!//TS:Eigentumsbeschraenkung.Aussage//
-        Abkuerzung: OPTIONAL TEXT*12;                 !! Abkuerzung Gemeinde
-        Bezeichnung: TEXT*150; !!//TS:Eigentumsbeschraenkung.Aussage//
+        Abkuerzung: OPTIONAL TEXT*24;                 !! Abkuerzung Gemeinde
+        Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//
         Bedeutung: Bedeutungen;
         Schutzgrad: Schutzgrade;
-        Planbeschriftung: OPTIONAL TEXT*150; !! fuer Beschriftungen auf dem Plan
-        Bemerkung: OPTIONAL TEXT*80;
+        Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
+        Bemerkung: OPTIONAL TEXT*160;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie; P = Punkt
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
@@ -586,7 +792,7 @@ MODEL DM16NplBE
 
     TABLE NH_FlaechenelementNHS =
         Objekt: -> NH_NHSchutz; !!//TS:Geometrie.Eigentumsbeschraenkung//  !! Beziehung 1-mc
-        Beschrieb: OPTIONAL TEXT*80;
+        Beschrieb: OPTIONAL TEXT*160;
         Genehmigung: OPTIONAL DATE;
         Inkraftsetzung: OPTIONAL DATE;
         Qualitaet: Qualitaetsstandard;
@@ -597,7 +803,7 @@ MODEL DM16NplBE
 
     TABLE NH_LinienelementNHS =
         Objekt: -> NH_NHSchutz; !!//TS:Geometrie.Eigentumsbeschraenkung//  !! Beziehung 1-mc
-        Beschrieb: OPTIONAL TEXT*80;
+        Beschrieb: OPTIONAL TEXT*160;
         Genehmigung: OPTIONAL DATE;
         Inkraftsetzung: OPTIONAL DATE;
         Qualitaet: Qualitaetsstandard;
@@ -607,7 +813,7 @@ MODEL DM16NplBE
 
     TABLE NH_PunktelementNHS =
         Objekt: -> NH_NHSchutz; !!//TS:Geometrie.Eigentumsbeschraenkung//  !! Beziehung 1-mc
-        Beschrieb: OPTIONAL TEXT*80;
+        Beschrieb: OPTIONAL TEXT*160;
         Genehmigung: OPTIONAL DATE;
         Inkraftsetzung: OPTIONAL DATE;
         Qualitaet: Qualitaetsstandard;
@@ -630,11 +836,11 @@ MODEL DM16NplBE
     TABLE WE_WegRoute =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
         Art: ArtWegRoute; !!//TS:Eigentumsbeschraenkung.Aussage//
-        Bezeichnung: TEXT*150;
+        Bezeichnung: TEXT*300;
         Bedeutung: OPTIONAL Bedeutungen;
         Schutzgrad: OPTIONAL Schutzgrade;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
-        Planbeschriftung: OPTIONAL TEXT*150; !! fuer Beschriftungen auf dem Plan
+        Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
     NO IDENT
@@ -687,9 +893,9 @@ MODEL DM16NplBE
                                           eingedolt,
                                           unbekannt);
         Kulturhist_Bedeutung: OPTIONAL (ja, nein, unbekannt);
-        Bezeichnung: TEXT*150;
-        Planbeschriftung: OPTIONAL TEXT*150; !! fuer Beschriftungen auf dem Plan
-        Bemerkung: OPTIONAL TEXT*80;
+        Bezeichnung: TEXT*300;
+        Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
+        Bemerkung: OPTIONAL TEXT*160;
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
@@ -734,8 +940,8 @@ MODEL DM16NplBE
 		
     TABLE GR_Gewaesserraum =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
-        Bemerkung: OPTIONAL TEXT*80;
-		Bezeichnung: TEXT*150; !!//TS:Eigentumsbeschraenkung.Aussage//		
+        Bemerkung: OPTIONAL TEXT*160;
+		Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//		
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie; P = Punkt
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
@@ -770,10 +976,247 @@ MODEL DM16NplBE
         Geometrie: POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord; !!//TS:Geometrie.Linie//
     NO IDENT
     END GR_Gewaesserraumlinie;
+	
+	TABLE WA_Wohnnutzungsanteil =
+	  Verbindlichkeit: Verbindlichkeiten;
+	  Wohnnutzungsanteil: Wohnnutzungsanteiltypen;
+	  KantArt: UeberlagerungArtKanton;
+      DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
+      Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
+      Datenverwaltungsstelle: -> Amt;
+      ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
+      Genehmigung: OPTIONAL DATE;
+      Inkraftsetzung: OPTIONAL DATE;
+      Qualitaet: Qualitaetsstandard;
+      Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord
+	    WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
+	NO IDENT
+	END WA_Wohnnutzungsanteil;
+	
+	TABLE WA_WohnnutzungsanteilRV =
+      Typ: -> WA_Wohnnutzungsanteil; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
+      Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
+      ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
+	NO IDENT
+	END WA_WohnnutzungsanteilRV;
 
+    TABLE WA_WohnnutzungsanteilPos = !! beschriftet Attribut Planbeschriftung
+        Objekt: -> WA_Wohnnutzungsanteil; !! Beziehung 1-mc
+        TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        TextOri: OPTIONAL Rotation;
+        TextHAli: OPTIONAL HALIGNMENT;
+        TextVAli: OPTIONAL VALIGNMENT;
+        TextSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END WA_WohnnutzungsanteilPos;
+
+    TABLE WA_WohnnutzungsanteilSym = !! Symbol und Text mit Zonenkuerzel
+        Objekt: -> WA_Wohnnutzungsanteil; !! Beziehung 1-mc
+        SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        SymOri: OPTIONAL Rotation;
+        SymSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END WA_WohnnutzungsanteilSym;	
+
+	TABLE GF_Gruenflaechenziffer =
+	  Verbindlichkeit: Verbindlichkeiten;
+	  Gruenflaechenziffer: Gruenflaechenzifferntypen;
+	  KantArt: UeberlagerungArtKanton;
+      DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
+      Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
+      Datenverwaltungsstelle: -> Amt;
+      ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
+      Genehmigung: OPTIONAL DATE;
+      Inkraftsetzung: OPTIONAL DATE;
+      Qualitaet: Qualitaetsstandard;
+      Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord
+	    WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
+	NO IDENT
+	END GF_Gruenflaechenziffer;
+	
+	TABLE GF_GruenflaechenzifferRV =
+      Typ: -> GF_Gruenflaechenziffer; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
+      Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
+      ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
+	NO IDENT
+	END GF_GruenflaechenzifferRV;
+
+    TABLE GF_GruenflaechenzifferPos = !! beschriftet Attribut Planbeschriftung
+        Objekt: -> GF_Gruenflaechenziffer; !! Beziehung 1-mc
+        TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        TextOri: OPTIONAL Rotation;
+        TextHAli: OPTIONAL HALIGNMENT;
+        TextVAli: OPTIONAL VALIGNMENT;
+        TextSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END GF_GruenflaechenzifferPos;
+
+    TABLE GF_GruenflaechenzifferSym = !! Symbol und Text mit Zonenkuerzel
+        Objekt: -> GF_Gruenflaechenziffer; !! Beziehung 1-mc
+        SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        SymOri: OPTIONAL Rotation;
+        SymSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END GF_GruenflaechenzifferSym;	
+
+	TABLE BW_Bauweise =
+	  Verbindlichkeit: Verbindlichkeiten;
+	  Bauweise: Bauweisetypen;
+	  KantArt: UeberlagerungArtKanton;
+      DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
+      Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
+      Datenverwaltungsstelle: -> Amt;
+      ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
+      Genehmigung: OPTIONAL DATE;
+      Inkraftsetzung: OPTIONAL DATE;
+      Qualitaet: Qualitaetsstandard;
+      Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord
+	    WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
+	NO IDENT
+	END BW_Bauweise;
+	
+	TABLE BW_BauweiseRV =
+      Typ: -> BW_Bauweise; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
+      Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
+      ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
+	NO IDENT
+	END BW_BauweiseRV;
+
+    TABLE BW_BauweisePos = !! beschriftet Attribut Planbeschriftung
+        Objekt: -> BW_Bauweise; !! Beziehung 1-mc
+        TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        TextOri: OPTIONAL Rotation;
+        TextHAli: OPTIONAL HALIGNMENT;
+        TextVAli: OPTIONAL VALIGNMENT;
+        TextSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END BW_BauweisePos;
+
+    TABLE BW_BauweiseSym = !! Symbol und Text mit Zonenkuerzel
+        Objekt: -> BW_Bauweise; !! Beziehung 1-mc
+        SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        SymOri: OPTIONAL Rotation;
+        SymSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END BW_BauweiseSym;	
+
+	TABLE GL_Gebaeudelaenge =
+	  Verbindlichkeit: Verbindlichkeiten;
+	  Gebaeudelaengetyp: Gebaeudelaengentypen;
+	  Gebaeudelaenge: OPTIONAL DIM1 0 99;
+      Gebaeudetiefe: OPTIONAL DIM1 0 99;
+	  KantArt: UeberlagerungArtKanton;
+      DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
+      Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
+      Datenverwaltungsstelle: -> Amt;
+      ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
+      Genehmigung: OPTIONAL DATE;
+      Inkraftsetzung: OPTIONAL DATE;
+      Qualitaet: Qualitaetsstandard;
+      Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord
+	    WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
+	NO IDENT
+	END GL_Gebaeudelaenge;
+	
+	TABLE GL_GebaeudelaengeRV =
+      Typ: -> GL_Gebaeudelaenge; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
+      Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
+      ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
+	NO IDENT
+	END GL_GebaeudelaengeRV;
+
+    TABLE GL_GebaeudelaengePos = !! beschriftet Attribut Planbeschriftung
+        Objekt: -> GL_Gebaeudelaenge; !! Beziehung 1-mc
+        TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        TextOri: OPTIONAL Rotation;
+        TextHAli: OPTIONAL HALIGNMENT;
+        TextVAli: OPTIONAL VALIGNMENT;
+        TextSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END GL_GebaeudelaengePos;
+
+    TABLE GL_GebaeudelaengeSym = !! Symbol und Text mit Zonenkuerzel
+        Objekt: -> GL_Gebaeudelaenge; !! Beziehung 1-mc
+        SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        SymOri: OPTIONAL Rotation;
+        SymSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END GL_GebaeudelaengeSym;
+
+	TABLE VG_Vorgartenbereich =
+	  Verbindlichkeit: Verbindlichkeiten;
+	  Vorgartenbereich: Vorgartenbereiche;
+	  KantArt: UeberlagerungArtKanton;
+      DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
+      Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
+      Datenverwaltungsstelle: -> Amt;
+      ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
+      Genehmigung: OPTIONAL DATE;
+      Inkraftsetzung: OPTIONAL DATE;
+      Qualitaet: Qualitaetsstandard;
+      Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord
+	    WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
+	NO IDENT
+	END VG_Vorgartenbereich;
+	
+	TABLE VG_VorgartenbereichRV =
+      Typ: -> VG_Vorgartenbereich; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
+      Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
+      ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
+	NO IDENT
+	END VG_VorgartenbereichRV;
+
+    TABLE VG_VorgartenbereichPos = !! beschriftet Attribut Planbeschriftung
+        Objekt: -> VG_Vorgartenbereich; !! Beziehung 1-mc
+        TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        TextOri: OPTIONAL Rotation;
+        TextHAli: OPTIONAL HALIGNMENT;
+        TextVAli: OPTIONAL VALIGNMENT;
+        TextSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END VG_VorgartenbereichPos;
+
+    TABLE VG_VorgartenbereichSym = !! Symbol und Text mit Zonenkuerzel
+        Objekt: -> VG_Vorgartenbereich; !! Beziehung 1-mc
+        SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
+        SymOri: OPTIONAL Rotation;
+        SymSize: OPTIONAL Schriftgroesse;
+    NO IDENT    
+    END VG_VorgartenbereichSym;		
+
+	TABLE BM_Baum =
+	  Verbindlichkeit: Verbindlichkeiten;
+	  Bezeichnung: TEXT*300;
+	  Abkuerzung: TEXT*24;
+	  KantArt: UeberlagerungArtKanton;
+      DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
+      Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
+      Datenverwaltungsstelle: -> Amt;
+      ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
+	NO IDENT
+	END BM_Baum;
+	
+	TABLE BM_BaumRV =
+      Typ: -> BM_Baum; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
+      Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
+      ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
+	NO IDENT
+	END BM_BaumRV;
+	
+	TABLE BM_Punktelemt_Baum =
+      Objekt: -> BM_Baum; !!//TS:Geometrie.Eigentumsbeschraenkung//  !! Beziehung 1-mc
+      Beschrieb: OPTIONAL TEXT*160;
+      Genehmigung: OPTIONAL DATE;
+      Inkraftsetzung: OPTIONAL DATE;
+      Qualitaet: Qualitaetsstandard;
+      Geometrie: LKoord; !!//TS:Geometrie.Punkt//
+        Ori: Rotation;
+	NO IDENT
+	END BM_Punktelemt_Baum;
+	
   END Nutzungsplanung.
 
-END DM16NplBE.
+END DM16NplBE_BielNidau.
 
 FORMAT FREE;
 
