@@ -3,7 +3,7 @@ TRANSFER Interlis1;
 MODEL DM16NplBE_BielNidau
 
    !! Amt für Geoinformation / Amt für Gemeinden und Raumordnung 
-   !! Entwurf vom 07.11.2019
+   !! Entwurf vom 24.07.2019
    !! Kommunale Nutzungsplanung im Kanton Bern / Erweiterungsmodell für die Städte Biel und Nidau
 
   DOMAIN
@@ -101,6 +101,10 @@ MODEL DM16NplBE_BielNidau
       ZOEN,                         !! Zone für öffentliche Nutzungen
       GR,                           !! Grünzone
       LWZ,                          !! Landwirtschaftszone
+	  UEO,                   		!! Ueberbauungsordnung
+      ZPP,                   		!! Zone mit Planungspflicht
+      SBV,                   		!! Zone mit Sonderbauvorschriften
+      USP,                   		!! Uferschutzplan
       oeffentlicher_Verkehrsraum,   !! Öffentlicher Verkehrsraum
       uebriges_Gebiet_Wald,         !! Übriges Gebiet Wald
       uebriges_Gebiet_Gewaesser,    !! Übriges Gebiet Gewässer
@@ -117,44 +121,12 @@ MODEL DM16NplBE_BielNidau
       BZ4,              !! Bauzone 4
       BZ5,              !! Bauzone 5
       BZ6,              !! Bauzone 6
-      W1,               !! Wohnzone, 1 Geschoss
-      W2,               !! Wohnzone, 2 Geschosse
-      W3,               !! Wohnzone, 3 Geschosse
-      W4,               !! Wohnzone, 4 Geschosse
-      W5,               !! Wohnzone, 5 Geschosse
-      W6plus,           !! Wohnzone, 6 und mehr Geschosse
-      FH,               !! Ferienhauszone
-      M2,               !! Mischzone, 2 Geschosse
-      M3,               !! Mischzone, 3 Geschosse
-      M4,               !! Mischzone, 4 Geschosse
-      M5,               !! Mischzone, 5 Geschosse
-      M6plus,           !! Mischzone, 6 und mehr Geschosse
-      KS,               !! Kernzone staedtisch
-      KL,               !! Kernzone laendlich
-      HT,               !! Hotelzone
-      WEZ,              !! Weilerzone
-      B_E,              !! Bestandeszone, Erhaltungszone
-      BH,               !! Bauernhofzone
-      A,                !! Arbeitszone
-      ZOEN,             !! Zone fuer oeffentliche Nutzungen
-      SKI,              !! Zone fuer Skipisten und Loipen
-      ZSF,              !! Zone fuer Sport- und Freizeitanlagen
-      GR,               !! Gruenzone
-      GB,               !! Gartenbauzone (kommerziell)
-      LWZ,              !! Landwirtschaftszone
-      ILW,              !! Intensivlandwirtschaftszone
-      AA,               !! Abbau- und/oder Ablagerungszone
-      ZMN,              !! Zone fuer militaerische Nutzungen
-      UEO,              !! Ueberbauungsordnung
-      ZPP,              !! Zone mit Planungspflicht
-      SBV,              !! Zone mit Sonderbauvorschriften
-      USP,              !! Uferschutzplan
-      Uebrige,          !! uebriges Gebiet    
-      VZ                !! Verkehrszone
+	  Uebrige			!! (z.B. Spezialfall Biel Parzelle 1730, Lücke in AREA-Fläche) 
     );
     
     SVtypen = ( !! Spezialvorschriften Biel/Nidau
       ZPP,              !! Zone mit Planungspflicht
+	  TGO,              !! Teilgrundordnung
       UeO               !! Überbauungsordnung (in Zuständigkeit er Stimmbürger)
     );
 
@@ -468,6 +440,7 @@ MODEL DM16NplBE_BielNidau
         Qualitaet: Qualitaetsstandard;
         Bemerkung: OPTIONAL TEXT*160;
         Flaechenmass: DIM2 0 999999999;  !! aus Koordinaten gerechnete Flaeche
+		Verkehrsraumart: OPTIONAL (oeffentlich, privat);
     NO IDENT
     END GN_NZ;
     
@@ -550,7 +523,7 @@ MODEL DM16NplBE_BielNidau
 
     !! SV Spezialvorschriften
     !! *********************************************************************
-    !! Spezialvorschriften SV (fuer ZPP, UeO (in Zustaendigkeit der Stimmbuerger)).
+    !! Spezialvorschriften SV (fuer ZPP, Teilgrundordnung TGO, UeO (in Zustaendigkeit der Stimmbuerger)).
     !! Darstellung in mehreren Plaenen: Nutzungszonenplan, Bauzonenplan, Baulinienplan.
     !! Erfassung als eigene Tabellen, da sie in Biel planerisch eigenstaendig zu betrachten sind und nicht nur als Attribut der baurechtlichen Grundordnung.
 	!! In der Datenlieferung an den Kanton erscheinen alle ZPP und UeO sowie deren Rechtsvorschriften je nach Fall in der NZ, respektive in der Überlagerung. 
