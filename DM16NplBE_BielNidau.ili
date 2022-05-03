@@ -3,7 +3,7 @@ TRANSFER Interlis1;
 MODEL DM16NplBE_BielNidau
 
    !! Amt für Geoinformation / Amt für Gemeinden und Raumordnung 
-   !! Entwurf vom 24.07.2019
+   !! Entwurf vom 21.02.2020
    !! Kommunale Nutzungsplanung im Kanton Bern / Erweiterungsmodell für die Städte Biel und Nidau
 
   DOMAIN
@@ -101,15 +101,15 @@ MODEL DM16NplBE_BielNidau
       ZOEN,                         !! Zone für öffentliche Nutzungen
       GR,                           !! Grünzone
       LWZ,                          !! Landwirtschaftszone
-	  UEO,                   		!! Ueberbauungsordnung
-      ZPP,                   		!! Zone mit Planungspflicht
-      SBV,                   		!! Zone mit Sonderbauvorschriften
-      USP,                   		!! Uferschutzplan
       oeffentlicher_Verkehrsraum,   !! Öffentlicher Verkehrsraum
       uebriges_Gebiet_Wald,         !! Übriges Gebiet Wald
       uebriges_Gebiet_Gewaesser,    !! Übriges Gebiet Gewässer
       uebriges_Gebiet_Verkehrsraum, !! Übriges Gebiet Verkehrsraum
-      uebriges_Gebiet               !! Übriges Gebiet (z.B. Felsformationen)
+      uebriges_Gebiet,              !! Übriges Gebiet (z.B. Felsformationen)
+	  UEO,                   		!! Ueberbauungsordnung				!! Fuer Transfer an Kanton : Für Merge der SV vom Typ UeO und DarstellungInNZPlan=Ja
+      ZPP,                   		!! Zone mit Planungspflicht 		!! Fuer Transfer an Kanton : Für Merge der SV vom Typ ZPP und DarstellungInNZPlan=Ja
+      SBV,                   		!! Zone mit Sonderbauvorschriften	!! Fuer Transfer an Kanton : Für Merge der SV vom Typ TGO und DarstellungInNZPlan=Ja
+      USP                   		!! Uferschutzplan
     );
     
     BZtypen = ( !! Bauzonen Biel/Nidau (Bauzonenplan)
@@ -188,7 +188,8 @@ MODEL DM16NplBE_BielNidau
       Siedlungseinheit, !! Biel: Dargestellt im Bauzonenplan
       Besonderer_Gestaltungsperimeter, !! Biel: Dargestellt im Bauzonenplan
       Wald, !! Biel: Dargestellt im Nutzungszonenplan
-      Keine !! Nidau: Nidau braucht dieses Attribut nicht.
+      Keine, !! Nidau: Nidau braucht dieses Attribut nicht.
+	  Flaeche_zu_Attikabaulinie !! Biel: Dargestellt im Baulinienplan
     );
 
     AbstandslinienArtKanton = (
@@ -221,7 +222,8 @@ MODEL DM16NplBE_BielNidau
       BL_BeschrVorsprGebaeudeteile,    !! Baulinien mit Beschraenkung vorspringender Gebaeudeteile
       GAL_Gewaesserabstandslinie,      !! Gewässerabstandslinie
       BL_Nationalstrasse_A5,           !! Baulinie für A5
-      weitere                          !! z.B. Nationalstrassenbaulinie mit STP_Art=weitere, KantArt=Nationalstrasse.
+      weitere,                         !! z.B. Nationalstrassenbaulinie mit STP_Art=weitere, KantArt=Nationalstrasse.
+	  BL_Attika                        !! Attikabaulinie
     );
 
     NHArtKanton = (
@@ -417,7 +419,6 @@ MODEL DM16NplBE_BielNidau
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
-        Verkehrsraumart: OPTIONAL (oeffentlich, privat); !! Obligatorisch, wenn Nutzungszone=uebriges_Gebiet_Verkehrsraum
     NO IDENT
     END GN_NZtyp;
     
