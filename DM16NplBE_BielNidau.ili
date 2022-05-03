@@ -3,7 +3,7 @@ TRANSFER Interlis1;
 MODEL DM16NplBE_BielNidau
 
    !! Amt für Geoinformation / Amt für Gemeinden und Raumordnung 
-   !! Entwurf vom 21.06.2021
+   !! Entwurf vom 19.10.2021
    !! Kommunale Nutzungsplanung im Kanton Bern / Erweiterungsmodell für die Städte Biel und Nidau
 
   DOMAIN
@@ -92,46 +92,8 @@ MODEL DM16NplBE_BielNidau
       ZPP,                   !! Zone mit Planungspflicht ; !!//TS:MGDMCode_1.19//
       SBV,                   !! Zone mit Sonderbauvorschriften ; !!//TS:MGDMCode_1.19//
       USP,                   !! Uferschutzplan ; !!//TS:MGDMCode_1.19//
-      Uebrige,               !! uebriges Gebiet ; !!//TS:MGDMCode_4.49//      
+      Uebrige,               !! uebriges Gebiet ; !!//TS:MGDMCode_4.49//
       VZ);                   !! Verkehrszone; !!//TS:MGDMCode_1.18//
-      
-    NZtypen = ( !! Nutzungszonen Biel/Nidau (Nutzungszonenplan))
-      MA,                           !! Mischzone A
-      MB,                           !! Mischzone B
-      A,                            !! Arbeitszone
-      ZOEN,                         !! Zone für öffentliche Nutzungen
-      GR,                           !! Grünzone
-      LWZ,                          !! Landwirtschaftszone
-      oeffentlicher_Verkehrsraum,   !! Öffentlicher Verkehrsraum
-      uebriges_Gebiet_Wald,         !! Übriges Gebiet Wald
-      uebriges_Gebiet_Gewaesser,    !! Übriges Gebiet Gewässer
-      uebriges_Gebiet_Verkehrsraum, !! Übriges Gebiet Verkehrsraum
-      uebriges_Gebiet,              !! Übriges Gebiet (z.B. Felsformationen)
-      UEO,                          !! Ueberbauungsordnung              !! Fuer Transfer an Kanton : Für Merge der SV vom Typ UeO und DarstellungInNZPlan=Ja
-      ZPP,                          !! Zone mit Planungspflicht         !! Fuer Transfer an Kanton : Für Merge der SV vom Typ ZPP und DarstellungInNZPlan=Ja
-      SBV,                          !! Zone mit Sonderbauvorschriften   !! Fuer Transfer an Kanton : Für Merge der SV vom Typ TGO und DarstellungInNZPlan=Ja
-      USP                           !! Uferschutzplan
-    );
-    
-    BZtypen = ( !! Bauzonen Biel/Nidau (Bauzonenplan)
-      BZK,              !! Bauzone Kleinbauten
-      BZ0,              !! Bauzone 0
-      BZ1,              !! Bauzone 1
-      BZ2,              !! Bauzone 2
-      BZ3,              !! Bauzone 3
-      BZ4,              !! Bauzone 4
-      BZ4plus,          !! Bauzone 4+
-      BZ5,              !! Bauzone 5
-      BZ5plus,          !! Bauzone 5+
-      BZ6,              !! Bauzone 6
-      Uebrige           !! (z.B. Spezialfall Biel Parzelle 1730, Lücke in AREA-Fläche) 
-    );
-    
-    SVtypen = ( !! Spezialvorschriften Biel/Nidau
-      ZPP,              !! Zone mit Planungspflicht
-      TGO,              !! Teilgrundordnung
-      UeO               !! Überbauungsordnung (in Zuständigkeit er Stimmbürger)
-    );
 
     Schutzgrade = (geschuetzt, schuetzenswert, erhaltenswert, unbekannt, reduziert);
 
@@ -184,16 +146,6 @@ MODEL DM16NplBE_BielNidau
          Restgefaehrdung, !!//MGDMCode_5.53//           !! Gefahrenstufe gelb-weiss
          Gefahrenhinweis), !!//MGDMCode_5.53//          !! nicht bestimmte Gefahrenstufe
       weitere);  !!//MGDMCode_6.69//                    !! weitere Ueberlagerungsarten
-      
-    UeberlArtBN = (
-      Landschaftsschutzgebiet, !! In Biel mit Gestaltungsfunktion, nicht "Schutzfunktion", deshalb nicht in NHS (siehe auch analog Baumstandorte Biel). Dargestellt im Nutzungszonenplan.
-      Gebiet_mit_Erdgeschossbestimmungen, !! Biel: Dargestellt im Nutzungszonenplan
-      Siedlungseinheit, !! Biel: Dargestellt im Bauzonenplan
-      Besonderer_Gestaltungsperimeter, !! Biel: Dargestellt im Bauzonenplan
-      Wald, !! Biel: Dargestellt im Nutzungszonenplan
-      Keine, !! Nidau: Nidau braucht dieses Attribut nicht.
-      Flaeche_zu_Attikabaulinie !! Biel: Dargestellt im Baulinienplan
-    );
 
     AbstandslinienArtKanton = (
       Eisenbahn, !!//MGDMCode_7.71//
@@ -209,25 +161,6 @@ MODEL DM16NplBE_BielNidau
       Innenbaulinie,  !!//MGDMCode_7.71//
       Hilfsbaulinie,  !!//MGDMCode_7.79//
       weitere);  !!//MGDMCode_7.79//                        !! weitere Abstandslinientypen
-      
-    AbstLinArtBN = (
-      BL,                              !! Baulinie
-      BL_optional,
-      BL_Anbaupflicht,                 !! Baulinie mit Anbaupflicht
-      BL_beschrAnbaubefugnis,          !! Baulinie mit beschraenkter Anbaubefugnis
-      BL_beschrAnbaubefugnis_optional,
-      HBL,                             !! Hoehenbaulinie
-      HBL_optional,
-      EBL,                             !! Erdgeschossbaulinie
-      EBL_optional,
-      BL_StrassenGeleiseAbstand_A,     !! Baulinien fuer Bauten im Strassen- und Geleiseabstand A
-      BL_StrassenGeleiseAbstand_B,     !! Baulinien fuer Bauten im Strassen- und Geleiseabstand B
-      BL_BeschrVorsprGebaeudeteile,    !! Baulinien mit Beschraenkung vorspringender Gebaeudeteile
-      GAL_Gewaesserabstandslinie,      !! Gewässerabstandslinie
-      BL_Nationalstrasse_A5,           !! Baulinie für A5
-      weitere,                         !! z.B. Nationalstrassenbaulinie mit STP_Art=weitere, KantArt=Nationalstrasse.
-      BL_Attika                        !! Attikabaulinie
-    );
 
     NHArtKanton = (
       Landschaft
@@ -309,41 +242,7 @@ MODEL DM16NplBE_BielNidau
             Veloweg,
             Uferweg,
             andere);
-            
-    WAtypen = ( !! Wohnnutzungsanteile Biel/Nidau (Nutzungszonenplan)
-      min_30_Prozent,
-      min_40_Prozent,
-      min_50_Prozent,
-      min_70_Prozent
-    );
-    
-    GFZtypen = ( !! Gruenflaechenziffern Biel/Nidau (Nutzungszonenplan)
-      min_30_Prozent,
-      min_40_Prozent
-    );
 
-    BWtypen = ( !! Bauweisen Biel/Nidau (Bauzonenplan)
-      geschlossen,
-      geschlossen_I,
-      annaehernd_geschlossen,
-      geschlossen_hofbauweise,
-      geschlossen_I_hofbauweise,
-      annaehernd_geschlossen_hofbauweise,
-      hofbauweise
-    );
-
-    GLtypen = ( !! Gebaeudelaengentypen Biel/Nidau (Bauzonenplan)
-      GL_GT_Generell,            !! Gebaeudelaenge_Gebaeudetiefe_Generell
-      GL_GT_Obergeschoss,        !! Gebaeudelaenge_Gebaeudetiefe_Obergeschoss
-      GL_GT_Ohne_Beschraenkung   !! Keine Beschraenkung, z.B. Insel bei Schule Mühlefeld
-    );
-      
-    VGtypen = ( !! Vorgartenbereiche Biel/Nidau (Baulinienplan)
-      A,
-      B,
-      kein_Vorgartenbereich !! z.B. für Inseln innerhalb von umgebenden Vorgartenbereichen
-    );
-    
   TOPIC Nutzungsplanung =
   
     TABLE Datenbestand =
@@ -390,220 +289,7 @@ MODEL DM16NplBE_BielNidau
     !! *********************************************************************
     !! TOPIC GN Grundnutzung
     !! *********************************************************************
-    
-    !! Die Grundnutzung wird nicht in eine Tabelle überführt sondern
-    !! verbleibt in getrennten Tabellen (GN_Nutzungszonentyp, GN_Bauzonentyp,
-    !! GN_Spezialvorschrift). Die Zuordnung zu ZonentypenKanton 
-    !! kann daher nicht im Modell gemacht werden.
-    !! Der dazu notwendige Verschnitt (Nutzungszone/Spezialvorschriften 
-    !! mit Bauzonen) wird durch das AGI gemacht.
-    !! Die Zuordnung der Verschnittkombinationen zu ZonentypenKanton
-    !! ist statisch und wird vom AGR noch definiert.
 
-    !! Nutzungszonen und Spezialvorschriften sind zusammen
-    !! flächendeckend. Dazu werden neben dem Verkehrsraum auch
-    !! Gewässer und Wald neu in den Nutzungszonen erfasst.
-    !! Für die Feinunterteilung des Verkehrsraums wurde das
-    !! Attribut Verkehrsraumart eingefügt.
-
-    !! NZ Nutzungszonen
-    !! *********************************************************************
-    !! Die NZ-Tabellen werden durch den Kanton nicht berücksichtigt. Sie dienen als Zwischenschritt, um die NZ mit der BZ zu verschneiden und in die GN-Tabellen abzufüllen.    
-    
-    TABLE GN_NZtyp =
-        Verbindlichkeit: Verbindlichkeiten;
-        Abkuerzung: TEXT*24; !!//TS:Eigentumsbeschraenkung.ArtCode//
-        Bezeichnung: TEXT*300; !! Zonenname Gemeinde
-        Nutzungszone: NZtypen; !!//TS:Eigentumsbeschraenkung.Aussage//
-        BR_Nutzungsart: OPTIONAL TEXT*160;  !! Hinweis auf Artikel Baureglement
-        BR_Nutzungsmass: OPTIONAL TEXT*160; !! Hinweis auf Artikel Baureglement
-        Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
-        Nutzungsziffer_Art: OPTIONAL MGDM_Nutzungsziffer_Art;
-        Gruenflaechenziffer: OPTIONAL MGDM_Nutzungsziffer;
-        Bemerkung: OPTIONAL TEXT*160;
-        DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;
-        Datenverwaltungsstelle: -> Amt;
-        ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
-    NO IDENT
-    END GN_NZtyp;
-    
-    TABLE GN_NZtypRV =
-        Typ: -> GN_NZtyp; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
-        Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
-        ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
-    NO IDENT
-    END GN_NZtypRV;
-    
-    TABLE GN_NZ =
-        NutzungszonentypRef: -> GN_NZtyp; !!//TS:Geometrie.Eigentumsbeschraenkung//
-        Genehmigung: OPTIONAL DATE;
-        Inkraftsetzung: OPTIONAL DATE;
-        Laermempfindlichkeit: OPTIONAL Laermempfindlichkeit;
-        Beschrieb: OPTIONAL TEXT*160;
-        Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan 
-        Geometrie: AREA WITH (STRAIGHTS, ARCS) VERTEX LKoord 
-            WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
-        Qualitaet: Qualitaetsstandard;
-        Bemerkung: OPTIONAL TEXT*160;
-        Flaechenmass: DIM2 0 999999999;  !! aus Koordinaten gerechnete Flaeche
-        Verkehrsraumart: OPTIONAL (oeffentlich, privat);
-    NO IDENT
-    END GN_NZ;
-    
-    TABLE GN_NZPos = !! beschriftet Attribut Planbeschriftung
-        Objekt: -> GN_NZ; !! Beziehung 1-mc
-        TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
-        TextOri: OPTIONAL Rotation;
-        TextHAli: OPTIONAL HALIGNMENT;
-        TextVAli: OPTIONAL VALIGNMENT;
-        TextSize: OPTIONAL Schriftgroesse;
-    NO IDENT    
-    END GN_NZPos;
-
-    TABLE GN_NZSym = !! Symbol und Text mit Zonenkuerzel
-        Objekt: -> GN_NZ; !! Beziehung 1-mc
-        SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
-        SymOri: OPTIONAL Rotation;
-        SymSize: OPTIONAL Schriftgroesse;
-    NO IDENT    
-    END GN_NZSym; 
-    
-    !! BZ Bauzonen
-    !! *********************************************************************
-    !! Die BZ-Tabellen werden durch den Kanton nicht berücksichtigt. Sie dienen als Zwischenschritt, um die NZ mit der BZ zu verschneiden und in die GN-Tabellen abzufüllen.    
-    
-    TABLE GN_BZtyp =
-        Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
-        Abkuerzung: TEXT*24;
-        Bezeichnung: TEXT*300; !! Zonenname Gemeinde        
-        Bauzone: BZtypen; !!//TS:Eigentumsbeschraenkung.Aussage//
-        BR_Nutzungsart: OPTIONAL TEXT*160;  !! Hinweis auf Artikel Baureglement
-        BR_Nutzungsmass: OPTIONAL TEXT*160; !! Hinweis auf Artikel Baureglement
-        Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
-        Nutzungsziffer_Art: OPTIONAL MGDM_Nutzungsziffer_Art;
-        Gruenflaechenziffer: OPTIONAL MGDM_Nutzungsziffer;
-        Bemerkung: OPTIONAL TEXT*160;
-        DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;
-        Datenverwaltungsstelle: -> Amt;
-        ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
-    NO IDENT
-    END GN_BZtyp;
-
-    TABLE GN_BZtypRV =
-        Typ: -> GN_BZtyp; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
-        Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
-        ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
-    NO IDENT
-    END GN_BZtypRV;
-    
-    TABLE GN_BZ =
-        BauzonentypRef: -> GN_BZtyp; !!//TS:Geometrie.Eigentumsbeschraenkung//
-        Genehmigung: OPTIONAL DATE;
-        Inkraftsetzung: OPTIONAL DATE;
-        Laermempfindlichkeit: OPTIONAL Laermempfindlichkeit;
-        Beschrieb: OPTIONAL TEXT*160;
-        Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan 
-        Geometrie: AREA WITH (STRAIGHTS, ARCS) VERTEX LKoord 
-            WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
-        Qualitaet: Qualitaetsstandard;
-        Bemerkung: OPTIONAL TEXT*160;
-        Flaechenmass: DIM2 0 999999999;  !! aus Koordinaten gerechnete Flaeche
-    NO IDENT
-    END GN_BZ;
-
-    TABLE GN_BZPos = !! beschriftet Attribut Planbeschriftung
-        Objekt: -> GN_BZ; !! Beziehung 1-mc
-        TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
-        TextOri: OPTIONAL Rotation;
-        TextHAli: OPTIONAL HALIGNMENT;
-        TextVAli: OPTIONAL VALIGNMENT;
-        TextSize: OPTIONAL Schriftgroesse;
-    NO IDENT    
-    END GN_BZPos;
-
-    TABLE GN_BZSym = !! Symbol und Text mit Zonenkuerzel
-        Objekt: -> GN_BZ; !! Beziehung 1-mc
-        SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
-        SymOri: OPTIONAL Rotation;
-        SymSize: OPTIONAL Schriftgroesse;
-    NO IDENT    
-    END GN_BZSym;  
-
-    !! SV Spezialvorschriften
-    !! *********************************************************************
-    !! Spezialvorschriften SV (fuer ZPP, Teilgrundordnung TGO, UeO (in Zustaendigkeit der Stimmbuerger)).
-    !! Darstellung in mehreren Plaenen: Nutzungszonenplan, Bauzonenplan, Baulinienplan.
-    !! Erfassung als eigene Tabellen, da sie in Biel planerisch eigenstaendig zu betrachten sind und nicht nur als Attribut der baurechtlichen Grundordnung.
-    !! In der Datenlieferung an den Kanton erscheinen alle ZPP und UeO sowie deren Rechtsvorschriften je nach Fall in der NZ, respektive in der Überlagerung. 
-    !! Der Inhalt der SV wird durch den Kanton nicht berücksichtigt.
-
-    TABLE GN_SVtyp =
-        Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
-        Abkuerzung: TEXT*24;
-        Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage// !! Zonenname Gemeinde
-        Spezialvorschrift: SVtypen; !!//TS:Eigentumsbeschraenkung.Aussage//
-        BR_Nutzungsart: OPTIONAL TEXT*160;  !! Hinweis auf Artikel Baureglement
-        BR_Nutzungsmass: OPTIONAL TEXT*160; !! Hinweis auf Artikel Baureglement
-        Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
-        Nutzungsziffer_Art: OPTIONAL MGDM_Nutzungsziffer_Art;
-        Gruenflaechenziffer: OPTIONAL MGDM_Nutzungsziffer;
-        Bemerkung: OPTIONAL TEXT*160;
-        DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;
-        Datenverwaltungsstelle: -> Amt;
-        ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
-    NO IDENT
-    END GN_SVtyp;
-
-    TABLE GN_SVtypRV =
-        Typ: -> GN_SVtyp; !!//TS:HinweisVorschrift.Eigentumsbeschraenkung//      
-        Vorschrift: -> Dokument; !!//TS:HinweisVorschrift.Vorschrift//
-        ArtikelNr: OPTIONAL ArtikelNummern; !!//TS:HinweisVorschrift.ArtikelNr// !! Hinweis auf spezifische Artikel. Durch Komma getrennte Liste z.B. "1, 2 a, 4, 20"
-    NO IDENT
-    END GN_SVtypRV;
-    
-    !! Unterteilung der SV in "Umhüllende" und "Teilgebiete" wird im Unterschied zum DM12 alles innerhalb der Haupttabelle mit Lineattr (für  Trennlinien) und Haupt-/Teilzonenbeschriftungen 
-    !! gelöst (mit Planbeschriftung_GanzeZone und Planbeschriftung_TeilZone).
-    TABLE GN_SV =
-        SpezialvorschriftentypRef: -> GN_SVtyp; !!//TS:Geometrie.Eigentumsbeschraenkung//
-        Genehmigung: OPTIONAL DATE;
-        Inkraftsetzung: OPTIONAL DATE;
-        Laermempfindlichkeit: OPTIONAL Laermempfindlichkeit;
-        Beschrieb: OPTIONAL TEXT*160;
-        Planbeschriftung_GanzeZone: OPTIONAL TEXT*300; !! fuer Beschriftungen der ganzen Zone
-        Planbeschriftung_Teilzone: OPTIONAL TEXT*300; !! fuer Beschriftungen einer Teilzone 
-        Geometrie: AREA WITH (STRAIGHTS, ARCS) VERTEX LKoord 
-            WITHOUT OVERLAPS > 0.050 !!//TS:Geometrie.Flaeche//
-            LINEATTR =
-                Linie_darstellen: OPTIONAL (ja, nein); !! //default=ja// für Biel bereits bisher nötig (deshalb Achtung bei Migration).
-            END;
-        Qualitaet: Qualitaetsstandard;
-        Bemerkung: OPTIONAL TEXT*160;
-        Flaechenmass: DIM2 0 999999999;  !! aus Koordinaten gerechnete Flaeche
-        DarstellungInNZPlan: (ja, nein); 
-        DarstellungInBZPlan: (ja, nein); 
-        DarstellungInBLPlan: (ja, nein);
-    NO IDENT
-    END GN_SV;
-
-    TABLE GN_SVPos = !! beschriftet Attribut Planbeschriftung
-        Objekt: -> GN_SV; !! Beziehung 1-mc
-        Planbeschriftungsart: (GanzeZone, Teilzone);
-        TextPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
-        TextOri: OPTIONAL Rotation;
-        TextHAli: OPTIONAL HALIGNMENT;
-        TextVAli: OPTIONAL VALIGNMENT;
-        TextSize: OPTIONAL Schriftgroesse;
-    NO IDENT    
-    END GN_SVPos;
-
-    TABLE GN_SVSym = !! Symbol und Text mit Zonenkuerzel
-        Objekt: -> GN_SV; !! Beziehung 1-mc
-        SymPos: LKoord; !! in der Regel innerhalb der Flaeche positionieren
-        SymOri: OPTIONAL Rotation;
-        SymSize: OPTIONAL Schriftgroesse;
-    NO IDENT    
-    END GN_SVSym;
-    
     !! Ein Verschnitt aus Nutzungszone und Bauzone wird in die GN-Tabellen abgefüllt und mit einer KantArt ergänzt.
     !! Im ÖREB-Kataster werden daraus wieder zwei separate Layer abgeleitet, um die Nutzungszone und Bauzone separat darzustellen.
     TABLE GN_Zonentyp =
@@ -617,14 +303,22 @@ MODEL DM16NplBE_BielNidau
         Bemerkung: OPTIONAL TEXT*80;
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt;              !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
-        Nutzungszone: NZtypen;                                                                      !! Erweiterung BielNidau
+        Nutzungszone: TEXT*100;                                                                     !! Erweiterung BielNidau
         BezeichnungNZ: TEXT*300;                !!//TS:Eigentumsbeschraenkung.Aussage//             !! Erweiterung BielNidau, Zonenname der Nutzungszone (ersetzt Attribut Bezeichnung)
         AbkuerzungNZ: TEXT*24;                  !!//TS:Eigentumsbeschraenkung.ArtCode//             !! Erweiterung BielNidau, Zonenabkuerzung der Nutzungszone (ersetzt Attribut Abkuerzung)
         DarstellungCodeNZ: TEXT*5;              !! Code 5-Stellen gefuehrt mit F = Flaeche;         !! Erweiterung BielNidau, Darstellung der Nutzungszone (ersetzt Attribut DarstellungCode)
-        Bauzone: OPTIONAL BZtypen;                                                                  !! Erweiterung BielNidau
+        Bauzone: OPTIONAL TEXT*100;                                                                  !! Erweiterung BielNidau
         BezeichnungBZ: OPTIONAL TEXT*300;       !!//TS:Eigentumsbeschraenkung.Aussage//             !! Erweiterung BielNidau, Zonenname der Bauzone (ersetzt Attribut Bezeichnung)
         AbkuerzungBZ: OPTIONAL TEXT*24;         !!//TS:Eigentumsbeschraenkung.ArtCode//             !! Erweiterung BielNidau, Zonenabkuerzung der Bauzone ()ersetzt Attribut Abkuerzung)
         DarstellungCodeBZ: OPTIONAL TEXT*5;     !! Code 5-Stellen gefuehrt mit F = Flaeche;         !! Erweiterung BielNidau, Darstellung der Bauzone (ersetzt Attribut DarstellungCode)
+        !! Erweiterung für Kontrollzwecke der Verschnitt-Herkunft durch Biel/Nidau. Für den Kanton nicht relevant.
+        BN_Nutzungszone: TEXT*100;       
+        BN_Bauzone: OPTIONAL TEXT*100;
+        BN_Spezialvorschrift: OPTIONAL TEXT*100;
+        !! Erweiterung für die Darstellung der Sonderbauvorschriften (SV) in unterschiedlichen Ebenen. Für den Kanton nicht relevant.
+        BN_SV_DarstellungInNZPlan: OPTIONAL TEXT*10;
+        BN_SV_DarstellungInBZPlan: OPTIONAL TEXT*10;
+        BN_SV_DarstellungInBLPlan: OPTIONAL TEXT*10;
     NO IDENT
     END GN_Zonentyp;
 
@@ -691,7 +385,7 @@ MODEL DM16NplBE_BielNidau
     TABLE UE_UeberlagerungZone =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Verbindlichkeit//
         KantArt: UeberlagerungArtKanton;
-        Art: UeberlArtBN; !!//TS:Eigentumsbeschraenkung.Aussage//
+        Art: TEXT*100; !!//TS:Eigentumsbeschraenkung.Aussage//
         Abkuerzung: OPTIONAL TEXT*24;                 !! Zonenabkuerzung Gemeinde
         Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//
         Planbeschriftung: OPTIONAL TEXT*300;        !! fuer Beschriftungen auf dem Plan
@@ -724,7 +418,7 @@ MODEL DM16NplBE_BielNidau
     END UE_FlaechenelementUeberl;
     
     TABLE UE_FlEleUeberlBedeut =
-        Art: UeberlArtBN;
+        Art: TEXT*100;
         Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord
             WITHOUT OVERLAPS > 0.050;
     NO IDENT
@@ -743,7 +437,7 @@ MODEL DM16NplBE_BielNidau
     TABLE UE_Abstandslinie =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
         KantArt: AbstandslinienArtKanton;
-        Art: AbstLinArtBN; !!//TS:Eigentumsbeschraenkung.Aussage//
+        Art: TEXT*100; !!//TS:Eigentumsbeschraenkung.Aussage//
         BeschrVorsprGebTeile: (ja, nein);   !! BL mit Beschraenkung vorspringender Gebaeudeteile
         Abkuerzung: OPTIONAL TEXT*24;                 !! Linienabkuerzung Gemeinde
         Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//
@@ -776,7 +470,7 @@ MODEL DM16NplBE_BielNidau
     END UE_LinienelementAbstand;
     
     TABLE UE_LinEleAbstandBedeut =
-        Art: AbstLinArtBN;
+        Art: TEXT*100;
         Geometrie: POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord;
         NO IDENT
     END UE_LinEleAbstandBedeut;
@@ -1142,7 +836,7 @@ MODEL DM16NplBE_BielNidau
 
     TABLE BN_WA =
         Verbindlichkeit: Verbindlichkeiten;
-        Wohnnutzungsanteil: WAtypen;
+        Wohnnutzungsanteil: TEXT*100;
         KantArt: UeberlagerungArtKanton;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
         Beschrieb: OPTIONAL TEXT*160;
@@ -1188,7 +882,7 @@ MODEL DM16NplBE_BielNidau
 
     TABLE BN_GFZ =
         Verbindlichkeit: Verbindlichkeiten;
-        Gruenflaechenziffer: GFZtypen;
+        Gruenflaechenziffer: TEXT*100;
         KantArt: UeberlagerungArtKanton;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
         Beschrieb: OPTIONAL TEXT*160;
@@ -1234,7 +928,7 @@ MODEL DM16NplBE_BielNidau
 
     TABLE BN_BW =
         Verbindlichkeit: Verbindlichkeiten;
-        Bauweise: BWtypen;
+        Bauweise: TEXT*100;
         KantArt: UeberlagerungArtKanton;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
         Beschrieb: OPTIONAL TEXT*160;
@@ -1282,7 +976,7 @@ MODEL DM16NplBE_BielNidau
     !! In BN_GL gehören die parzellenscharfen Definitionen für Flächenberechnungen und Verschnitte.
     TABLE BN_GL =
         Verbindlichkeit: Verbindlichkeiten;
-        Gebaeudelaengetyp: GLtypen;
+        Gebaeudelaengetyp: TEXT*100;
         Gebaeudelaenge: OPTIONAL DIM1 0 99;
         Gebaeudetiefe: OPTIONAL DIM1 0 99;
         KantArt: UeberlagerungArtKanton;
@@ -1337,7 +1031,7 @@ MODEL DM16NplBE_BielNidau
 
     TABLE BN_VG =
         Verbindlichkeit: Verbindlichkeiten;
-        Vorgartenbereich: VGtypen;
+        Vorgartenbereich: TEXT*100;
         KantArt: UeberlagerungArtKanton;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
         Beschrieb: OPTIONAL TEXT*160;
@@ -1416,7 +1110,7 @@ MODEL DM16NplBE_BielNidau
     !! *********************************************************************
     !! TOPIC BN_Div Diverses Biel/Nidau
     !! *********************************************************************
-    !! Ganzes Topic dient als Sammeltopf nur zur Speicherung diverser Spezialfälle, zu Konstruktions- oder zu Test-Zwecken. Enthält keine ÖREB-relevanten Festlegungen.
+    !! Ganzes Topic dient als Sammeltopf zur Speicherung diverser Spezialfälle, zu Konstruktions- oder zu Test-Zwecken. Enthält keine ÖREB-relevanten Festlegungen.
 
     TABLE BN_DivObj =
         Objektart: (Strassenlinie, Bemassungshilfslinie, Leitungstrasse);
@@ -1476,6 +1170,6 @@ END DM16NplBE_BielNidau.
 FORMAT FREE;
 
 CODE
-  BLANK = 0X7E , UNDEFINED = DEFAULT, CONTINUE = DEFAULT;
+  BLANK = 0x24 , UNDEFINED = DEFAULT, CONTINUE = DEFAULT;  !! Tilde als Leerzeichen ist für Stadt Biel ungeeignet, da häufig zur Trennung von dt/fr verwendet.
   TID = ANY;
 END.
