@@ -3,7 +3,7 @@ TRANSFER Interlis1;
 MODEL DM16NplBE_BielNidau
 
    !! Amt für Geoinformation / Amt für Gemeinden und Raumordnung 
-   !! Entwurf vom 21.02.2020
+   !! Entwurf vom 14.12.2020
    !! Kommunale Nutzungsplanung im Kanton Bern / Erweiterungsmodell für die Städte Biel und Nidau
 
   DOMAIN
@@ -66,6 +66,7 @@ MODEL DM16NplBE_BielNidau
       W5,                    !! Wohnzone, 5 Geschosse ; !!//TS:MGDMCode_1.11//
       W6plus,                !! Wohnzone, 6 und mehr Geschosse ; !!//TS:MGDMCode_1.11//
       FH,                    !! Ferienhauszone ; !!//TS:MGDMCode_1.17//
+	  M1,					 !! Mischzone, 1 Geschosse ; !!//TS:MGDMCode_1.13// 		!! Erweiterung BielNidau
       M2,                    !! Mischzone, 2 Geschosse ; !!//TS:MGDMCode_1.13//
       M3,                    !! Mischzone, 3 Geschosse ; !!//TS:MGDMCode_1.13//
       M4,                    !! Mischzone, 4 Geschosse ; !!//TS:MGDMCode_1.13//
@@ -119,7 +120,9 @@ MODEL DM16NplBE_BielNidau
       BZ2,              !! Bauzone 2
       BZ3,              !! Bauzone 3
       BZ4,              !! Bauzone 4
+	  BZ4plus,			!! Bauzone 4+
       BZ5,              !! Bauzone 5
+	  BZ5plus,			!! Bauzone 5+
       BZ6,              !! Bauzone 6
 	  Uebrige			!! (z.B. Spezialfall Biel Parzelle 1730, Lücke in AREA-Fläche) 
     );
@@ -405,6 +408,8 @@ MODEL DM16NplBE_BielNidau
 
     !! NZ Nutzungszonen
     !! *********************************************************************
+	!! Die NZ-Tabellen werden durch den Kanton nicht berücksichtigt. Sie dienen als Zwischenschritt, um die NZ mit der BZ zu verschneiden und in die GN-Tabellen abzufüllen.	
+	
     TABLE GN_NZtyp =
         Verbindlichkeit: Verbindlichkeiten;
         Abkuerzung: TEXT*24; !!//TS:Eigentumsbeschraenkung.ArtCode//
@@ -465,6 +470,8 @@ MODEL DM16NplBE_BielNidau
     
     !! BZ Bauzonen
     !! *********************************************************************
+	!! Die BZ-Tabellen werden durch den Kanton nicht berücksichtigt. Sie dienen als Zwischenschritt, um die NZ mit der BZ zu verschneiden und in die GN-Tabellen abzufüllen.	
+	
     TABLE GN_BZtyp =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
         Abkuerzung: TEXT*24;
@@ -528,7 +535,7 @@ MODEL DM16NplBE_BielNidau
     !! Darstellung in mehreren Plaenen: Nutzungszonenplan, Bauzonenplan, Baulinienplan.
     !! Erfassung als eigene Tabellen, da sie in Biel planerisch eigenstaendig zu betrachten sind und nicht nur als Attribut der baurechtlichen Grundordnung.
 	!! In der Datenlieferung an den Kanton erscheinen alle ZPP und UeO sowie deren Rechtsvorschriften je nach Fall in der NZ, respektive in der Überlagerung. 
-	!! Der Inhalt der SV wird vom Kanton nicht berücksichtigt.
+	!! Der Inhalt der SV wird durch den Kanton nicht berücksichtigt.
 
     TABLE GN_SVtyp =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
@@ -597,23 +604,27 @@ MODEL DM16NplBE_BielNidau
     NO IDENT    
     END GN_SVSym;
     
-    !! Die originalen Tabellen der Grundnutzung verbleiben im Modell,
-    !! damit der Mischbetrieb in Nidau möglich wird. In Biel bleiben
-    !! sie leer (Ausnahme: GN_Grundzone_ZPP_UeO).
+    !! Ein Verschnitt aus Nutzungszone und Bauzone wird in die GN-Tabellen abgefüllt und mit einer KantArt ergänzt.
+    !! Im ÖREB-Kataster werden daraus wieder zwei separate Layer abgeleitet, um die Nutzungszone und Bauzone separat darzustellen.
     TABLE GN_Zonentyp =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
         KantArt: ZonentypenKanton;  !! Zonencode gemaess UZP Kanton Bern
-        Abkuerzung: TEXT*12; !!//TS:Eigentumsbeschraenkung.ArtCode//                 !! Zonenabkuerzung Gemeinde VV01
-        Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//                !! Zonenname Gemeinde VV01 / Zeichenlaenge VV28
         BR_Nutzungsart: OPTIONAL TEXT*80;  !! Hinweis auf Artikel Baureglement
         BR_Nutzungsmass: OPTIONAL TEXT*80; !! Hinweis auf Artikel Baureglement
         Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
         Nutzungsziffer_Art: OPTIONAL MGDM_Nutzungsziffer_Art;
         Gruenflaechenziffer: OPTIONAL MGDM_Nutzungsziffer;
         Bemerkung: OPTIONAL TEXT*80;
-        DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;
         Datenverwaltungsstelle: -> Amt;
-        ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
+        ZustaendigeStelle: -> Amt; 	!!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
+		Nutzungszone: NZtypen;															!! Erweiterung BielNidau
+		BezeichnungNZ: TEXT*300; 	!!//TS:Eigentumsbeschraenkung.Aussage//				!! Erweiterung BielNidau, Zonenname der Nutzungszone (ersetzt Attribut Bezeichnung)
+		AbkuerzungNZ: TEXT*24; 		!!//TS:Eigentumsbeschraenkung.ArtCode// 			!! Erweiterung BielNidau, Zonenabkuerzung der Nutzungszone (ersetzt Attribut Abkuerzung)
+        DarstellungCodeNZ: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;			!! Erweiterung BielNidau, Darstellung der Nutzungszone (ersetzt Attribut DarstellungCode)
+		Bauzone: BZtypen;																!! Erweiterung BielNidau
+		BezeichnungBZ: TEXT*300;	!!//TS:Eigentumsbeschraenkung.Aussage//				!! Erweiterung BielNidau, Zonenname der Bauzone (ersetzt Attribut Bezeichnung)
+		AbkuerzungBZ: TEXT*24; 		!!//TS:Eigentumsbeschraenkung.ArtCode// 			!! Erweiterung BielNidau, Zonenabkuerzung der Bauzone ()ersetzt Attribut Abkuerzung)
+        DarstellungCodeBZ: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;			!! Erweiterung BielNidau, Darstellung der Bauzone (ersetzt Attribut DarstellungCode)
     NO IDENT
     END GN_Zonentyp;
 
@@ -636,6 +647,7 @@ MODEL DM16NplBE_BielNidau
         Qualitaet: Qualitaetsstandard;
         Bemerkung: OPTIONAL TEXT*80;
         Flaechenmass: DIM2 0 999999999;  !! aus Koordinaten gerechnete Flaeche
+		Verkehrsraumart: OPTIONAL (oeffentlich, privat);								!! Erweiterung BielNidau
     NO IDENT    
     END GN_Grundzone;
 
