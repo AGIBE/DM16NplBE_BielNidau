@@ -3,7 +3,7 @@ TRANSFER Interlis1;
 MODEL DM16NplBE_BielNidau
 
    !! Amt für Geoinformation / Amt für Gemeinden und Raumordnung 
-   !! Entwurf vom 19.10.2021
+   !! Entwurf vom 02.12.2021
    !! Kommunale Nutzungsplanung im Kanton Bern / Erweiterungsmodell für die Städte Biel und Nidau
 
   DOMAIN
@@ -66,7 +66,6 @@ MODEL DM16NplBE_BielNidau
       W5,                    !! Wohnzone, 5 Geschosse ; !!//TS:MGDMCode_1.11//
       W6plus,                !! Wohnzone, 6 und mehr Geschosse ; !!//TS:MGDMCode_1.11//
       FH,                    !! Ferienhauszone ; !!//TS:MGDMCode_1.17//
-      M1,                    !! Mischzone, 1 Geschosse ; !!//TS:MGDMCode_1.13//         !! Erweiterung BielNidau
       M2,                    !! Mischzone, 2 Geschosse ; !!//TS:MGDMCode_1.13//
       M3,                    !! Mischzone, 3 Geschosse ; !!//TS:MGDMCode_1.13//
       M4,                    !! Mischzone, 4 Geschosse ; !!//TS:MGDMCode_1.13//
@@ -303,18 +302,18 @@ MODEL DM16NplBE_BielNidau
         Bemerkung: OPTIONAL TEXT*80;
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt;              !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
-        Nutzungszone: TEXT*100;                                                                     !! Erweiterung BielNidau
+        Nutzungszone: TEXT*150;                                                                     !! Erweiterung BielNidau
         BezeichnungNZ: TEXT*300;                !!//TS:Eigentumsbeschraenkung.Aussage//             !! Erweiterung BielNidau, Zonenname der Nutzungszone (ersetzt Attribut Bezeichnung)
-        AbkuerzungNZ: TEXT*24;                  !!//TS:Eigentumsbeschraenkung.ArtCode//             !! Erweiterung BielNidau, Zonenabkuerzung der Nutzungszone (ersetzt Attribut Abkuerzung)
+        AbkuerzungNZ: TEXT*28;                  !!//TS:Eigentumsbeschraenkung.ArtCode//             !! Erweiterung BielNidau, Zonenabkuerzung der Nutzungszone (ersetzt Attribut Abkuerzung)
         DarstellungCodeNZ: TEXT*5;              !! Code 5-Stellen gefuehrt mit F = Flaeche;         !! Erweiterung BielNidau, Darstellung der Nutzungszone (ersetzt Attribut DarstellungCode)
-        Bauzone: OPTIONAL TEXT*100;                                                                  !! Erweiterung BielNidau
+        Bauzone: OPTIONAL TEXT*150;                                                                 !! Erweiterung BielNidau
         BezeichnungBZ: OPTIONAL TEXT*300;       !!//TS:Eigentumsbeschraenkung.Aussage//             !! Erweiterung BielNidau, Zonenname der Bauzone (ersetzt Attribut Bezeichnung)
-        AbkuerzungBZ: OPTIONAL TEXT*24;         !!//TS:Eigentumsbeschraenkung.ArtCode//             !! Erweiterung BielNidau, Zonenabkuerzung der Bauzone ()ersetzt Attribut Abkuerzung)
+        AbkuerzungBZ: OPTIONAL TEXT*28;         !!//TS:Eigentumsbeschraenkung.ArtCode//             !! Erweiterung BielNidau, Zonenabkuerzung der Bauzone ()ersetzt Attribut Abkuerzung)
         DarstellungCodeBZ: OPTIONAL TEXT*5;     !! Code 5-Stellen gefuehrt mit F = Flaeche;         !! Erweiterung BielNidau, Darstellung der Bauzone (ersetzt Attribut DarstellungCode)
         !! Erweiterung für Kontrollzwecke der Verschnitt-Herkunft durch Biel/Nidau. Für den Kanton nicht relevant.
-        BN_Nutzungszone: TEXT*100;       
-        BN_Bauzone: OPTIONAL TEXT*100;
-        BN_Spezialvorschrift: OPTIONAL TEXT*100;
+        BN_Nutzungszone: TEXT*150;       
+        BN_Bauzone: OPTIONAL TEXT*150;
+        BN_Spezialvorschrift: OPTIONAL TEXT*150;
         !! Erweiterung für die Darstellung der Sonderbauvorschriften (SV) in unterschiedlichen Ebenen. Für den Kanton nicht relevant.
         BN_SV_DarstellungInNZPlan: OPTIONAL TEXT*10;
         BN_SV_DarstellungInBZPlan: OPTIONAL TEXT*10;
@@ -385,8 +384,8 @@ MODEL DM16NplBE_BielNidau
     TABLE UE_UeberlagerungZone =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Verbindlichkeit//
         KantArt: UeberlagerungArtKanton;
-        Art: TEXT*100; !!//TS:Eigentumsbeschraenkung.Aussage//
-        Abkuerzung: OPTIONAL TEXT*24;                 !! Zonenabkuerzung Gemeinde
+        Art: TEXT*150; !!//TS:Eigentumsbeschraenkung.Aussage//
+        Abkuerzung: OPTIONAL TEXT*28;                 !! Zonenabkuerzung Gemeinde
         Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//
         Planbeschriftung: OPTIONAL TEXT*300;        !! fuer Beschriftungen auf dem Plan
         Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
@@ -418,7 +417,7 @@ MODEL DM16NplBE_BielNidau
     END UE_FlaechenelementUeberl;
     
     TABLE UE_FlEleUeberlBedeut =
-        Art: TEXT*100;
+        Art: TEXT*150;
         Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord
             WITHOUT OVERLAPS > 0.050;
     NO IDENT
@@ -437,9 +436,9 @@ MODEL DM16NplBE_BielNidau
     TABLE UE_Abstandslinie =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
         KantArt: AbstandslinienArtKanton;
-        Art: TEXT*100; !!//TS:Eigentumsbeschraenkung.Aussage//
+        Art: TEXT*150; !!//TS:Eigentumsbeschraenkung.Aussage//
         BeschrVorsprGebTeile: (ja, nein);   !! BL mit Beschraenkung vorspringender Gebaeudeteile
-        Abkuerzung: OPTIONAL TEXT*24;                 !! Linienabkuerzung Gemeinde
+        Abkuerzung: OPTIONAL TEXT*28;                 !! Linienabkuerzung Gemeinde
         Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//
         Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
         Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
@@ -470,7 +469,7 @@ MODEL DM16NplBE_BielNidau
     END UE_LinienelementAbstand;
     
     TABLE UE_LinEleAbstandBedeut =
-        Art: TEXT*100;
+        Art: TEXT*150;
         Geometrie: POLYLINE WITH (STRAIGHTS, ARCS) VERTEX LKoord;
         NO IDENT
     END UE_LinEleAbstandBedeut;
@@ -498,7 +497,7 @@ MODEL DM16NplBE_BielNidau
                   andere);
         Gueltig_bis: DATE;
         Beschwerde_haengig: OPTIONAL (ja, nein);
-        Abkuerzung: OPTIONAL TEXT*24;                 !! Abkuerzung Gemeinde
+        Abkuerzung: OPTIONAL TEXT*28;                 !! Abkuerzung Gemeinde
         Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
         Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//
         Nutzungsziffer: OPTIONAL MGDM_Nutzungsziffer;
@@ -553,7 +552,7 @@ MODEL DM16NplBE_BielNidau
     TABLE WF_Einzelpunkt = 
         !! Definition gemaess Einzelpunkt Bodenbedeckung AV
         !! Rechtsgueltig vermessene Einzelpunkte
-        Identifikator: OPTIONAL TEXT*24;
+        Identifikator: OPTIONAL TEXT*28;
         Geometrie: LKoord;
         LageGen: [0.0 .. 700.0];  !! in cm
         LageZuv: (ja,     !! genuegend
@@ -611,7 +610,7 @@ MODEL DM16NplBE_BielNidau
     TABLE NH_NHSchutz =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
         KantArt: NHArtKanton; !!//TS:Eigentumsbeschraenkung.Aussage//
-        Abkuerzung: OPTIONAL TEXT*24;                 !! Abkuerzung Gemeinde
+        Abkuerzung: OPTIONAL TEXT*28;                 !! Abkuerzung Gemeinde
         Bezeichnung: TEXT*300; !!//TS:Eigentumsbeschraenkung.Aussage//
         Bedeutung: Bedeutungen;
         Schutzgrad: Schutzgrade;
@@ -836,7 +835,7 @@ MODEL DM16NplBE_BielNidau
 
     TABLE BN_WA =
         Verbindlichkeit: Verbindlichkeiten;
-        Wohnnutzungsanteil: TEXT*100;
+        Wohnnutzungsanteil: TEXT*150;
         KantArt: UeberlagerungArtKanton;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
         Beschrieb: OPTIONAL TEXT*160;
@@ -882,7 +881,7 @@ MODEL DM16NplBE_BielNidau
 
     TABLE BN_GFZ =
         Verbindlichkeit: Verbindlichkeiten;
-        Gruenflaechenziffer: TEXT*100;
+        Gruenflaechenziffer: TEXT*150;
         KantArt: UeberlagerungArtKanton;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
         Beschrieb: OPTIONAL TEXT*160;
@@ -928,7 +927,7 @@ MODEL DM16NplBE_BielNidau
 
     TABLE BN_BW =
         Verbindlichkeit: Verbindlichkeiten;
-        Bauweise: TEXT*100;
+        Bauweise: TEXT*150;
         KantArt: UeberlagerungArtKanton;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
         Beschrieb: OPTIONAL TEXT*160;
@@ -976,7 +975,7 @@ MODEL DM16NplBE_BielNidau
     !! In BN_GL gehören die parzellenscharfen Definitionen für Flächenberechnungen und Verschnitte.
     TABLE BN_GL =
         Verbindlichkeit: Verbindlichkeiten;
-        Gebaeudelaengetyp: TEXT*100;
+        Gebaeudelaengetyp: TEXT*150;
         Gebaeudelaenge: OPTIONAL DIM1 0 99;
         Gebaeudetiefe: OPTIONAL DIM1 0 99;
         KantArt: UeberlagerungArtKanton;
@@ -1031,7 +1030,7 @@ MODEL DM16NplBE_BielNidau
 
     TABLE BN_VG =
         Verbindlichkeit: Verbindlichkeiten;
-        Vorgartenbereich: TEXT*100;
+        Vorgartenbereich: TEXT*150;
         KantArt: UeberlagerungArtKanton;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
         Beschrieb: OPTIONAL TEXT*160;
@@ -1078,7 +1077,7 @@ MODEL DM16NplBE_BielNidau
     TABLE BN_Baum =
         Verbindlichkeit: Verbindlichkeiten;
         Bezeichnung: TEXT*300;
-        Abkuerzung: TEXT*24;
+        Abkuerzung: TEXT*28;
         KantArt: UeberlagerungArtKanton;
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche; L = Linie
         Beschrieb: OPTIONAL TEXT*160;
@@ -1116,7 +1115,7 @@ MODEL DM16NplBE_BielNidau
         Objektart: (Strassenlinie, Bemassungshilfslinie, Leitungstrasse);
         !! Verbindlichkeit: Verbindlichkeiten;  !! Explizit auskommentiert, damit keine Verwechslung mit ÖREB-relevanten Festlegungen.
         Bezeichnung: TEXT*300;
-        Abkuerzung: TEXT*24;
+        Abkuerzung: TEXT*28;
         Beschrieb: OPTIONAL TEXT*160;
         Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan
         !! Datenverwaltungsstelle: -> Amt;  !! Explizit auskommentiert, damit keine Verwechslung mit ÖREB-relevanten Festlegungen.
