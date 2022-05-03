@@ -3,7 +3,7 @@ TRANSFER Interlis1;
 MODEL DM16NplBE_BielNidau
 
    !! Amt für Geoinformation / Amt für Gemeinden und Raumordnung 
-   !! Entwurf vom 24.07.2019
+   !! Entwurf vom 07.11.2019
    !! Kommunale Nutzungsplanung im Kanton Bern / Erweiterungsmodell für die Städte Biel und Nidau
 
   DOMAIN
@@ -95,7 +95,6 @@ MODEL DM16NplBE_BielNidau
       VZ);                   !! Verkehrszone; !!//TS:MGDMCode_1.18//
       
     NZtypen = ( !! Nutzungszonen Biel/Nidau (Nutzungszonenplan))
-      W,                            !! Wohnzone (Entwurf Nidau)
       MA,                           !! Mischzone A
       MB,                           !! Mischzone B
       A,                            !! Arbeitszone
@@ -118,12 +117,44 @@ MODEL DM16NplBE_BielNidau
       BZ4,              !! Bauzone 4
       BZ5,              !! Bauzone 5
       BZ6,              !! Bauzone 6
-      Uebrige           !! (z.B. Spezialfall Biel Parzelle 1730)
+      W1,               !! Wohnzone, 1 Geschoss
+      W2,               !! Wohnzone, 2 Geschosse
+      W3,               !! Wohnzone, 3 Geschosse
+      W4,               !! Wohnzone, 4 Geschosse
+      W5,               !! Wohnzone, 5 Geschosse
+      W6plus,           !! Wohnzone, 6 und mehr Geschosse
+      FH,               !! Ferienhauszone
+      M2,               !! Mischzone, 2 Geschosse
+      M3,               !! Mischzone, 3 Geschosse
+      M4,               !! Mischzone, 4 Geschosse
+      M5,               !! Mischzone, 5 Geschosse
+      M6plus,           !! Mischzone, 6 und mehr Geschosse
+      KS,               !! Kernzone staedtisch
+      KL,               !! Kernzone laendlich
+      HT,               !! Hotelzone
+      WEZ,              !! Weilerzone
+      B_E,              !! Bestandeszone, Erhaltungszone
+      BH,               !! Bauernhofzone
+      A,                !! Arbeitszone
+      ZOEN,             !! Zone fuer oeffentliche Nutzungen
+      SKI,              !! Zone fuer Skipisten und Loipen
+      ZSF,              !! Zone fuer Sport- und Freizeitanlagen
+      GR,               !! Gruenzone
+      GB,               !! Gartenbauzone (kommerziell)
+      LWZ,              !! Landwirtschaftszone
+      ILW,              !! Intensivlandwirtschaftszone
+      AA,               !! Abbau- und/oder Ablagerungszone
+      ZMN,              !! Zone fuer militaerische Nutzungen
+      UEO,              !! Ueberbauungsordnung
+      ZPP,              !! Zone mit Planungspflicht
+      SBV,              !! Zone mit Sonderbauvorschriften
+      USP,              !! Uferschutzplan
+      Uebrige,          !! uebriges Gebiet    
+      VZ                !! Verkehrszone
     );
     
     SVtypen = ( !! Spezialvorschriften Biel/Nidau
       ZPP,              !! Zone mit Planungspflicht
-      TGO,              !! Teilgrundordnung
       UeO               !! Überbauungsordnung (in Zuständigkeit er Stimmbürger)
     );
 
@@ -414,7 +445,7 @@ MODEL DM16NplBE_BielNidau
         DarstellungCode: TEXT*5;  !! Code 5-Stellen gefuehrt mit F = Flaeche;
         Datenverwaltungsstelle: -> Amt;
         ZustaendigeStelle: -> Amt; !!//TS:Eigentumsbeschraenkung.ZustaendigeStelle//
-        Verkehrsraumart: OPTIONAL (oeffentlich, privat, Gleis); !! Obligatorisch, wenn Nutzungszone=uebriges_Gebiet_Verkehrsraum
+        Verkehrsraumart: OPTIONAL (oeffentlich, privat); !! Obligatorisch, wenn Nutzungszone=uebriges_Gebiet_Verkehrsraum
     NO IDENT
     END GN_NZtyp;
     
@@ -432,7 +463,7 @@ MODEL DM16NplBE_BielNidau
         Laermempfindlichkeit: OPTIONAL Laermempfindlichkeit;
         Beschrieb: OPTIONAL TEXT*160;
         Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan 
-        Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord 
+        Geometrie: AREA WITH (STRAIGHTS, ARCS) VERTEX LKoord 
             WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
         Qualitaet: Qualitaetsstandard;
         Bemerkung: OPTIONAL TEXT*160;
@@ -491,7 +522,7 @@ MODEL DM16NplBE_BielNidau
         Laermempfindlichkeit: OPTIONAL Laermempfindlichkeit;
         Beschrieb: OPTIONAL TEXT*160;
         Planbeschriftung: OPTIONAL TEXT*300; !! fuer Beschriftungen auf dem Plan 
-        Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord 
+        Geometrie: AREA WITH (STRAIGHTS, ARCS) VERTEX LKoord 
             WITHOUT OVERLAPS > 0.050; !!//TS:Geometrie.Flaeche//
         Qualitaet: Qualitaetsstandard;
         Bemerkung: OPTIONAL TEXT*160;
@@ -519,9 +550,11 @@ MODEL DM16NplBE_BielNidau
 
     !! SV Spezialvorschriften
     !! *********************************************************************
-    !! Spezialvorschriften SV (fuer ZPP, Teilgrundordnung TGO, UeO (in Zustaendigkeit der Stimmbuerger)).
+    !! Spezialvorschriften SV (fuer ZPP, UeO (in Zustaendigkeit der Stimmbuerger)).
     !! Darstellung in mehreren Plaenen: Nutzungszonenplan, Bauzonenplan, Baulinienplan.
     !! Erfassung als eigene Tabellen, da sie in Biel planerisch eigenstaendig zu betrachten sind und nicht nur als Attribut der baurechtlichen Grundordnung.
+	!! In der Datenlieferung an den Kanton erscheinen alle ZPP und UeO sowie deren Rechtsvorschriften je nach Fall in der NZ, respektive in der Überlagerung. 
+	!! Der Inhalt der SV wird vom Kanton nicht berücksichtigt.
 
     TABLE GN_SVtyp =
         Verbindlichkeit: Verbindlichkeiten; !!//TS:Eigentumsbeschraenkung.Rechtsstatus//
@@ -557,7 +590,7 @@ MODEL DM16NplBE_BielNidau
         Beschrieb: OPTIONAL TEXT*160;
         Planbeschriftung_GanzeZone: OPTIONAL TEXT*300; !! fuer Beschriftungen der ganzen Zone
         Planbeschriftung_Teilzone: OPTIONAL TEXT*300; !! fuer Beschriftungen einer Teilzone 
-        Geometrie: SURFACE WITH (STRAIGHTS, ARCS) VERTEX LKoord 
+        Geometrie: AREA WITH (STRAIGHTS, ARCS) VERTEX LKoord 
             WITHOUT OVERLAPS > 0.050 !!//TS:Geometrie.Flaeche//
             LINEATTR =
                 Linie_darstellen: OPTIONAL (ja, nein); !! //default=ja// für Biel bereits bisher nötig (deshalb Achtung bei Migration).
