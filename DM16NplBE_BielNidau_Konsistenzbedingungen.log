@@ -1,0 +1,1005 @@
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|FME 2021.1.2.0 (20210903 - Build 21627 - WIN64)
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|FME Desktop ESRI Edition (floating)
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|Permanent License.
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|Machine host name is: vdihcpab1124
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|Locale: de_CH
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|System Encoding: windows-1252
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'Y:\Anwend\OEREBK\Work\Datenmodelle\DM16NplBE_BielNidau/'
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'DM16NplBE_BielNidau_Konsistenzbedingungen.fmw'
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2021.1.2.0'
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 10 64-bit  (Build 19044)
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|FME Platform: WIN64
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|System Status: 106.72 GB of disk space available in the FME temporary folder (C:\TEMP\wbrun_1677589384911_9472\fmetmp_0)
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|System Status: 16.00 GB of physical memory available
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|System Status: 64.00 GB of virtual memory available
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|START - ProcessID: 17652, peak process memory usage: 48000 kB, current process memory usage: 48000 kB
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `Y:/Anwend/OEREBK/Work/Datenmodelle/DM16NplBE_BielNidau\wb-xlate-1677589394744_9472' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{69bb1a73-11c7-4d9f-ac8f-6daa84595bdb}'
+2023-02-28 14:03:24|   0.0|  0.0|WARN  |Failed to free sufficient memory to reach the process usage limit. To improve stability and performance please increase the memory available to FME. Available memory can be increased by adding physical RAM, increasing swap space, or closing other applications
+2023-02-28 14:03:24|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\m9i9\AppData\Roaming\Safe Software\FME\'
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;\\a2va-cfs-usr0.jgk.be.ch\usr0\UserHomes\M9I9\Z_Systems\RedirectedFolders\Documents\FME\Formats
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\m9i9\AppData\Roaming\Safe Software\FME\Packages\21627-win64\transformers;C:\Program Files\FME\transformers;C:\Users\m9i9\AppData\Roaming\Safe Software\FME\FME Store\Transformers
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : \\a2va-cfs-usr0.jgk.be.ch\usr0\UserHomes\M9I9\Z_Systems\RedirectedFolders\Documents\FME\CoordinateSystems
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : \\a2va-cfs-usr0.jgk.be.ch\usr0\UserHomes\M9I9\Z_Systems\RedirectedFolders\Documents\FME\CoordinateSystemExceptions
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : \\a2va-cfs-usr0.jgk.be.ch\usr0\UserHomes\M9I9\Z_Systems\RedirectedFolders\Documents\FME\CoordinateSystemGridOverrides
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : \\a2va-cfs-usr0.jgk.be.ch\usr0\UserHomes\M9I9\Z_Systems\RedirectedFolders\Documents\FME\CsmapTransformationExceptions
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|Shared folders for transformer categories are : \\a2va-cfs-usr0.jgk.be.ch\usr0\UserHomes\M9I9\Z_Systems\RedirectedFolders\Documents\FME\TransformerCategories
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `NULL_DEST'
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `NULL_DEST_DEF'
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|FME Configuration: Writer type is `NULL'
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `Y:\Anwend\OEREBK\Work\Datenmodelle\DM16NplBE_BielNidau'
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\TEMP\wbrun_1677589384911_9472\fmetmp_0', set from environment variable `FME_TEMP'
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\TEMP'
+2023-02-28 14:03:25|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2023-02-28 14:03:25|   0.0|  0.0|WARN  |FME Configuration: Extremely low initial memory conditions detected. To improve stability and performance please increase the memory available to FME. Available memory can be increased by adding physical RAM, increasing swap space, or closing other applications
+2023-02-28 14:03:25|   0.1|  0.1|INFORM|Creating writer for format: NULL (Nothing)
+2023-02-28 14:03:25|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `NULL'
+2023-02-28 14:03:25|   0.1|  0.0|INFORM|Loaded module 'NULL' from file 'C:\Program Files\FME\plugins/NULL.dll'
+2023-02-28 14:03:25|   0.1|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.8 20210302)
+2023-02-28 14:03:25|   0.1|  0.0|INFORM|Creating reader for format: 
+2023-02-28 14:03:25|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2023-02-28 14:03:25|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding CH.EHI.FME.MAIN Reader with keyword ch.ehi.fme.Main_1
+2023-02-28 14:03:25|   0.1|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2023-02-28 14:03:25|   0.1|  0.0|INFORM|Creating reader for format: Swiss INTERLIS (ili2fme)
+2023-02-28 14:03:25|   0.1|  0.0|INFORM|Trying to find a JAVA plugin for reader named `CH.EHI.FME.MAIN'
+2023-02-28 14:03:25|   0.1|  0.0|INFORM|FME Configuration: Source coordinate system for reader ch.ehi.fme.Main_1[CH.EHI.FME.MAIN] set to `EPSG:2056'
+2023-02-28 14:03:25|   0.4|  0.3|INFORM|Coordinate System `EPSG:2056' parameters: CS_NAME=`CH1903Plus_1.LV95/01' DESC_NM=`CH1903+ / LV95' DT_NAME=`CH1903Plus_1' EPSG_QD=`1' GROUP=`SWITZERLAND' MAP_SCL=`1' MAX_LAT=`48' MAX_LNG=`11.05' MIN_LAT=`45.63333333333333' MIN_LNG=`5.4' ORG_LAT=`46.95240555555556' ORG_LNG=`7.439583333333333' PROJ=`SWISS' QUAD=`1' SCL_RED=`1' SOURCE=`EPSG, V6.3, 2056 [Large and medium scale topographic mappi]' UNIT=`Meter' X_OFF=`2600000' Y_OFF=`1200000' ZERO_X=`0.0001' ZERO_Y=`0.0001'
+2023-02-28 14:03:25|   0.4|  0.0|INFORM|Attempting to load Java Virtual Machine from C:\Program Files\FME\jre\bin\server
+2023-02-28 14:03:29|   1.0|  0.6|INFORM|ili2fme-7.0.13-70d7690e7e9627d181b6d13b6d780889bb933145
+2023-02-28 14:03:30|   1.0|  0.0|INFORM|ili2c-5.2.3-3ec7a10e9bacc87e149a14a7f11a6035e0481c69
+2023-02-28 14:03:30|   1.1|  0.1|INFORM|iox-ili-1.21.7-a3b5f1ee56a96cc8c6668896c40b81cb7192b11d
+2023-02-28 14:03:30|   1.1|  0.0|INFORM|java.version 1.8.0_265
+2023-02-28 14:03:30|   1.1|  0.0|INFORM|maxMemory 3728384 KB
+2023-02-28 14:03:30|   1.2|  0.1|INFORM|Using Java Reader Interface Version 2.0 (Oct 31, 2000) with module ch.ehi.fme.Main to read data
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|ili2fme reader uses enhanced geometry handling
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|checkUniqueOid <false>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|validate <true>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|validationConfig <>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|validateMultiplicity <true>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|ili1IgnorePolygonBuildingErrors <false>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|trimValues <true>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|geometryEncoding <FMEBIN>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|geoAttrMapping <EncodeAsFmeAttribute>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|ili1RenumberTid <false>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|lineTables <Polygon>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|inheritanceMapping <SuperClass>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|createEnumTypes <No>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|ili1AddDefVal <false>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|ili1EnumAsItfCode <false>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|xtfFile <Y:\Anwend\OEREBK\Data\DM16NplBE\371\4507\371.itf>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|modeldir <Y:\Anwend\OEREBK\Data\DM16NplBE\371\4507;http://models.interlis.ch/;C:\Program Files\FME/plugins/interlis2/ilimodels;C:\Program Files\FME/plugins/interlis2/ili22models>
+2023-02-28 14:03:30|   1.2|  0.0|INFORM|model from xtf <DM16NplBE_BielNidau>
+2023-02-28 14:03:30|   1.3|  0.1|INFORM|lookup model <DM16NplBE_BielNidau> in repository <Y:\Anwend\OEREBK\Data\DM16NplBE\371\4507/>
+2023-02-28 14:03:30|   1.3|  0.0|INFORM|lookup model <DM16NplBE_BielNidau> in repository <http://models.interlis.ch/>
+2023-02-28 14:03:30|   1.5|  0.2|INFORM|model SIA405_Base_f_MN95: no version without precursor; model ignored
+2023-02-28 14:03:30|   1.5|  0.0|INFORM|model SIA405_Base: no version without precursor; model ignored
+2023-02-28 14:03:30|   1.5|  0.0|INFORM|model SIA405_Base_f: no version without precursor; model ignored
+2023-02-28 14:03:30|   1.5|  0.0|INFORM|model SIA405_Base_LV95: no version without precursor; model ignored
+2023-02-28 14:03:30|   1.5|  0.0|INFORM|model Base: no version without precursor; model ignored
+2023-02-28 14:03:30|   1.5|  0.0|INFORM|model Base_LV95: no version without precursor; model ignored
+2023-02-28 14:03:30|   1.5|  0.0|INFORM|model Base_f: no version without precursor; model ignored
+2023-02-28 14:03:30|   1.5|  0.0|INFORM|model Base_f_MN95: no version without precursor; model ignored
+2023-02-28 14:03:30|   1.5|  0.0|INFORM|lookup model <DM16NplBE_BielNidau> in repository <C:\Program Files\FME/plugins/interlis2/ilimodels/>
+2023-02-28 14:03:31|   1.8|  0.3|INFORM|lookup model <DM16NplBE_BielNidau> in repository <C:\Program Files\FME/plugins/interlis2/ili22models/>
+2023-02-28 14:03:31|   1.9|  0.1|INFORM|lookup model <DM16NplBE_BielNidau> in repository <http://models.geo.admin.ch/>
+2023-02-28 14:03:31|   2.8|  0.9|INFORM|model Messorte_V1: no version without precursor; model ignored
+2023-02-28 14:03:31|   3.0|  0.2|INFORM|lookup model <DM16NplBE_BielNidau> in repository <https://models.kgk-cgc.ch/>
+2023-02-28 14:03:34|   4.0|  1.0|INFORM|lookup model <DM16NplBE_BielNidau> in repository <https://models.interlis.ch/>
+2023-02-28 14:03:34|   4.0|  0.0|INFORM|model SIA405_Base_f_MN95: no version without precursor; model ignored
+2023-02-28 14:03:34|   4.0|  0.0|INFORM|model SIA405_Base: no version without precursor; model ignored
+2023-02-28 14:03:34|   4.0|  0.0|INFORM|model SIA405_Base_f: no version without precursor; model ignored
+2023-02-28 14:03:34|   4.0|  0.0|INFORM|model SIA405_Base_LV95: no version without precursor; model ignored
+2023-02-28 14:03:34|   4.0|  0.0|INFORM|model Base: no version without precursor; model ignored
+2023-02-28 14:03:34|   4.0|  0.0|INFORM|model Base_LV95: no version without precursor; model ignored
+2023-02-28 14:03:34|   4.0|  0.0|INFORM|model Base_f: no version without precursor; model ignored
+2023-02-28 14:03:34|   4.0|  0.0|INFORM|model Base_f_MN95: no version without precursor; model ignored
+2023-02-28 14:03:34|   4.0|  0.0|INFORM|lookup model <DM16NplBE_BielNidau> in repository <https://models.geo.llv.li/>
+2023-02-28 14:03:35|   4.2|  0.2|INFORM|lookup model <DM16NplBE_BielNidau> in repository <https://405.sia.ch/models/>
+2023-02-28 14:03:38|   4.5|  0.3|INFORM|lookup model <DM16NplBE_BielNidau> in repository <https://repositorio.proadmintierra.info/>
+2023-02-28 14:03:41|   4.6|  0.1|INFORM|lookup model <DM16NplBE_BielNidau> in repository <http://models.geo.ai.ch/>
+2023-02-28 14:03:41|   4.8|  0.2|INFORM|lookup model <DM16NplBE_BielNidau> in repository <https://models.geo.kgk-cgc.ch/>
+2023-02-28 14:03:43|   4.8|  0.0|INFORM|lookup model <DM16NplBE_BielNidau> in repository <https://models.geo.ar.ch/>
+2023-02-28 14:03:44|   4.8|  0.0|INFORM|lookup model <DM16NplBE_BielNidau> in repository <http://models.geo.kgk-cgc.ch/>
+2023-02-28 14:03:44|   4.8|  0.0|INFORM|lookup model <DM16NplBE_BielNidau> in repository <https://models.geo.be.ch/>
+2023-02-28 14:03:44|   4.9|  0.1|INFORM|ilifile <C:\Users\m9i9\.ilicache\models.geo.be.ch\Grundlagen_und_Planung\Raumplanung_Grundstueckskataster\DM16NplBE_BielNidau.ili>
+2023-02-28 14:03:45|   5.6|  0.7|INFORM|FME API version of module 'NULL' matches current internal version (3.8 20210302)
+2023-02-28 14:03:45|   5.6|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.8 20210302)
+2023-02-28 14:03:45|   5.6|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2023-02-28 14:03:45|   5.6|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.8 20210302)
+2023-02-28 14:03:45|   5.6|  0.0|INFORM|Loaded module 'AttributeFilterFactory' from file 'C:\Program Files\FME\plugins/AttributeFilterFactory.dll'
+2023-02-28 14:03:45|   5.6|  0.0|INFORM|FME API version of module 'AttributeFilterFactory' matches current internal version (3.8 20210302)
+2023-02-28 14:03:45|   5.6|  0.0|INFORM|Loaded module 'AttributeKeeperFactory' from file 'C:\Program Files\FME\plugins/AttributeKeeperFactory.dll'
+2023-02-28 14:03:45|   5.6|  0.0|INFORM|FME API version of module 'AttributeKeeperFactory' matches current internal version (3.8 20210302)
+2023-02-28 14:03:45|   5.6|  0.0|INFORM|FME API version of module 'AttributeKeeperFactory' matches current internal version (3.8 20210302)
+2023-02-28 14:03:45|   5.6|  0.0|INFORM|Loaded module 'DuplicateRemoverFactory' from file 'C:\Program Files\FME\plugins/DuplicateRemoverFactory.dll'
+2023-02-28 14:03:45|   5.6|  0.0|INFORM|FME API version of module 'DuplicateRemoverFactory' matches current internal version (3.8 20210302)
+2023-02-28 14:03:46|   5.6|  0.0|INFORM|Loaded module 'InspectorFactory' from file 'C:\Program Files\FME\plugins/InspectorFactory.dll'
+2023-02-28 14:03:46|   5.6|  0.0|INFORM|FME API version of module 'InspectorFactory' matches current internal version (3.8 20210302)
+2023-02-28 14:03:46|   5.6|  0.0|INFORM|assume unknown external objects
+2023-02-28 14:03:46|   5.7|  0.1|INFORM|first validation pass...
+2023-02-28 14:03:46|   5.7|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_XTF_TRANSFER -1 5 -1  0  7e469954f99a6c2ecfbb792dafcb29f43ff0da1e.ffsupdating'
+2023-02-28 14:03:46|   5.9|  0.2|INFORM|DM16NplBE_BielNidau.Nutzungsplanung itf0...
+2023-02-28 14:03:46|   5.9|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_XTF_BASKETS -1 6 -1  0  7a697cf6e1456f9ccc07b40b68aab2bd83157e07.ffsupdating'
+2023-02-28 14:03:46|   5.9|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 66 -1  0  b899595a7ba432c376f466c15c08d567d5b4eed4.ffsupdating'
+2023-02-28 14:03:46|   6.0|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_3 -1 264 fo 0 OUTPUT  0  380894aa7d23ab9e822abf0633d9321931fdae7d.ffsupdating'
+2023-02-28 14:03:46|   6.7|  0.7|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 53 -1  0  29e1a678950fa4f6fbd5c01d8caf604707dcfbb4.ffsupdating'
+2023-02-28 14:03:46|   6.8|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester_3 -1 397 fo 1 FAILED  0  bff6d2ea14aab20dbc5e576a5d45b0d2cfa7d3d5.ffsupdating'
+2023-02-28 14:03:46|   6.8|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 13 -1  0  e365e6f5fd254ba2e48b2819869994a8b1fc5f22.ffsupdating'
+2023-02-28 14:03:46|   6.8|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_6 -1 338 fo 0 OUTPUT  0  99f9a1d476adb5e0d12230c128c9598779f0ab69.ffsupdating'
+2023-02-28 14:03:48|  12.0|  5.2|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:03:48|  12.5|  0.5|INFORM|Reading source feature # 2500
+2023-02-28 14:03:48|  12.6|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 21 -1  0  fa79cb82ccc89e14dfb4aa7d864ab23d80559b1a.ffsupdating'
+2023-02-28 14:03:48|  12.6|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_4 -1 246 fo 0 OUTPUT  0  e967b78efc327ea134f97485390b1f5a4f0b3b0b.ffsupdating'
+2023-02-28 14:03:50|  13.9|  1.3|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:03:50|  14.6|  0.7|INFORM|Reading source feature # 5000
+2023-02-28 14:03:53|  20.0|  5.4|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 85 -1  0  c7874861ed0324ca7e8b5f6f79e30519014bd3de.ffsupdating'
+2023-02-28 14:03:53|  20.0|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_5 -1 341 fo 0 OUTPUT  0  a28c4b93c81f8612339b5a9ec3b5068424705dce.ffsupdating'
+2023-02-28 14:03:54|  21.3|  1.3|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:03:54|  21.9|  0.6|INFORM|Reading source feature # 7500
+2023-02-28 14:03:55|  22.4|  0.5|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:03:56|  24.0|  1.6|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:03:56|  24.0|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 55 -1  0  54f5ebb7159d40af94fbc87c7a1db100177a7fa0.ffsupdating'
+2023-02-28 14:03:56|  24.1|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeFilter -1 210 fo 7 _lt_lt_gt_UNFILTERED_lt_gt_gt_  0  f271470ce96089fbc07a2e3541a6719ed152c5e4.ffsupdating'
+2023-02-28 14:03:56|  24.1|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_9 -1 374 fo 0 OUTPUT  0  d32a108b439e9a06fbe4573907268a99cc3c0e7e.ffsupdating'
+2023-02-28 14:03:56|  24.2|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:03:56|  24.3|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 89 -1  0  82b79e5211c8fc32e9a21ff00587ee4c30e0a6bd.ffsupdating'
+2023-02-28 14:03:56|  24.4|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_21 -1 277 fo 0 OUTPUT  0  e7b227382df7c789b3927378acee1412ef3e3978.ffsupdating'
+2023-02-28 14:03:56|  24.4|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_2 -1 254 fo 0 OUTPUT  0  63071e7385b70bd224f09d86785ffa53fe432d6d.ffsupdating'
+2023-02-28 14:03:56|  24.5|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 88 -1  0  6689f87613d3f3e12169137a970e287f7d5a08b7.ffsupdating'
+2023-02-28 14:03:56|  24.5|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_22 -1 262 fo 0 OUTPUT  0  a40b588fb0c1817cb22b598051b33489f5ccade2.ffsupdating'
+2023-02-28 14:03:57|  25.2|  0.7|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 47 -1  0  cdf13572c1f703ead7359211bf0ddb439f721411.ffsupdating'
+2023-02-28 14:03:57|  25.2|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_3 -1 271 fo 0 OUTPUT  0  95a571d320819ba9fa1cac8842231b62708822f6.ffsupdating'
+2023-02-28 14:03:57|  25.2|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer -1 260 fo 0 OUTPUT  0  709e55a1c7f85657b7f5dbe53f238ef4e872929e.ffsupdating'
+2023-02-28 14:03:57|  25.8|  0.6|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 35 -1  0  899e71c238a2b679286a8f15fdf5ded922a612c6.ffsupdating'
+2023-02-28 14:03:57|  25.8|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_23 -1 273 fo 0 OUTPUT  0  6c29deaeae6f6f22c29ee2b293d9e3f4f828204a.ffsupdating'
+2023-02-28 14:03:57|  25.8|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 36 -1  0  5b09f248603d0d70c5d8727bc20ddc6ecc109c02.ffsupdating'
+2023-02-28 14:03:57|  25.8|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_24 -1 306 fo 0 OUTPUT  0  4eef708de169bb50d998a2b989046cf16f079cbe.ffsupdating'
+2023-02-28 14:03:57|  26.0|  0.2|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 79 -1  0  a61684cd1a0246a07832d537e14ea00a357a24cf.ffsupdating'
+2023-02-28 14:03:57|  26.0|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_15 -1 269 fo 0 OUTPUT  0  857acb4e0b00f1d3716caba54c8a2be5fda8ea42.ffsupdating'
+2023-02-28 14:03:57|  26.0|  0.0|INFORM|Reading source feature # 10000
+2023-02-28 14:03:57|  26.1|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:03:59|  28.4|  2.3|INFORM|... Last line repeated 4 times ...
+2023-02-28 14:03:59|  28.4|  0.0|INFORM|Reading source feature # 12500
+2023-02-28 14:03:59|  29.3|  0.9|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 11 -1  0  9933816b84d7c94eb3aa6377bb91b808d698a354.ffsupdating'
+2023-02-28 14:03:59|  29.3|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_12 -1 302 fo 0 OUTPUT  0  a436051fc76f78c23f9ee0b1d9f87e5f24150dd7.ffsupdating'
+2023-02-28 14:03:59|  29.3|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester_2 -1 391 fo 1 FAILED  0  65b3c4712cb77833fe2fb69b95ba7e943653db40.ffsupdating'
+2023-02-28 14:03:59|  29.3|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 78 -1  0  abfdcd6df39cbabc5798b584eda933c7ffdf7820.ffsupdating'
+2023-02-28 14:03:59|  29.5|  0.2|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_13 -1 304 fo 0 OUTPUT  0  cfe04348014a64ee3c1229f9366e5827537c403a.ffsupdating'
+2023-02-28 14:03:59|  29.5|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 39 -1  0  63efa12affc81562fbce4c789b53d45f693d866f.ffsupdating'
+2023-02-28 14:03:59|  29.5|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_11 -1 275 fo 0 OUTPUT  0  4479649f5f7464b64137db8aad430657d31c112a.ffsupdating'
+2023-02-28 14:03:59|  29.7|  0.2|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 56 -1  0  ee08fedde0cec75fb255d752123e8e26cd866a97.ffsupdating'
+2023-02-28 14:03:59|  29.7|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_7 -1 360 fo 0 OUTPUT  0  d7a67ecab59e5a445f8abaa28d9afdcd09346efc.ffsupdating'
+2023-02-28 14:04:00|  29.8|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 12 -1  0  22bedfea5e6a9c0fdfce10666c8668432d2dbf6f.ffsupdating'
+2023-02-28 14:04:00|  30.3|  0.5|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 80 -1  0  4859a2181fb12831a9e0a1af5e5440ccefb7700f.ffsupdating'
+2023-02-28 14:04:00|  30.4|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_4 -1 354 fo 0 OUTPUT  0  514f444eaa92630d2a2bed792ece878aa5fff911.ffsupdating'
+2023-02-28 14:04:00|  30.4|  0.0|INFORM|Reading source feature # 15000
+2023-02-28 14:04:00|  30.7|  0.3|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 90 -1  0  a47a7ec681ab1b2f39a1134b751f32b2c84736d7.ffsupdating'
+2023-02-28 14:04:00|  31.3|  0.6|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 52 -1  0  2c9616247730cdf36b340ba984197e6bad071dff.ffsupdating'
+2023-02-28 14:04:00|  31.3|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_3 -1 352 fo 0 OUTPUT  0  b05e99ed823002f39bd46f6fcced051b9dddccff.ffsupdating'
+2023-02-28 14:04:01|  31.8|  0.5|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 81 -1  0  6a475c127b721ddc56828b123c052fd0d629f8ff.ffsupdating'
+2023-02-28 14:04:01|  31.9|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:01|  32.4|  0.5|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 40 -1  0  bfdbbec5cd07108c7a653eecd400c7755ea1565f.ffsupdating'
+2023-02-28 14:04:01|  32.6|  0.2|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_5 -1 356 fo 0 OUTPUT  0  84c5b438fbc0d1975b5b8b945684d2fa326de247.ffsupdating'
+2023-02-28 14:04:01|  32.9|  0.3|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 33 -1  0  f7920e49079f8e0d072a087a76d7dcd9d978cacc.ffsupdating'
+2023-02-28 14:04:01|  33.5|  0.6|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 22 -1  0  4eb05c61dfc45f9ad73e18f7bffffa8bff193701.ffsupdating'
+2023-02-28 14:04:01|  33.5|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_6 -1 358 fo 0 OUTPUT  0  02b0902c7bab6c97fdc9bb529a25a72927859f21.ffsupdating'
+2023-02-28 14:04:02|  33.8|  0.3|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 84 -1  0  2e2c1d34aa3cb8575b67d2ce350c457634974dd2.ffsupdating'
+2023-02-28 14:04:02|  34.0|  0.2|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 62 -1  0  218e07f2f0854c8c687bc5bb8f82901eef035535.ffsupdating'
+2023-02-28 14:04:02|  34.0|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_19 -1 313 fo 0 OUTPUT  0  b2a47d268061ca5429ca5db2d6bf45688e11336f.ffsupdating'
+2023-02-28 14:04:02|  34.0|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 69 -1  0  092d8664066e2e1064609187f6b603a2cdd11da9.ffsupdating'
+2023-02-28 14:04:02|  34.1|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_20 -1 315 fo 0 OUTPUT  0  7a6d5689db806db91c59050b8acb7a851edecd7e.ffsupdating'
+2023-02-28 14:04:02|  34.1|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 86 -1  0  9da1736868abfbbbedb6d1ae33991461a38aa57e.ffsupdating'
+2023-02-28 14:04:02|  34.1|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_18 -1 288 fo 0 OUTPUT  0  c3b1402052d2af88eff7015b824c6d8bad39678f.ffsupdating'
+2023-02-28 14:04:02|  34.2|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:02|  34.3|  0.1|INFORM|Reading source feature # 17500
+2023-02-28 14:04:02|  34.5|  0.2|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:03|  35.6|  1.1|INFORM|... Last line repeated 3 times ...
+2023-02-28 14:04:03|  35.6|  0.0|INFORM|Reading source feature # 20000
+2023-02-28 14:04:03|  35.6|  0.0|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:04|  35.7|  0.1|INFORM|second validation pass...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZone2ZustaendigeStelle.UE_UeberlagerungZone2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZDatenverwaltungsstelle.BN_GFZ...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BW2ZustaendigeStelle.BN_BW2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypDatenverwaltungsstelle.GN_Zonentyp...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_Abstandslinie2ZustaendigeStelle.UE_Abstandslinie2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWDatenverwaltungsstelle.BN_BW...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_Zonentyp2ZustaendigeStelle.GN_Zonentyp2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieDatenverwaltungsstelle.UE_Abstandslinie...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.NH_NHSchutzDatenverwaltungsstelle.NH_NHSchutz...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VGDatenverwaltungsstelle.BN_VG...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLDatenverwaltungsstelle.BN_GL...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_Baum2ZustaendigeStelle.BN_Baum2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.DokumentZustaendigeStelle.Dokument...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldDatenverwaltungsstelle.WF_FeststellungWald...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WE_WegRoute2ZustaendigeStelle.WE_WegRoute2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GW_GewaesserDatenverwaltungsstelle.GW_Gewaesser...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WA2ZustaendigeStelle.BN_WA2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GL2ZustaendigeStelle.BN_GL2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.VE_Vor_Einschraenkung2ZustaendigeStelle.VE_Vor_Einschraenkung2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WE_WegRouteDatenverwaltungsstelle.WE_WegRoute...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.VE_Vor_EinschraenkungDatenverwaltungsstelle.VE_Vor_Einschraenkung...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GW_Gewaesser2ZustaendigeStelle.GW_Gewaesser2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZ2ZustaendigeStelle.BN_GFZ2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneDatenverwaltungsstelle.UE_UeberlagerungZone...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GR_GewaesserraumDatenverwaltungsstelle.GR_Gewaesserraum...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumDatenverwaltungsstelle.BN_Baum...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWald2ZustaendigeStelle.WF_FeststellungWald2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WADatenverwaltungsstelle.BN_WA...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GR_Gewaesserraum2ZustaendigeStelle.GR_Gewaesserraum2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VG2ZustaendigeStelle.BN_VG2...
+2023-02-28 14:04:04|  35.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.NH_NHSchutz2ZustaendigeStelle.NH_NHSchutz2...
+2023-02-28 14:04:04|  35.8|  0.1|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:04|  35.8|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BW2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:04|  35.8|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWSymObjekt.BN_BWSym...
+2023-02-28 14:04:04|  35.8|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWRVTyp.BN_BWRV...
+2023-02-28 14:04:04|  35.8|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWPosObjekt.BN_BWPos...
+2023-02-28 14:04:04|  35.8|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:04|  35.8|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BW2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:04|  35.9|  0.1|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWRVTyp.Typ...
+2023-02-28 14:04:04|  35.9|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWRVVorschrift.Vorschrift...
+2023-02-28 14:04:04|  35.9|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWRVVorschrift.Vorschrift...
+2023-02-28 14:04:04|  35.9|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWRVTyp.Typ...
+2023-02-28 14:04:04|  36.0|  0.1|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWSymObjekt.Objekt...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWSymObjekt.Objekt...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_Baum2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumRVTyp.BN_BaumRV...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_PktEleBaumObjekt.BN_PktEleBaum...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_Baum2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumRVTyp.Typ...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumRVVorschrift.Vorschrift...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumRVTyp.Typ...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumRVVorschrift.Vorschrift...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_LinEleDivObjObjekt.BN_LinEleDivObj...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_DivObjSymObjekt.BN_DivObjSym...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_FlEleDivObjObjekt.BN_FlEleDivObj...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_DivObjPosObjekt.BN_DivObjPos...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_PktEleDivObjObjekt.BN_PktEleDivObj...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_FlEleDivObjObjekt.Objekt...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_FlEleDivObjObjekt.Objekt...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZ2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZRVTyp.BN_GFZRV...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZ2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZPosObjekt.BN_GFZPos...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:04|  36.0|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZSymObjekt.BN_GFZSym...
+2023-02-28 14:04:04|  36.2|  0.2|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZRVTyp.Typ...
+2023-02-28 14:04:04|  36.2|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZRVVorschrift.Vorschrift...
+2023-02-28 14:04:04|  36.2|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZRVTyp.Typ...
+2023-02-28 14:04:04|  36.2|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZRVVorschrift.Vorschrift...
+2023-02-28 14:04:04|  36.4|  0.2|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:04|  36.4|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GL2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:04|  36.4|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLPosObjekt.BN_GLPos...
+2023-02-28 14:04:04|  36.4|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLSymObjekt.BN_GLSym...
+2023-02-28 14:04:04|  36.4|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:04|  36.4|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GL2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:04|  36.4|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLRVTyp.BN_GLRV...
+2023-02-28 14:04:04|  36.5|  0.1|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLPosObjekt.Objekt...
+2023-02-28 14:04:04|  36.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLPosObjekt.Objekt...
+2023-02-28 14:04:04|  36.6|  0.1|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLRVTyp.Typ...
+2023-02-28 14:04:04|  36.6|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLRVVorschrift.Vorschrift...
+2023-02-28 14:04:04|  36.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLRVTyp.Typ...
+2023-02-28 14:04:04|  36.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLRVVorschrift.Vorschrift...
+2023-02-28 14:04:04|  36.6|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_LinEleDivObjObjekt.Objekt...
+2023-02-28 14:04:04|  36.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_LinEleDivObjObjekt.Objekt...
+2023-02-28 14:04:04|  36.7|  0.1|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_PktEleBaumObjekt.Objekt...
+2023-02-28 14:04:04|  36.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_PktEleBaumObjekt.Objekt...
+2023-02-28 14:04:04|  37.2|  0.5|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VGDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:04|  37.2|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VG2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:04|  37.2|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VGRVTyp.BN_VGRV...
+2023-02-28 14:04:04|  37.2|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VG2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:04|  37.2|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VGDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:04|  37.2|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VGPosObjekt.BN_VGPos...
+2023-02-28 14:04:04|  37.2|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VGSymObjekt.BN_VGSym...
+2023-02-28 14:04:04|  37.4|  0.2|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VGRVTyp.Typ...
+2023-02-28 14:04:04|  37.5|  0.1|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VGRVVorschrift.Vorschrift...
+2023-02-28 14:04:04|  37.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VGRVTyp.Typ...
+2023-02-28 14:04:04|  37.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VGRVVorschrift.Vorschrift...
+2023-02-28 14:04:05|  37.6|  0.1|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WADatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:05|  37.6|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WA2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:05|  37.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WASymObjekt.BN_WASym...
+2023-02-28 14:04:05|  37.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WADatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:05|  37.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WAPosObjekt.BN_WAPos...
+2023-02-28 14:04:05|  37.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WA2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:05|  37.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WARVTyp.BN_WARV...
+2023-02-28 14:04:05|  37.6|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WARVTyp.Typ...
+2023-02-28 14:04:05|  37.6|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WARVVorschrift.Vorschrift...
+2023-02-28 14:04:05|  37.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WARVTyp.Typ...
+2023-02-28 14:04:05|  37.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WARVVorschrift.Vorschrift...
+2023-02-28 14:04:05|  37.7|  0.1|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.DokumentZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneRVVorschrift.UE_UeberlagerungZoneRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GR_GewaesserraumRVVorschrift.GR_GewaesserraumRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldRVVorschrift.WF_FeststellungWaldRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.NH_NHSchutzRVVorschrift.NH_NHSchutzRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_WARVVorschrift.BN_WARV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypRVVorschrift.GN_ZonentypRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.HinweisWeitereDokumenteUrsprung.HinweisWeitereDokumente...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WE_WegRouteRVVorschrift.WE_WegRouteRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.VE_Vor_EinschraenkungRVVorschrift.VE_Vor_EinschraenkungRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_VGRVVorschrift.BN_VGRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieRVVorschrift.UE_AbstandslinieRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GW_GewaesserRVVorschrift.GW_GewaesserRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZRVVorschrift.BN_GFZRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumRVVorschrift.BN_BaumRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_BWRVVorschrift.BN_BWRV...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.DokumentZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.HinweisWeitereDokumente2Hinweis.HinweisWeitereDokumente2...
+2023-02-28 14:04:05|  37.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.BN_GLRVVorschrift.BN_GLRV...
+2023-02-28 14:04:05|  37.9|  0.2|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.GN_GrundzoneZonentypRef.ZonentypRef...
+2023-02-28 14:04:05|  37.9|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_GrundzonePosObjekt.GN_GrundzonePos...
+2023-02-28 14:04:05|  37.9|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_GrundzoneSymObjekt.GN_GrundzoneSym...
+2023-02-28 14:04:05|  37.9|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_GrundzoneZonentypRef.ZonentypRef...
+2023-02-28 14:04:05|  38.5|  0.6|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:05|  38.5|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.GN_Zonentyp2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:05|  38.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_GrundzoneZonentypRef.GN_Grundzone...
+2023-02-28 14:04:05|  38.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypRVTyp.GN_ZonentypRV...
+2023-02-28 14:04:05|  38.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_Zonentyp2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:05|  38.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:06|  39.8|  1.3|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypRVTyp.Typ...
+2023-02-28 14:04:06|  39.8|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypRVVorschrift.Vorschrift...
+2023-02-28 14:04:06|  39.8|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypRVTyp.Typ...
+2023-02-28 14:04:06|  39.8|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypRVVorschrift.Vorschrift...
+2023-02-28 14:04:06|  41.6|  1.8|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.HinweisWeitereDokumente2Hinweis.Hinweis...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.HinweisWeitereDokumenteUrsprung.Ursprung...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.HinweisWeitereDokumente2Hinweis.Hinweis...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.HinweisWeitereDokumenteUrsprung.Ursprung...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.UE_Abstandslinie2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieRVTyp.UE_AbstandslinieRV...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_LinienelementAbstandObjekt.UE_LinienelementAbstand...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_Abstandslinie2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandsliniePosObjekt.UE_AbstandsliniePos...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandsliniePosObjekt.Objekt...
+2023-02-28 14:04:06|  41.6|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandsliniePosObjekt.Objekt...
+2023-02-28 14:04:06|  41.7|  0.1|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieRVTyp.Typ...
+2023-02-28 14:04:06|  41.7|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieRVVorschrift.Vorschrift...
+2023-02-28 14:04:06|  41.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieRVTyp.Typ...
+2023-02-28 14:04:06|  41.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieRVVorschrift.Vorschrift...
+2023-02-28 14:04:07|  41.7|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.UE_FlaechenelementUeberlObjekt.Objekt...
+2023-02-28 14:04:07|  41.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_FlaechenelementUeberlObjekt.Objekt...
+2023-02-28 14:04:07|  41.8|  0.1|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.UE_LinienelementAbstandObjekt.Objekt...
+2023-02-28 14:04:07|  41.8|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_LinienelementAbstandObjekt.Objekt...
+2023-02-28 14:04:07|  42.5|  0.7|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:07|  42.5|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZone2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:07|  42.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_FlaechenelementUeberlObjekt.UE_FlaechenelementUeberl...
+2023-02-28 14:04:07|  42.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:07|  42.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungPosObjekt.UE_UeberlagerungPos...
+2023-02-28 14:04:07|  42.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneRVTyp.UE_UeberlagerungZoneRV...
+2023-02-28 14:04:07|  42.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZone2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:07|  42.5|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneRVTyp.Typ...
+2023-02-28 14:04:07|  42.5|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneRVVorschrift.Vorschrift...
+2023-02-28 14:04:07|  42.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneRVTyp.Typ...
+2023-02-28 14:04:07|  42.5|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneRVVorschrift.Vorschrift...
+2023-02-28 14:04:07|  42.7|  0.2|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWald2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldDatenverwaltungsstelle.Datenverwaltungsstelle...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WF_LinienelementWaldObjekt.WF_LinienelementWald...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldRVTyp.WF_FeststellungWaldRV...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWald2ZustaendigeStelle.ZustaendigeStelle...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldRVTyp.Typ...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldRVVorschrift.Vorschrift...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldRVVorschrift.Vorschrift...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldRVTyp.Typ...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate target of role DM16NplBE_BielNidau.Nutzungsplanung.WF_LinienelementWaldObjekt.Objekt...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WF_LinienelementWaldObjekt.Objekt...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|validate multiplicity of role DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldPosObjekt.WF_FeststellungWaldPos...
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|MULTI_READER(MULTI_READER): Done reading 20482 features from 1 readers
+2023-02-28 14:04:07|  42.7|  0.0|INFORM|Emptying factory pipeline
+2023-02-28 14:04:07|  42.7|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 20482 input feature(s), wrote 20482 output feature(s): 17391 matched merge filters, 17391 were routed to output, 3091 could not be routed.
+2023-02-28 14:04:07|  42.7|  0.0|STATS |Unexpected Input Remover Nuker (TeeFactory): Cloned 3091 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |XTF_TRANSFER_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 1 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |XTF_BASKETS_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 1 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |XTF_DELETEOBJECT_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |XTF_ERRORS_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWald_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWald_ch.ehi.fme.Main_1 Feature Counter -1 303 (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_WARV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 105 input feature(s) into 105 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_WARV_ch.ehi.fme.Main_1 Feature Counter -1 371 (TeeFactory): Cloned 105 input feature(s) into 105 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_Zonentyp_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_Zonentyp_ch.ehi.fme.Main_1 Feature Counter -1 344 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GW_LinienelementGew_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WE_LinienelementWeg_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WE_LinienelementWeg_ch.ehi.fme.Main_1 Feature Counter -1 307 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 4083 input feature(s) into 4083 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypRV_ch.ehi.fme.Main_1 Feature Counter -1 351 (TeeFactory): Cloned 4083 input feature(s) into 4083 output feature(s)
+2023-02-28 14:04:07|  42.7|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_VG_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 368 input feature(s) into 368 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.1|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_VG_ch.ehi.fme.Main_1 Feature Counter -1 359 (TeeFactory): Cloned 368 input feature(s) into 368 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GW_Gewaesser_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.VE_Vor_Einschraenkung_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GLRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 81 input feature(s) into 81 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GLRV_ch.ehi.fme.Main_1 Feature Counter -1 369 (TeeFactory): Cloned 81 input feature(s) into 81 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_Abstandslinie_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 23 input feature(s) into 23 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_Abstandslinie_ch.ehi.fme.Main_1 Feature Counter -1 285 (TeeFactory): Cloned 23 input feature(s) into 23 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 23 input feature(s) into 23 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieRV_ch.ehi.fme.Main_1 Feature Counter -1 320 (TeeFactory): Cloned 23 input feature(s) into 23 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.NH_LinienelementNHS_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.NH_LinienelementNHS_ch.ehi.fme.Main_1 Feature Counter -1 276 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GW_FlaechenelementGew_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WF_LinienelementWald_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 24 input feature(s) into 24 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WF_LinienelementWald_ch.ehi.fme.Main_1 Feature Counter -1 301 (TeeFactory): Cloned 24 input feature(s) into 24 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GL_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 81 input feature(s) into 81 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GL_ch.ehi.fme.Main_1 Feature Counter -1 357 (TeeFactory): Cloned 81 input feature(s) into 81 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_FlaechenelementUeberl_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 251 input feature(s) into 251 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_FlaechenelementUeberl_ch.ehi.fme.Main_1 Feature Counter -1 287 (TeeFactory): Cloned 251 input feature(s) into 251 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.NH_NHSchutz_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.NH_NHSchutz_ch.ehi.fme.Main_1 Feature Counter -1 298 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_BW_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 180 input feature(s) into 180 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_BW_ch.ehi.fme.Main_1 Feature Counter -1 353 (TeeFactory): Cloned 180 input feature(s) into 180 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.HinweisWeitereDokumente_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 3 input feature(s) into 3 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.HinweisWeitereDokumente_ch.ehi.fme.Main_1 Feature Counter -1 398 (TeeFactory): Cloned 3 input feature(s) into 3 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.NH_PunktelementNHS_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.NH_PunktelementNHS_ch.ehi.fme.Main_1 Feature Counter -1 296 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_Grundzone_ZPP_UeO_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 255 input feature(s) into 510 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_Grundzone_ZPP_UeO_ch.ehi.fme.Main_1_0_1sk3PiG4sMA= Feature Counter -1 211 (TeeFactory): Cloned 255 input feature(s) into 255 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_Grundzone_ZPP_UeO_ch.ehi.fme.Main_1_1_bTMsWYAvzqA= Feature Counter -1 379 (TeeFactory): Cloned 255 input feature(s) into 255 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_WA_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 105 input feature(s) into 105 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_WA_ch.ehi.fme.Main_1 Feature Counter -1 361 (TeeFactory): Cloned 105 input feature(s) into 105 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WE_FlaechenelementWeg_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WE_FlaechenelementWeg_ch.ehi.fme.Main_1 Feature Counter -1 278 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WE_WegRoute_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WE_WegRoute_ch.ehi.fme.Main_1 Feature Counter -1 309 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.NH_NHSchutzRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.NH_NHSchutzRV_ch.ehi.fme.Main_1 Feature Counter -1 300 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_Baum_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_Baum_ch.ehi.fme.Main_1 Feature Counter -1 314 (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GR_Gewaesserraum_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GR_Gewaesserraum_ch.ehi.fme.Main_1 Feature Counter -1 293 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.Dokument_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 282 input feature(s) into 282 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.Dokument_ch.ehi.fme.Main_1 Feature Counter -1 378 (TeeFactory): Cloned 282 input feature(s) into 282 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GR_Gewaesserraumflaeche_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GR_Gewaesserraumflaeche_ch.ehi.fme.Main_1 Feature Counter -1 292 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumRV_ch.ehi.fme.Main_1 Feature Counter -1 316 (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.VE_FlaechenelementEinschr_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.VE_Vor_EinschraenkungRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GR_GewaesserraumRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GR_GewaesserraumRV_ch.ehi.fme.Main_1 Feature Counter -1 295 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldRV_ch.ehi.fme.Main_1 Feature Counter -1 305 (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_LinienelementAbstand_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 2294 input feature(s) into 2294 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_LinienelementAbstand_ch.ehi.fme.Main_1 Feature Counter -1 272 (TeeFactory): Cloned 2294 input feature(s) into 2294 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZ_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 323 input feature(s) into 323 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZ_ch.ehi.fme.Main_1 Feature Counter -1 355 (TeeFactory): Cloned 323 input feature(s) into 323 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_BWRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 180 input feature(s) into 180 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_BWRV_ch.ehi.fme.Main_1 Feature Counter -1 367 (TeeFactory): Cloned 180 input feature(s) into 180 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GR_Gewaesserraumlinie_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GR_Gewaesserraumlinie_ch.ehi.fme.Main_1 Feature Counter -1 263 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WE_WegRouteRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WE_WegRouteRV_ch.ehi.fme.Main_1 Feature Counter -1 311 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_VGRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 369 input feature(s) into 369 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_VGRV_ch.ehi.fme.Main_1 Feature Counter -1 370 (TeeFactory): Cloned 369 input feature(s) into 369 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_Grundzone_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_Grundzone_ch.ehi.fme.Main_1 Feature Counter -1 342 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_PktEleBaum_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 3048 input feature(s) into 3048 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_PktEleBaum_ch.ehi.fme.Main_1 Feature Counter -1 312 (TeeFactory): Cloned 3048 input feature(s) into 3048 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GW_GewaesserRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 335 input feature(s) into 335 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneRV_ch.ehi.fme.Main_1 Feature Counter -1 318 (TeeFactory): Cloned 335 input feature(s) into 335 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZone_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 141 input feature(s) into 141 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZone_ch.ehi.fme.Main_1 Feature Counter -1 286 (TeeFactory): Cloned 141 input feature(s) into 141 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZRV_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 323 input feature(s) into 323 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZRV_ch.ehi.fme.Main_1 Feature Counter -1 368 (TeeFactory): Cloned 323 input feature(s) into 323 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.NH_FlaechenelementNHS_ch.ehi.fme.Main_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.NH_FlaechenelementNHS_ch.ehi.fme.Main_1 Feature Counter -1 274 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_21_OUTPUT Feature Counter -1 317 (TeeFactory): Cloned 141 input feature(s) into 141 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_22_OUTPUT Feature Counter -1 319 (TeeFactory): Cloned 335 input feature(s) into 335 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_18_OUTPUT Feature Counter -1 247 (TeeFactory): Cloned 3048 input feature(s) into 3048 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer_5 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer_5 OUTPUT Splitter (TeeFactory): Cloned 2254 input feature(s) into 4508 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer_5_OUTPUT_0_F741A912AG8= Feature Counter -1 343 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer_5_OUTPUT_1_fTHvjYZ7p+4= Feature Counter -1 347 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_17_OUTPUT Feature Counter -1 327 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeManager_4_OUTPUT Feature Counter -1 363 (TeeFactory): Cloned 323 input feature(s) into 323 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_15_OUTPUT Feature Counter -1 321 (TeeFactory): Cloned 2294 input feature(s) into 2294 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_13_OUTPUT Feature Counter -1 329 (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_7_OUTPUT Feature Counter -1 333 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_20_OUTPUT Feature Counter -1 325 (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_5_OUTPUT Feature Counter -1 257 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer_3 (TeeFactory): Cloned 282 input feature(s) into 282 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer_3_OUTPUT Feature Counter -1 265 (TeeFactory): Cloned 282 input feature(s) into 282 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_6_OUTPUT Feature Counter -1 332 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_19_OUTPUT Feature Counter -1 324 (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_10_OUTPUT Feature Counter -1 331 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_16_OUTPUT Feature Counter -1 326 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeManager_7_OUTPUT Feature Counter -1 366 (TeeFactory): Cloned 105 input feature(s) into 105 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeFilter (TeeFactory): Cloned 255 input feature(s) into 255 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeFilter_UEO Feature Counter -1 223 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeFilter_ZPP Feature Counter -1 214 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeFilter_SBV Feature Counter -1 215 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeFilter_USP Feature Counter -1 216 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeFilter_<lt>EMPTY<gt> Feature Counter -1 2147877074 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeFilter_<lt>MISSING<gt> Feature Counter -1 2147942610 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeFilter_<lt>NULL<gt> Feature Counter -1 2148008146 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeFilter_<lt>UNFILTERED<gt> Feature Counter -1 2148073682 (TeeFactory): Cloned 255 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeKeeper_2_OUTPUT Feature Counter -1 224 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_OUTPUT Feature Counter -1 221 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeManager_9_OUTPUT Feature Counter -1 380 (TeeFactory): Cloned 255 input feature(s) into 255 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |Tester_3 (TestFactory): Tested 3 input feature(s) -- 0 feature(s) passed and 3 feature(s) failed
+2023-02-28 14:04:07|  42.8|  0.0|STATS |Tester_3_PASSED Feature Counter -1 400 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |Tester_3_FAILED Feature Counter -1 2147680653 (TeeFactory): Cloned 3 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_26_OUTPUT Feature Counter -1 402 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeManager_3_OUTPUT Feature Counter -1 362 (TeeFactory): Cloned 180 input feature(s) into 180 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_9_OUTPUT Feature Counter -1 330 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_3_OUTPUT Feature Counter -1 289 (TeeFactory): Cloned 251 input feature(s) into 251 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeManager_5_OUTPUT Feature Counter -1 364 (TeeFactory): Cloned 81 input feature(s) into 81 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_11_OUTPUT Feature Counter -1 258 (TeeFactory): Cloned 24 input feature(s) into 24 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_8_OUTPUT Feature Counter -1 261 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_24_OUTPUT Feature Counter -1 323 (TeeFactory): Cloned 23 input feature(s) into 23 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_23_OUTPUT Feature Counter -1 322 (TeeFactory): Cloned 23 input feature(s) into 23 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeManager_6_OUTPUT Feature Counter -1 365 (TeeFactory): Cloned 368 input feature(s) into 368 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |AttributeCreator_14_OUTPUT Feature Counter -1 248 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer (TeeFactory): Cloned 5617 input feature(s) into 5617 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer_OUTPUT Feature Counter -1 335 (TeeFactory): Cloned 5617 input feature(s) into 5617 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer_6 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer_6 OUTPUT Splitter (TeeFactory): Cloned 2254 input feature(s) into 4508 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer_6_OUTPUT_0_FFNuwKqDovM= Feature Counter -1 280 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |BulkAttributeRenamer_6_OUTPUT_1_lIcRdsH1p34= Feature Counter -1 345 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:07|  42.8|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger -1 242 fo 0 MERGED  0  e1ed392c6899ad81586ed196de7d1194ffedbc1a.ffsupdating'
+2023-02-28 14:04:07|  42.8|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager -1 279 fo 0 OUTPUT  0  74805bdf7371bd64fa088c4389d9bc5289ed195f.ffsupdating'
+2023-02-28 14:04:07|  42.9|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:08|  43.4|  0.5|INFORM|... Last line repeated 3 times ...
+2023-02-28 14:04:08|  43.4|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger -1 242 fo 2 USED_SUPPLIER  0  ffed5acd8c6d21e6197ba9bea0e4ffe2edfdbf86.ffsupdating'
+2023-02-28 14:04:08|  43.5|  0.1|STATS |FeatureMerger (ReferenceFactory): Total Results: 2254 Complete Feature(s), 0 Incomplete Feature(s), 2254 Referenced Feature(s), 0 Unreferenced Feature(s), 0 Referencer Feature(s) (NO REFERENCES), 0 Referencee Feature(s) (NO Referencee fields defined), and 0 Duplicate Referencee Feature(s)
+2023-02-28 14:04:08|  43.5|  0.0|STATS |FeatureMerger_MERGED Feature Counter -1 281 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:08|  43.5|  0.0|STATS |FeatureMerger_UNMERGED_REQUESTOR Feature Counter -1 2147680498 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:08|  43.5|  0.0|STATS |FeatureMerger_USED_SUPPLIER Feature Counter -1 2147746034 (TeeFactory): Cloned 2254 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:08|  43.5|  0.0|STATS |FeatureMerger_UNUSED_SUPPLIER Feature Counter -1 2147811570 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:08|  43.5|  0.0|STATS |FeatureMerger_<REJECTED> Feature Counter -1 2147877106 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:08|  43.5|  0.0|STATS |FeatureMerger_<Rejected> (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:08|  43.5|  0.0|STATS |AttributeManager_OUTPUT Feature Counter -1 349 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:08|  43.5|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_5 -1 339 fo 0 MERGED  0  d641028b653a3f68a408b3f28a431a3867ce56fe.ffsupdating'
+2023-02-28 14:04:08|  43.5|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_2 -1 283 fo 0 OUTPUT  0  84bfa33ed3932aa8daaa7770cbfe7462fc7b0efc.ffsupdating'
+2023-02-28 14:04:08|  43.6|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:08|  44.0|  0.4|INFORM|... Last line repeated 3 times ...
+2023-02-28 14:04:08|  44.0|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_5 -1 339 fo 2 USED_SUPPLIER  0  d35718051fdb7be280b6c9a454536a1e02717269.ffsupdating'
+2023-02-28 14:04:08|  44.1|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:09|  44.1|  0.0|STATS |FeatureMerger_5 (ReferenceFactory): Total Results: 2254 Complete Feature(s), 0 Incomplete Feature(s), 2254 Referenced Feature(s), 0 Unreferenced Feature(s), 0 Referencer Feature(s) (NO REFERENCES), 0 Referencee Feature(s) (NO Referencee fields defined), and 0 Duplicate Referencee Feature(s)
+2023-02-28 14:04:09|  44.1|  0.0|STATS |FeatureMerger_5_MERGED Feature Counter -1 284 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:09|  44.1|  0.0|STATS |FeatureMerger_5_UNMERGED_REQUESTOR Feature Counter -1 2147680595 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:09|  44.1|  0.0|STATS |FeatureMerger_5_USED_SUPPLIER Feature Counter -1 2147746131 (TeeFactory): Cloned 2254 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:09|  44.1|  0.0|STATS |FeatureMerger_5_UNUSED_SUPPLIER Feature Counter -1 2147811667 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:09|  44.1|  0.0|STATS |FeatureMerger_5_<REJECTED> Feature Counter -1 2147877203 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:09|  44.1|  0.0|STATS |FeatureMerger_5_<Rejected> (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:09|  44.1|  0.0|STATS |AttributeManager_2_OUTPUT Feature Counter -1 350 (TeeFactory): Cloned 2254 input feature(s) into 2254 output feature(s)
+2023-02-28 14:04:09|  44.1|  0.0|STATS |BulkAttributeRenamer_4 (TeeFactory): Cloned 5501 input feature(s) into 5501 output feature(s)
+2023-02-28 14:04:09|  44.1|  0.0|STATS |BulkAttributeRenamer_4_OUTPUT Feature Counter -1 255 (TeeFactory): Cloned 5501 input feature(s) into 5501 output feature(s)
+2023-02-28 14:04:09|  44.1|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 0 MERGED  0  8ec7d45e5c7a840096a789c77b55d299c1172cbc.ffsupdating'
+2023-02-28 14:04:09|  44.3|  0.2|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:09|  44.7|  0.4|INFORM|... Last line repeated 3 times ...
+2023-02-28 14:04:09|  44.7|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 2 USED_SUPPLIER  0  6bbbd5b10f660a34d91b3e6b17f67d39638e3306.ffsupdating'
+2023-02-28 14:04:09|  44.7|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 3 UNUSED_SUPPLIER  0  d25caf0c629e2cc1c044f1662016e6d2881582a7.ffsupdating'
+2023-02-28 14:04:09|  44.7|  0.0|STATS |FeatureMerger_3 (ReferenceFactory): Total Results: 5501 Complete Feature(s), 0 Incomplete Feature(s), 276 Referenced Feature(s), 6 Unreferenced Feature(s), 0 Referencer Feature(s) (NO REFERENCES), 0 Referencee Feature(s) (NO Referencee fields defined), and 0 Duplicate Referencee Feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |FeatureMerger_3_MERGED Feature Counter -1 252 (TeeFactory): Cloned 5501 input feature(s) into 5501 output feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |FeatureMerger_3_UNMERGED_REQUESTOR Feature Counter -1 2147680500 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |FeatureMerger_3_USED_SUPPLIER Feature Counter -1 2147746036 (TeeFactory): Cloned 276 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |FeatureMerger_3_UNUSED_SUPPLIER Feature Counter -1 2147811572 (TeeFactory): Cloned 6 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |FeatureMerger_3_<REJECTED> Feature Counter -1 2147877108 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |FeatureMerger_3_<Rejected> (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |AttributeCreator_12 OUTPUT Splitter (TeeFactory): Cloned 1 input feature(s) into 2 output feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |AttributeCreator_12_OUTPUT_0_P5T580iZ/1A= Feature Counter -1 328 (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |AttributeCreator_12_OUTPUT_1_1Ai/UJDY9Y0= Feature Counter -1 392 (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |BulkAttributeRenamer_2 (TeeFactory): Cloned 166 input feature(s) into 166 output feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |BulkAttributeRenamer_2_OUTPUT Feature Counter -1 253 (TeeFactory): Cloned 166 input feature(s) into 166 output feature(s)
+2023-02-28 14:04:09|  44.7|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 0 MERGED  0  3a532484911c7d2e8a61bbb9c5fe32afb8f958a0.ffsupdating'
+2023-02-28 14:04:09|  44.8|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:10|  45.3|  0.5|INFORM|... Last line repeated 4 times ...
+2023-02-28 14:04:10|  45.3|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 2 USED_SUPPLIER  0  a2d82464de203a29b4d1d8c968cc02015b74a2ef.ffsupdating'
+2023-02-28 14:04:10|  45.3|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 3 UNUSED_SUPPLIER  0  20f120285259065af762a9fb066b596e1123c5db.ffsupdating'
+2023-02-28 14:04:10|  45.4|  0.1|STATS |FeatureMerger_4 (ReferenceFactory): Total Results: 5617 Complete Feature(s), 0 Incomplete Feature(s), 160 Referenced Feature(s), 6 Unreferenced Feature(s), 0 Referencer Feature(s) (NO REFERENCES), 0 Referencee Feature(s) (NO Referencee fields defined), and 0 Duplicate Referencee Feature(s)
+2023-02-28 14:04:10|  45.4|  0.0|STATS |FeatureMerger_4_MERGED Feature Counter -1 336 (TeeFactory): Cloned 5617 input feature(s) into 5617 output feature(s)
+2023-02-28 14:04:10|  45.4|  0.0|STATS |FeatureMerger_4_UNMERGED_REQUESTOR Feature Counter -1 2147680590 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:10|  45.4|  0.0|STATS |FeatureMerger_4_USED_SUPPLIER Feature Counter -1 2147746126 (TeeFactory): Cloned 160 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:10|  45.4|  0.0|STATS |FeatureMerger_4_UNUSED_SUPPLIER Feature Counter -1 2147811662 (TeeFactory): Cloned 6 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:10|  45.4|  0.0|STATS |FeatureMerger_4_<REJECTED> Feature Counter -1 2147877198 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:10|  45.4|  0.0|STATS |FeatureMerger_4_<Rejected> (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:10|  45.4|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 0 MERGED  0  99f5be45f49f5566ad6bc452c696fe20aa485674.ffsupdating'
+2023-02-28 14:04:10|  45.4|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_8 -1 372 fo 0 OUTPUT  0  33daf8b39f6bc9b63daa9fd731b56feb0234ebf2.ffsupdating'
+2023-02-28 14:04:10|  45.4|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter -1 70 fo 1 Festlegung  0  c4450531c9b05d051c974113c510169332f4949b.ffsupdating'
+2023-02-28 14:04:10|  45.4|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_ListSearcher -1 63 fo 0 FOUND  0  83665ea2e0d5bdd8831b7b10db83d3661919ef86.ffsupdating'
+2023-02-28 14:04:10|  45.4|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter_2 -1 213 fo 1 _lt_lt_gt_UNFILTERED_lt_gt_gt_  0  b18adc0890a88e40e1804e13702e49991b42eb86.ffsupdating'
+2023-02-28 14:04:10|  45.4|  0.0|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:11|  46.6|  1.2|INFORM|... Last line repeated 5 times ...
+2023-02-28 14:04:11|  46.6|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter_2 -1 213 fo 0 SV-Perimeter  0  37dbff912fcc1fcfcc679c2b1a75bdb36c403125.ffsupdating'
+2023-02-28 14:04:11|  46.7|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeRemover -1 385 fo 0 OUTPUT  0  8c11af422ab482d26676833d014c4420d2d5d22b.ffsupdating'
+2023-02-28 14:04:11|  46.8|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:15|  50.4|  3.6|INFORM|... Last line repeated 16 times ...
+2023-02-28 14:04:15|  50.4|  0.0|INFORM|FeatureMerger_2 (ReferenceFactory): Processing requestors: Completed 46.5% of intermediate processing
+2023-02-28 14:04:15|  50.4|  0.0|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:20|  55.3|  4.9|INFORM|... Last line repeated 31 times ...
+2023-02-28 14:04:20|  55.3|  0.0|INFORM|FeatureMerger_2 (ReferenceFactory): Processing requestors: Completed 99.26% of intermediate processing
+2023-02-28 14:04:20|  55.3|  0.0|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:20|  55.4|  0.1|INFORM|FeatureMerger_2 (ReferenceFactory): Processing requestors: Completed 100% of intermediate processing
+2023-02-28 14:04:20|  55.4|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 2 USED_SUPPLIER  0  021c115632dd1db89b18c3a70ad9b568f15422f6.ffsupdating'
+2023-02-28 14:04:20|  55.7|  0.3|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:20|  55.7|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 3 UNUSED_SUPPLIER  0  df1af897fa62e6d46b34bb2e031f157091d940ca.ffsupdating'
+2023-02-28 14:04:20|  55.7|  0.0|STATS |FeatureMerger_2 (ReferenceFactory): Total Results: 11182 Complete Feature(s), 0 Incomplete Feature(s), 5496 Referenced Feature(s), 5 Unreferenced Feature(s), 0 Referencer Feature(s) (NO REFERENCES), 0 Referencee Feature(s) (NO Referencee fields defined), and 0 Duplicate Referencee Feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |FeatureMerger_2_MERGED Feature Counter -1 373 (TeeFactory): Cloned 11182 input feature(s) into 11182 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |FeatureMerger_2_UNMERGED_REQUESTOR Feature Counter -1 375 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |FeatureMerger_2_USED_SUPPLIER Feature Counter -1 2147746035 (TeeFactory): Cloned 5496 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |FeatureMerger_2_UNUSED_SUPPLIER Feature Counter -1 2147811571 (TeeFactory): Cloned 5 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |FeatureMerger_2_<REJECTED> Feature Counter -1 2147877107 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |FeatureMerger_2_<Rejected> (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |AttributeManager_8 OUTPUT Splitter (TeeFactory): Cloned 11182 input feature(s) into 22364 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |AttributeManager_8_OUTPUT_0_gWCXTwIsuS8= Feature Counter -1 376 (TeeFactory): Cloned 11182 input feature(s) into 11182 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |AttributeManager_8_OUTPUT_1_Et4q4fyief4= Feature Counter -1 250 (TeeFactory): Cloned 11182 input feature(s) into 11182 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |TestFilter (TeeFactory): Cloned 11182 input feature(s) into 11182 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |TestFilter_Condition_1 (TestFactory): Tested 11182 input feature(s) -- 0 feature(s) passed and 11182 feature(s) failed
+2023-02-28 14:04:20|  55.7|  0.0|STATS |TestFilter_Festlegung (TeeFactory): Cloned 11182 input feature(s) into 11182 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |TestFilter_Hinweis Feature Counter -1 2147614790 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |TestFilter_Festlegung Feature Counter -1 73 (TeeFactory): Cloned 11182 input feature(s) into 11182 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |ListSearcher (TeeFactory): Cloned 11182 input feature(s) into 11182 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |ListSearcher__Tester (TestFactory): Tested 11182 input feature(s) -- 0 feature(s) passed and 11182 feature(s) failed
+2023-02-28 14:04:20|  55.7|  0.0|STATS |ListSearcher__Tester2 (TestFactory): Tested 11182 input feature(s) -- 11182 feature(s) passed and 0 feature(s) failed
+2023-02-28 14:04:20|  55.7|  0.0|STATS |ListSearcher_FOUND Feature Counter -1 2147614783 (TeeFactory): Cloned 11182 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |ListSearcher_NOT_FOUND Feature Counter -1 99 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |AttributeKeeper_OUTPUT Feature Counter -1 101 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |DuplicateFilter_UNIQUE Feature Counter -1 102 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |DuplicateFilter_DUPLICATE Feature Counter -1 2147680332 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |AttributeCreator_2_OUTPUT Feature Counter -1 219 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |TestFilter_2 (TeeFactory): Cloned 11182 input feature(s) into 11182 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |TestFilter_2_Condition_1 (TestFactory): Tested 11182 input feature(s) -- 131 feature(s) passed and 11051 feature(s) failed
+2023-02-28 14:04:20|  55.7|  0.0|STATS |TestFilter_2_<lt>UNFILTERED<gt> (TeeFactory): Cloned 11051 input feature(s) into 11051 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |TestFilter_2_SV-Perimeter Feature Counter -1 386 (TeeFactory): Cloned 131 input feature(s) into 131 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |TestFilter_2_<lt>UNFILTERED<gt> Feature Counter -1 2147680469 (TeeFactory): Cloned 11051 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |AttributeRemover (TeeFactory): Cloned 131 input feature(s) into 131 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|STATS |AttributeRemover_OUTPUT Feature Counter -1 387 (TeeFactory): Cloned 131 input feature(s) into 131 output feature(s)
+2023-02-28 14:04:20|  55.7|  0.0|INFORM|AreaOnAreaOverlayer (OverlayFactory): Overlaying with an automatic tolerance of 5.179499286000009e-9
+2023-02-28 14:04:20|  55.8|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:21|  56.0|  0.2|INFORM|... Last line repeated 4 times ...
+2023-02-28 14:04:21|  56.0|  0.0|INFORM|AreaOnAreaOverlayer (OverlayFactory): Sorting 707 features...
+2023-02-28 14:04:21|  56.0|  0.0|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:21|  56.0|  0.0|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:21|  56.0|  0.0|INFORM|AreaOnAreaOverlayer (OverlayFactory): Constructing donuts from 707 features...
+2023-02-28 14:04:21|  56.1|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:21|  56.2|  0.1|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:21|  56.2|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AreaOnAreaOverlayer -1 226 fo 0 AREA  0  c40941c799191efd25f01dd8633aca1043cd5b7b.ffsupdating'
+2023-02-28 14:04:21|  56.2|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AreaCalculator -1 234 fo 0 OUTPUT  0  8d216350a48eac42c7c288ffae4cbf166aed4b6a.ffsupdating'
+2023-02-28 14:04:21|  56.3|  0.1|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester -1 229 fo 0 PASSED  0  cfa41ab6432b61a2d1eaba6fdee806c7e3c6825e.ffsupdating'
+2023-02-28 14:04:21|  56.3|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_4 -1 388 fo 0 OUTPUT  0  e5d85e4be0aea4c08fbcaad3d4987db2953ed2bd.ffsupdating'
+2023-02-28 14:04:21|  56.3|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-inspectors-OCMtQV\inspector.ffs'
+2023-02-28 14:04:21|  56.3|  0.0|STATS |Storing feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester -1 229 fo 1 FAILED  0  71a80b948eb1f2260b4f29fd5c6d7f44f120d9cc.ffsupdating'
+2023-02-28 14:04:21|  56.5|  0.2|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:21|  56.7|  0.2|STATS |AreaOnAreaOverlayer (OverlayFactory): Input Summary:  386 area(s), 0 point(s), and 0 line(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |AreaOnAreaOverlayer (OverlayFactory): Output Summary: 706 area(s), 0 point(s), and 0 line(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |AreaOnAreaOverlayer_AREA Feature Counter -1 230 (TeeFactory): Cloned 706 input feature(s) into 706 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |AreaOnAreaOverlayer_REMNANTS Feature Counter -1 2147680482 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |AreaOnAreaOverlayer_<REJECTED> Feature Counter -1 2147746018 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |AreaOnAreaOverlayer_<Rejected> (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |AreaCalculator_AreaCalculatorInput (TeeFactory): Cloned 706 input feature(s) into 706 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |AreaCalculator_AreaCalculator (TeeFactory): Cloned 706 input feature(s) into 706 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |AreaCalculator_Rejector (TestFactory): Tested 706 input feature(s) -- 0 feature(s) passed and 706 feature(s) failed
+2023-02-28 14:04:21|  56.7|  0.0|STATS |AreaCalculator_OUTPUT Feature Counter -1 382 (TeeFactory): Cloned 706 input feature(s) into 706 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Tester (TestFactory): Tested 706 input feature(s) -- 103 feature(s) passed and 603 feature(s) failed
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Tester_PASSED Feature Counter -1 389 (TeeFactory): Cloned 103 input feature(s) into 103 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Tester_FAILED Feature Counter -1 2147680485 (TeeFactory): Cloned 603 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |AttributeCreator_4_OUTPUT Feature Counter -1 390 (TeeFactory): Cloned 103 input feature(s) into 103 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Tester_2 (TestFactory): Tested 1 input feature(s) -- 0 feature(s) passed and 1 feature(s) failed
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Tester_2_PASSED Feature Counter -1 394 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Tester_2_FAILED Feature Counter -1 2147680647 (TeeFactory): Cloned 1 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |AttributeCreator_25_OUTPUT Feature Counter -1 396 (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 23 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 36 -1  0  5b09f248603d0d70c5d8727bc20ddc6ecc109c02.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 36 -1  0  5b09f248603d0d70c5d8727bc20ddc6ecc109c02.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 36 -1  0  5b09f248603d0d70c5d8727bc20ddc6ecc109c02.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 6 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 3 UNUSED_SUPPLIER  0  20f120285259065af762a9fb066b596e1123c5db.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 3 UNUSED_SUPPLIER  0  20f120285259065af762a9fb066b596e1123c5db.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 3 UNUSED_SUPPLIER  0  20f120285259065af762a9fb066b596e1123c5db.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 282 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 66 -1  0  b899595a7ba432c376f466c15c08d567d5b4eed4.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 66 -1  0  b899595a7ba432c376f466c15c08d567d5b4eed4.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 66 -1  0  b899595a7ba432c376f466c15c08d567d5b4eed4.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 1 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_XTF_TRANSFER -1 5 -1  0  7e469954f99a6c2ecfbb792dafcb29f43ff0da1e.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_XTF_TRANSFER -1 5 -1  0  7e469954f99a6c2ecfbb792dafcb29f43ff0da1e.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_XTF_TRANSFER -1 5 -1  0  7e469954f99a6c2ecfbb792dafcb29f43ff0da1e.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 3 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester_3 -1 397 fo 1 FAILED  0  bff6d2ea14aab20dbc5e576a5d45b0d2cfa7d3d5.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester_3 -1 397 fo 1 FAILED  0  bff6d2ea14aab20dbc5e576a5d45b0d2cfa7d3d5.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester_3 -1 397 fo 1 FAILED  0  bff6d2ea14aab20dbc5e576a5d45b0d2cfa7d3d5.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 4083 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 21 -1  0  fa79cb82ccc89e14dfb4aa7d864ab23d80559b1a.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 21 -1  0  fa79cb82ccc89e14dfb4aa7d864ab23d80559b1a.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 21 -1  0  fa79cb82ccc89e14dfb4aa7d864ab23d80559b1a.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 1 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_XTF_BASKETS -1 6 -1  0  7a697cf6e1456f9ccc07b40b68aab2bd83157e07.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_XTF_BASKETS -1 6 -1  0  7a697cf6e1456f9ccc07b40b68aab2bd83157e07.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_XTF_BASKETS -1 6 -1  0  7a697cf6e1456f9ccc07b40b68aab2bd83157e07.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 5496 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 2 USED_SUPPLIER  0  021c115632dd1db89b18c3a70ad9b568f15422f6.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 2 USED_SUPPLIER  0  021c115632dd1db89b18c3a70ad9b568f15422f6.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 2 USED_SUPPLIER  0  021c115632dd1db89b18c3a70ad9b568f15422f6.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 2254 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_5 -1 339 fo 0 MERGED  0  d641028b653a3f68a408b3f28a431a3867ce56fe.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_5 -1 339 fo 0 MERGED  0  d641028b653a3f68a408b3f28a431a3867ce56fe.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_5 -1 339 fo 0 MERGED  0  d641028b653a3f68a408b3f28a431a3867ce56fe.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 3048 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 86 -1  0  9da1736868abfbbbedb6d1ae33991461a38aa57e.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 86 -1  0  9da1736868abfbbbedb6d1ae33991461a38aa57e.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 86 -1  0  9da1736868abfbbbedb6d1ae33991461a38aa57e.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 23 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 35 -1  0  899e71c238a2b679286a8f15fdf5ded922a612c6.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 35 -1  0  899e71c238a2b679286a8f15fdf5ded922a612c6.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 35 -1  0  899e71c238a2b679286a8f15fdf5ded922a612c6.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 2254 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_6 -1 338 fo 0 OUTPUT  0  99f9a1d476adb5e0d12230c128c9598779f0ab69.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_6 -1 338 fo 0 OUTPUT  0  99f9a1d476adb5e0d12230c128c9598779f0ab69.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_6 -1 338 fo 0 OUTPUT  0  99f9a1d476adb5e0d12230c128c9598779f0ab69.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 1 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester_2 -1 391 fo 1 FAILED  0  65b3c4712cb77833fe2fb69b95ba7e943653db40.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester_2 -1 391 fo 1 FAILED  0  65b3c4712cb77833fe2fb69b95ba7e943653db40.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester_2 -1 391 fo 1 FAILED  0  65b3c4712cb77833fe2fb69b95ba7e943653db40.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 282 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_3 -1 264 fo 0 OUTPUT  0  380894aa7d23ab9e822abf0633d9321931fdae7d.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_3 -1 264 fo 0 OUTPUT  0  380894aa7d23ab9e822abf0633d9321931fdae7d.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_3 -1 264 fo 0 OUTPUT  0  380894aa7d23ab9e822abf0633d9321931fdae7d.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 180 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 81 -1  0  6a475c127b721ddc56828b123c052fd0d629f8ff.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 81 -1  0  6a475c127b721ddc56828b123c052fd0d629f8ff.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 81 -1  0  6a475c127b721ddc56828b123c052fd0d629f8ff.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 3 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 53 -1  0  29e1a678950fa4f6fbd5c01d8caf604707dcfbb4.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 53 -1  0  29e1a678950fa4f6fbd5c01d8caf604707dcfbb4.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 53 -1  0  29e1a678950fa4f6fbd5c01d8caf604707dcfbb4.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 2254 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 13 -1  0  e365e6f5fd254ba2e48b2819869994a8b1fc5f22.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 13 -1  0  e365e6f5fd254ba2e48b2819869994a8b1fc5f22.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 13 -1  0  e365e6f5fd254ba2e48b2819869994a8b1fc5f22.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 5501 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_4 -1 246 fo 0 OUTPUT  0  e967b78efc327ea134f97485390b1f5a4f0b3b0b.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_4 -1 246 fo 0 OUTPUT  0  e967b78efc327ea134f97485390b1f5a4f0b3b0b.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_4 -1 246 fo 0 OUTPUT  0  e967b78efc327ea134f97485390b1f5a4f0b3b0b.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|STATS |Stored 81 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 40 -1  0  bfdbbec5cd07108c7a653eecd400c7755ea1565f.ffsupdating'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 40 -1  0  bfdbbec5cd07108c7a653eecd400c7755ea1565f.fsi'
+2023-02-28 14:04:21|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 40 -1  0  bfdbbec5cd07108c7a653eecd400c7755ea1565f.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|STATS |Stored 105 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_7 -1 360 fo 0 OUTPUT  0  d7a67ecab59e5a445f8abaa28d9afdcd09346efc.ffsupdating'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_7 -1 360 fo 0 OUTPUT  0  d7a67ecab59e5a445f8abaa28d9afdcd09346efc.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_7 -1 360 fo 0 OUTPUT  0  d7a67ecab59e5a445f8abaa28d9afdcd09346efc.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|STATS |Stored 255 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 55 -1  0  54f5ebb7159d40af94fbc87c7a1db100177a7fa0.ffsupdating'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 55 -1  0  54f5ebb7159d40af94fbc87c7a1db100177a7fa0.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 55 -1  0  54f5ebb7159d40af94fbc87c7a1db100177a7fa0.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|STATS |Stored 2254 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger -1 242 fo 0 MERGED  0  e1ed392c6899ad81586ed196de7d1194ffedbc1a.ffsupdating'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger -1 242 fo 0 MERGED  0  e1ed392c6899ad81586ed196de7d1194ffedbc1a.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger -1 242 fo 0 MERGED  0  e1ed392c6899ad81586ed196de7d1194ffedbc1a.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|STATS |Stored 23 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_24 -1 306 fo 0 OUTPUT  0  4eef708de169bb50d998a2b989046cf16f079cbe.ffsupdating'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_24 -1 306 fo 0 OUTPUT  0  4eef708de169bb50d998a2b989046cf16f079cbe.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_24 -1 306 fo 0 OUTPUT  0  4eef708de169bb50d998a2b989046cf16f079cbe.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|STATS |Stored 2254 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 85 -1  0  c7874861ed0324ca7e8b5f6f79e30519014bd3de.ffsupdating'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 85 -1  0  c7874861ed0324ca7e8b5f6f79e30519014bd3de.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 85 -1  0  c7874861ed0324ca7e8b5f6f79e30519014bd3de.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|STATS |Stored 2254 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager -1 279 fo 0 OUTPUT  0  74805bdf7371bd64fa088c4389d9bc5289ed195f.ffsupdating'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager -1 279 fo 0 OUTPUT  0  74805bdf7371bd64fa088c4389d9bc5289ed195f.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager -1 279 fo 0 OUTPUT  0  74805bdf7371bd64fa088c4389d9bc5289ed195f.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|STATS |Stored 2254 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_5 -1 341 fo 0 OUTPUT  0  a28c4b93c81f8612339b5a9ec3b5068424705dce.ffsupdating'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_5 -1 341 fo 0 OUTPUT  0  a28c4b93c81f8612339b5a9ec3b5068424705dce.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_5 -1 341 fo 0 OUTPUT  0  a28c4b93c81f8612339b5a9ec3b5068424705dce.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|STATS |Stored 5617 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer -1 260 fo 0 OUTPUT  0  709e55a1c7f85657b7f5dbe53f238ef4e872929e.ffsupdating'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer -1 260 fo 0 OUTPUT  0  709e55a1c7f85657b7f5dbe53f238ef4e872929e.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer -1 260 fo 0 OUTPUT  0  709e55a1c7f85657b7f5dbe53f238ef4e872929e.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|STATS |Stored 255 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeFilter -1 210 fo 7 _lt_lt_gt_UNFILTERED_lt_gt_gt_  0  f271470ce96089fbc07a2e3541a6719ed152c5e4.ffsupdating'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeFilter -1 210 fo 7 _lt_lt_gt_UNFILTERED_lt_gt_gt_  0  f271470ce96089fbc07a2e3541a6719ed152c5e4.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeFilter -1 210 fo 7 _lt_lt_gt_UNFILTERED_lt_gt_gt_  0  f271470ce96089fbc07a2e3541a6719ed152c5e4.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|STATS |Stored 706 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AreaOnAreaOverlayer -1 226 fo 0 AREA  0  c40941c799191efd25f01dd8633aca1043cd5b7b.ffsupdating'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AreaOnAreaOverlayer -1 226 fo 0 AREA  0  c40941c799191efd25f01dd8633aca1043cd5b7b.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AreaOnAreaOverlayer -1 226 fo 0 AREA  0  c40941c799191efd25f01dd8633aca1043cd5b7b.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|STATS |Stored 2254 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_2 -1 283 fo 0 OUTPUT  0  84bfa33ed3932aa8daaa7770cbfe7462fc7b0efc.ffsupdating'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_2 -1 283 fo 0 OUTPUT  0  84bfa33ed3932aa8daaa7770cbfe7462fc7b0efc.fsi'
+2023-02-28 14:04:22|  56.7|  0.0|INFORM|ResourceManager: Optimizing Memory Usage.  Please wait...
+2023-02-28 14:04:22|  56.8|  0.1|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_2 -1 283 fo 0 OUTPUT  0  84bfa33ed3932aa8daaa7770cbfe7462fc7b0efc.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 255 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_9 -1 374 fo 0 OUTPUT  0  d32a108b439e9a06fbe4573907268a99cc3c0e7e.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_9 -1 374 fo 0 OUTPUT  0  d32a108b439e9a06fbe4573907268a99cc3c0e7e.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_9 -1 374 fo 0 OUTPUT  0  d32a108b439e9a06fbe4573907268a99cc3c0e7e.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 141 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 89 -1  0  82b79e5211c8fc32e9a21ff00587ee4c30e0a6bd.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 89 -1  0  82b79e5211c8fc32e9a21ff00587ee4c30e0a6bd.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 89 -1  0  82b79e5211c8fc32e9a21ff00587ee4c30e0a6bd.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 141 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_21 -1 277 fo 0 OUTPUT  0  e7b227382df7c789b3927378acee1412ef3e3978.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_21 -1 277 fo 0 OUTPUT  0  e7b227382df7c789b3927378acee1412ef3e3978.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_21 -1 277 fo 0 OUTPUT  0  e7b227382df7c789b3927378acee1412ef3e3978.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 369 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 84 -1  0  2e2c1d34aa3cb8575b67d2ce350c457634974dd2.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 84 -1  0  2e2c1d34aa3cb8575b67d2ce350c457634974dd2.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 84 -1  0  2e2c1d34aa3cb8575b67d2ce350c457634974dd2.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 166 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_2 -1 254 fo 0 OUTPUT  0  63071e7385b70bd224f09d86785ffa53fe432d6d.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_2 -1 254 fo 0 OUTPUT  0  63071e7385b70bd224f09d86785ffa53fe432d6d.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_BulkAttributeRenamer_2 -1 254 fo 0 OUTPUT  0  63071e7385b70bd224f09d86785ffa53fe432d6d.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 335 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 88 -1  0  6689f87613d3f3e12169137a970e287f7d5a08b7.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 88 -1  0  6689f87613d3f3e12169137a970e287f7d5a08b7.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 88 -1  0  6689f87613d3f3e12169137a970e287f7d5a08b7.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 24 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_11 -1 275 fo 0 OUTPUT  0  4479649f5f7464b64137db8aad430657d31c112a.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_11 -1 275 fo 0 OUTPUT  0  4479649f5f7464b64137db8aad430657d31c112a.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_11 -1 275 fo 0 OUTPUT  0  4479649f5f7464b64137db8aad430657d31c112a.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 335 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_22 -1 262 fo 0 OUTPUT  0  a40b588fb0c1817cb22b598051b33489f5ccade2.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_22 -1 262 fo 0 OUTPUT  0  a40b588fb0c1817cb22b598051b33489f5ccade2.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_22 -1 262 fo 0 OUTPUT  0  a40b588fb0c1817cb22b598051b33489f5ccade2.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 105 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 56 -1  0  ee08fedde0cec75fb255d752123e8e26cd866a97.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 56 -1  0  ee08fedde0cec75fb255d752123e8e26cd866a97.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 56 -1  0  ee08fedde0cec75fb255d752123e8e26cd866a97.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 251 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 47 -1  0  cdf13572c1f703ead7359211bf0ddb439f721411.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 47 -1  0  cdf13572c1f703ead7359211bf0ddb439f721411.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 47 -1  0  cdf13572c1f703ead7359211bf0ddb439f721411.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 2254 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_5 -1 339 fo 2 USED_SUPPLIER  0  d35718051fdb7be280b6c9a454536a1e02717269.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_5 -1 339 fo 2 USED_SUPPLIER  0  d35718051fdb7be280b6c9a454536a1e02717269.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_5 -1 339 fo 2 USED_SUPPLIER  0  d35718051fdb7be280b6c9a454536a1e02717269.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 251 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_3 -1 271 fo 0 OUTPUT  0  95a571d320819ba9fa1cac8842231b62708822f6.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_3 -1 271 fo 0 OUTPUT  0  95a571d320819ba9fa1cac8842231b62708822f6.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_3 -1 271 fo 0 OUTPUT  0  95a571d320819ba9fa1cac8842231b62708822f6.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 23 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_23 -1 273 fo 0 OUTPUT  0  6c29deaeae6f6f22c29ee2b293d9e3f4f828204a.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_23 -1 273 fo 0 OUTPUT  0  6c29deaeae6f6f22c29ee2b293d9e3f4f828204a.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_23 -1 273 fo 0 OUTPUT  0  6c29deaeae6f6f22c29ee2b293d9e3f4f828204a.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 1 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_20 -1 315 fo 0 OUTPUT  0  7a6d5689db806db91c59050b8acb7a851edecd7e.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_20 -1 315 fo 0 OUTPUT  0  7a6d5689db806db91c59050b8acb7a851edecd7e.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_20 -1 315 fo 0 OUTPUT  0  7a6d5689db806db91c59050b8acb7a851edecd7e.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 2294 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 79 -1  0  a61684cd1a0246a07832d537e14ea00a357a24cf.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 79 -1  0  a61684cd1a0246a07832d537e14ea00a357a24cf.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 79 -1  0  a61684cd1a0246a07832d537e14ea00a357a24cf.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 323 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 80 -1  0  4859a2181fb12831a9e0a1af5e5440ccefb7700f.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 80 -1  0  4859a2181fb12831a9e0a1af5e5440ccefb7700f.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 80 -1  0  4859a2181fb12831a9e0a1af5e5440ccefb7700f.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 2294 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_15 -1 269 fo 0 OUTPUT  0  857acb4e0b00f1d3716caba54c8a2be5fda8ea42.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_15 -1 269 fo 0 OUTPUT  0  857acb4e0b00f1d3716caba54c8a2be5fda8ea42.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_15 -1 269 fo 0 OUTPUT  0  857acb4e0b00f1d3716caba54c8a2be5fda8ea42.fsi'
+2023-02-28 14:04:22|  56.8|  0.0|STATS |Stored 1 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 11 -1  0  9933816b84d7c94eb3aa6377bb91b808d698a354.ffsupdating'
+2023-02-28 14:04:22|  56.8|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 11 -1  0  9933816b84d7c94eb3aa6377bb91b808d698a354.fsi'
+2023-02-28 14:04:22|  56.9|  0.1|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 11 -1  0  9933816b84d7c94eb3aa6377bb91b808d698a354.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 1 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_12 -1 302 fo 0 OUTPUT  0  a436051fc76f78c23f9ee0b1d9f87e5f24150dd7.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_12 -1 302 fo 0 OUTPUT  0  a436051fc76f78c23f9ee0b1d9f87e5f24150dd7.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_12 -1 302 fo 0 OUTPUT  0  a436051fc76f78c23f9ee0b1d9f87e5f24150dd7.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 1 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 78 -1  0  abfdcd6df39cbabc5798b584eda933c7ffdf7820.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 78 -1  0  abfdcd6df39cbabc5798b584eda933c7ffdf7820.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 78 -1  0  abfdcd6df39cbabc5798b584eda933c7ffdf7820.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 1 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_13 -1 304 fo 0 OUTPUT  0  cfe04348014a64ee3c1229f9366e5827537c403a.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_13 -1 304 fo 0 OUTPUT  0  cfe04348014a64ee3c1229f9366e5827537c403a.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_13 -1 304 fo 0 OUTPUT  0  cfe04348014a64ee3c1229f9366e5827537c403a.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 24 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 39 -1  0  63efa12affc81562fbce4c789b53d45f693d866f.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 39 -1  0  63efa12affc81562fbce4c789b53d45f693d866f.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 39 -1  0  63efa12affc81562fbce4c789b53d45f693d866f.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 323 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 90 -1  0  a47a7ec681ab1b2f39a1134b751f32b2c84736d7.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 90 -1  0  a47a7ec681ab1b2f39a1134b751f32b2c84736d7.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 90 -1  0  a47a7ec681ab1b2f39a1134b751f32b2c84736d7.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 105 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 12 -1  0  22bedfea5e6a9c0fdfce10666c8668432d2dbf6f.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 12 -1  0  22bedfea5e6a9c0fdfce10666c8668432d2dbf6f.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 12 -1  0  22bedfea5e6a9c0fdfce10666c8668432d2dbf6f.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 323 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_4 -1 354 fo 0 OUTPUT  0  514f444eaa92630d2a2bed792ece878aa5fff911.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_4 -1 354 fo 0 OUTPUT  0  514f444eaa92630d2a2bed792ece878aa5fff911.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_4 -1 354 fo 0 OUTPUT  0  514f444eaa92630d2a2bed792ece878aa5fff911.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 81 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 33 -1  0  f7920e49079f8e0d072a087a76d7dcd9d978cacc.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 33 -1  0  f7920e49079f8e0d072a087a76d7dcd9d978cacc.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 33 -1  0  f7920e49079f8e0d072a087a76d7dcd9d978cacc.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 180 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 52 -1  0  2c9616247730cdf36b340ba984197e6bad071dff.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 52 -1  0  2c9616247730cdf36b340ba984197e6bad071dff.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 52 -1  0  2c9616247730cdf36b340ba984197e6bad071dff.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 1 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 69 -1  0  092d8664066e2e1064609187f6b603a2cdd11da9.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 69 -1  0  092d8664066e2e1064609187f6b603a2cdd11da9.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 69 -1  0  092d8664066e2e1064609187f6b603a2cdd11da9.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 180 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_3 -1 352 fo 0 OUTPUT  0  b05e99ed823002f39bd46f6fcced051b9dddccff.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_3 -1 352 fo 0 OUTPUT  0  b05e99ed823002f39bd46f6fcced051b9dddccff.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_3 -1 352 fo 0 OUTPUT  0  b05e99ed823002f39bd46f6fcced051b9dddccff.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 81 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_5 -1 356 fo 0 OUTPUT  0  84c5b438fbc0d1975b5b8b945684d2fa326de247.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_5 -1 356 fo 0 OUTPUT  0  84c5b438fbc0d1975b5b8b945684d2fa326de247.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_5 -1 356 fo 0 OUTPUT  0  84c5b438fbc0d1975b5b8b945684d2fa326de247.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 368 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 22 -1  0  4eb05c61dfc45f9ad73e18f7bffffa8bff193701.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 22 -1  0  4eb05c61dfc45f9ad73e18f7bffffa8bff193701.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 22 -1  0  4eb05c61dfc45f9ad73e18f7bffffa8bff193701.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 368 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_6 -1 358 fo 0 OUTPUT  0  02b0902c7bab6c97fdc9bb529a25a72927859f21.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_6 -1 358 fo 0 OUTPUT  0  02b0902c7bab6c97fdc9bb529a25a72927859f21.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_6 -1 358 fo 0 OUTPUT  0  02b0902c7bab6c97fdc9bb529a25a72927859f21.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 1 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 62 -1  0  218e07f2f0854c8c687bc5bb8f82901eef035535.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 62 -1  0  218e07f2f0854c8c687bc5bb8f82901eef035535.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_DM16NplBE_BielNidau.Nutzungsplan -1 62 -1  0  218e07f2f0854c8c687bc5bb8f82901eef035535.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 1 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_19 -1 313 fo 0 OUTPUT  0  b2a47d268061ca5429ca5db2d6bf45688e11336f.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_19 -1 313 fo 0 OUTPUT  0  b2a47d268061ca5429ca5db2d6bf45688e11336f.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_19 -1 313 fo 0 OUTPUT  0  b2a47d268061ca5429ca5db2d6bf45688e11336f.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 3048 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_18 -1 288 fo 0 OUTPUT  0  c3b1402052d2af88eff7015b824c6d8bad39678f.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_18 -1 288 fo 0 OUTPUT  0  c3b1402052d2af88eff7015b824c6d8bad39678f.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_18 -1 288 fo 0 OUTPUT  0  c3b1402052d2af88eff7015b824c6d8bad39678f.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 2254 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger -1 242 fo 2 USED_SUPPLIER  0  ffed5acd8c6d21e6197ba9bea0e4ffe2edfdbf86.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger -1 242 fo 2 USED_SUPPLIER  0  ffed5acd8c6d21e6197ba9bea0e4ffe2edfdbf86.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger -1 242 fo 2 USED_SUPPLIER  0  ffed5acd8c6d21e6197ba9bea0e4ffe2edfdbf86.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 5501 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 0 MERGED  0  8ec7d45e5c7a840096a789c77b55d299c1172cbc.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 0 MERGED  0  8ec7d45e5c7a840096a789c77b55d299c1172cbc.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 0 MERGED  0  8ec7d45e5c7a840096a789c77b55d299c1172cbc.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 276 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 2 USED_SUPPLIER  0  6bbbd5b10f660a34d91b3e6b17f67d39638e3306.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 2 USED_SUPPLIER  0  6bbbd5b10f660a34d91b3e6b17f67d39638e3306.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 2 USED_SUPPLIER  0  6bbbd5b10f660a34d91b3e6b17f67d39638e3306.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 6 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 3 UNUSED_SUPPLIER  0  d25caf0c629e2cc1c044f1662016e6d2881582a7.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 3 UNUSED_SUPPLIER  0  d25caf0c629e2cc1c044f1662016e6d2881582a7.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_3 -1 244 fo 3 UNUSED_SUPPLIER  0  d25caf0c629e2cc1c044f1662016e6d2881582a7.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 103 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester -1 229 fo 0 PASSED  0  cfa41ab6432b61a2d1eaba6fdee806c7e3c6825e.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester -1 229 fo 0 PASSED  0  cfa41ab6432b61a2d1eaba6fdee806c7e3c6825e.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester -1 229 fo 0 PASSED  0  cfa41ab6432b61a2d1eaba6fdee806c7e3c6825e.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 5617 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 0 MERGED  0  3a532484911c7d2e8a61bbb9c5fe32afb8f958a0.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 0 MERGED  0  3a532484911c7d2e8a61bbb9c5fe32afb8f958a0.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 0 MERGED  0  3a532484911c7d2e8a61bbb9c5fe32afb8f958a0.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 160 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 2 USED_SUPPLIER  0  a2d82464de203a29b4d1d8c968cc02015b74a2ef.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 2 USED_SUPPLIER  0  a2d82464de203a29b4d1d8c968cc02015b74a2ef.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_4 -1 334 fo 2 USED_SUPPLIER  0  a2d82464de203a29b4d1d8c968cc02015b74a2ef.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 11182 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 0 MERGED  0  99f5be45f49f5566ad6bc452c696fe20aa485674.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 0 MERGED  0  99f5be45f49f5566ad6bc452c696fe20aa485674.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 0 MERGED  0  99f5be45f49f5566ad6bc452c696fe20aa485674.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 11182 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_8 -1 372 fo 0 OUTPUT  0  33daf8b39f6bc9b63daa9fd731b56feb0234ebf2.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_8 -1 372 fo 0 OUTPUT  0  33daf8b39f6bc9b63daa9fd731b56feb0234ebf2.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeManager_8 -1 372 fo 0 OUTPUT  0  33daf8b39f6bc9b63daa9fd731b56feb0234ebf2.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 11182 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter -1 70 fo 1 Festlegung  0  c4450531c9b05d051c974113c510169332f4949b.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter -1 70 fo 1 Festlegung  0  c4450531c9b05d051c974113c510169332f4949b.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter -1 70 fo 1 Festlegung  0  c4450531c9b05d051c974113c510169332f4949b.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 11182 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_ListSearcher -1 63 fo 0 FOUND  0  83665ea2e0d5bdd8831b7b10db83d3661919ef86.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_ListSearcher -1 63 fo 0 FOUND  0  83665ea2e0d5bdd8831b7b10db83d3661919ef86.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_ListSearcher -1 63 fo 0 FOUND  0  83665ea2e0d5bdd8831b7b10db83d3661919ef86.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 11051 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter_2 -1 213 fo 1 _lt_lt_gt_UNFILTERED_lt_gt_gt_  0  b18adc0890a88e40e1804e13702e49991b42eb86.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter_2 -1 213 fo 1 _lt_lt_gt_UNFILTERED_lt_gt_gt_  0  b18adc0890a88e40e1804e13702e49991b42eb86.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter_2 -1 213 fo 1 _lt_lt_gt_UNFILTERED_lt_gt_gt_  0  b18adc0890a88e40e1804e13702e49991b42eb86.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 131 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter_2 -1 213 fo 0 SV-Perimeter  0  37dbff912fcc1fcfcc679c2b1a75bdb36c403125.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter_2 -1 213 fo 0 SV-Perimeter  0  37dbff912fcc1fcfcc679c2b1a75bdb36c403125.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_TestFilter_2 -1 213 fo 0 SV-Perimeter  0  37dbff912fcc1fcfcc679c2b1a75bdb36c403125.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 131 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeRemover -1 385 fo 0 OUTPUT  0  8c11af422ab482d26676833d014c4420d2d5d22b.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeRemover -1 385 fo 0 OUTPUT  0  8c11af422ab482d26676833d014c4420d2d5d22b.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeRemover -1 385 fo 0 OUTPUT  0  8c11af422ab482d26676833d014c4420d2d5d22b.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 5 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 3 UNUSED_SUPPLIER  0  df1af897fa62e6d46b34bb2e031f157091d940ca.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 3 UNUSED_SUPPLIER  0  df1af897fa62e6d46b34bb2e031f157091d940ca.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_FeatureMerger_2 -1 243 fo 3 UNUSED_SUPPLIER  0  df1af897fa62e6d46b34bb2e031f157091d940ca.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 706 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AreaCalculator -1 234 fo 0 OUTPUT  0  8d216350a48eac42c7c288ffae4cbf166aed4b6a.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AreaCalculator -1 234 fo 0 OUTPUT  0  8d216350a48eac42c7c288ffae4cbf166aed4b6a.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AreaCalculator -1 234 fo 0 OUTPUT  0  8d216350a48eac42c7c288ffae4cbf166aed4b6a.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 103 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_4 -1 388 fo 0 OUTPUT  0  e5d85e4be0aea4c08fbcaad3d4987db2953ed2bd.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_4 -1 388 fo 0 OUTPUT  0  e5d85e4be0aea4c08fbcaad3d4987db2953ed2bd.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_AttributeCreator_4 -1 388 fo 0 OUTPUT  0  e5d85e4be0aea4c08fbcaad3d4987db2953ed2bd.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 103 feature(s) to FME feature store file `C:\TEMP\wb-inspectors-OCMtQV\inspector.ffs'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-inspectors-OCMtQV\inspector.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-inspectors-OCMtQV\inspector.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|STATS |Stored 603 feature(s) to FME feature store file `C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester -1 229 fo 1 FAILED  0  71a80b948eb1f2260b4f29fd5c6d7f44f120d9cc.ffsupdating'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester -1 229 fo 1 FAILED  0  71a80b948eb1f2260b4f29fd5c6d7f44f120d9cc.fsi'
+2023-02-28 14:04:22|  56.9|  0.0|INFORM|Finished saving spatial index into file 'C:\TEMP\wb-cache-DM16NplBE_BielNidau_Konsistenzbe-FksmPX\Main_Tester -1 229 fo 1 FAILED  0  71a80b948eb1f2260b4f29fd5c6d7f44f120d9cc.fsi'
+2023-02-28 14:04:22|  57.0|  0.1|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
+2023-02-28 14:04:22|  57.0|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:22|  57.0|  0.0|STATS |VisualizerProcessor (CreationFactory): Created 1 features
+2023-02-28 14:04:22|  57.0|  0.0|STATS |VisualizerCleaner (TeeFactory): Cloned 1 input feature(s) into 0 output feature(s)
+2023-02-28 14:04:22|  57.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2023-02-28 14:04:22|  57.0|  0.0|STATS |                            Features Read Summary
+2023-02-28 14:04:22|  57.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.Amt                                      5
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_BW                                  180
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_BWRV                                180
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_BWSym                                61
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_Baum                                  1
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_BaumRV                                1
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_DivObj                                3
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_FlEleDivObj                           2
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZ                                 323
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GFZRV                               323
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GL                                   81
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GLBedeut                             81
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GLPos                                82
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_GLRV                                 81
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_LinEleDivObj                        307
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_PktEleBaum                         3048
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_VG                                  368
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_VGRV                                369
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_WA                                  105
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.BN_WARV                                105
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.Dokument                               282
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_Grundzone                          2254
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_Grundzone_ZPP_UeO                   255
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_Zonentyp                           2254
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.GN_ZonentypRV                         4083
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.HinweisWeitereDokumente                  3
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_Abstandslinie                        23
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandsliniePos                    189
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_AbstandslinieRV                      23
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_FlEleUeberlBedeut                    71
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_FlaechenelementUeberl               251
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_LinEleAbstandBedeut                2290
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_LinienelementAbstand               2294
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZone                   141
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.UE_UeberlagerungZoneRV                 335
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWald                      1
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WF_FeststellungWaldRV                    1
+2023-02-28 14:04:22|  57.0|  0.0|STATS |DM16NplBE_BielNidau.Nutzungsplanung.WF_LinienelementWald                    24
+2023-02-28 14:04:22|  57.0|  0.0|STATS |XTF_BASKETS                                                                  1
+2023-02-28 14:04:22|  57.0|  0.0|STATS |XTF_TRANSFER                                                                 1
+2023-02-28 14:04:22|  57.0|  0.0|STATS |==============================================================================
+2023-02-28 14:04:22|  57.0|  0.0|STATS |Total Features Read                                                      20482
+2023-02-28 14:04:22|  57.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2023-02-28 14:04:22|  57.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2023-02-28 14:04:22|  57.0|  0.0|STATS |                           Features Written Summary
+2023-02-28 14:04:22|  57.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2023-02-28 14:04:22|  57.0|  0.0|STATS |==============================================================================
+2023-02-28 14:04:22|  57.0|  0.0|STATS |Total Features Written                                                       0
+2023-02-28 14:04:22|  57.0|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2023-02-28 14:04:22|  57.0|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2023-02-28 14:04:22|  57.0|  0.0|WARN  |-~                                                                             ~-
+2023-02-28 14:04:22|  57.0|  0.0|WARN  |-~    Feature caches have been recorded at every stage of the translation.     ~-
+2023-02-28 14:04:22|  57.0|  0.0|WARN  |-~                      To inspect the recorded features,                      ~-
+2023-02-28 14:04:22|  57.0|  0.0|WARN  |-~              click the feature cache icons next to the ports.               ~-
+2023-02-28 14:04:22|  57.0|  0.0|WARN  |-~                                                                             ~-
+2023-02-28 14:04:22|  57.0|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2023-02-28 14:04:22|  57.0|  0.0|INFORM|Translation was SUCCESSFUL with 9 warning(s) (0 feature(s) output)
+2023-02-28 14:04:22|  57.0|  0.0|INFORM|FME Session Duration: 58 seconds. (CPU: 44.9s user, 12.1s system)
+2023-02-28 14:04:22|  57.0|  0.0|INFORM|END - ProcessID: 17652, peak process memory usage: 690744 kB, current process memory usage: 567436 kB
